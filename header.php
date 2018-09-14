@@ -1,6 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+	<meta name="yandex-verification" content="b4130eb718677801" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="description" content="столы и стулья из массива от производителя">
 	<meta name="keywords" content="столы стулья табуретки массив производитель престол">
