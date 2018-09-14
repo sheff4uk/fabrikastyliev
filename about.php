@@ -1,5 +1,5 @@
 <?
-	$title = "Престол: столы и стулья";
+	$title = "О нас";
 	include "header.php";
 ?>
 
