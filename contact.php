@@ -13,7 +13,7 @@
 
 		<section class="contact1">
 			<p>Адрес производства: г.Киров, ул.Луганская 59в</p>
-			<p>Телефон: +79091317732</p>
+			<p>Телефон: 8(909)131-77-32</p>
 			<p>email: fabrikaprestol@gmail.com</p>
 		</section>
 	</section>
