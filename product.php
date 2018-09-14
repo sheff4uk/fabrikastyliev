@@ -36,7 +36,15 @@
 				<p><?=$product[2]?></p>
 				<h2>Цена: <span class="price"><?=$product[3]?></span> руб </h2>
 				<p>Где купить:<a href="address.php"> адреса магазинов. </a></p>
-				<p>Под заказ индивидуальный размер и цвет по каталогам пластиков <a href="http://www.plastics-foils.ru/products/18/" target="_blank">LeMark</a>, <a href="http://www.slotex.ru/products/decor/collection/index.php?ID=9" target="_blank">Slotex</a>
+				<?
+					if ($type == "table") {
+						echo "<p>Под заказ индивидуальный размер и цвет стола по каталогам пластиков <a href='http://www.plastics-foils.ru/products/18/' target='_blank'>LeMark</a>, <a href='http://www.slotex.ru/products/decor/collection/index.php?ID=9' target='_blank'>Slotex</a>";
+					}
+					if ($type == "chair") {
+						echo "<p>Под заказ на выбор ткань и цвет стула по каталогам пластиков  <a href='http://www.plastics-foils.ru/products/18/' target='_blank'>LeMark</a>, <a href='http://www.slotex.ru/products/decor/collection/index.php?ID=9' target='_blank'>Slotex</a>";
+					}
+				?>
+				<p><a href="/price.pdf" target="_blank">Скачать подробный прайс</a></p>
 			</section>
 
 			<section id="prod_photo">
