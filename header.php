@@ -4,7 +4,6 @@
 	<meta name="yandex-verification" content="b4130eb718677801" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="description" content="столы и стулья из массива от производителя <?=$title?>">
-	<description>столы и стулья из массива от производителя <?=$title?></description>
 	<meta name="keywords" content="столы стулья табуретки массив производитель престол">
 	<title><?=$title?></title>
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
