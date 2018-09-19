@@ -1,3 +1,8 @@
+@font-face {
+	font-family: "Helvetica Neue";
+	src: url('/fonts/HelveticaNeue.ttf') format('truetype');
+}
+
 .page {
 	width: 990px;
 	padding: 0 5px;
@@ -103,6 +108,7 @@ body {
 	color: #333;
 	margin: 0px;
 	font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+	font-family: 'Helvetica Neue',Arial,sans-serif;
 	font-size: 16px;
 }
 
