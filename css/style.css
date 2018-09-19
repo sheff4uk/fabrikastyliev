@@ -72,13 +72,14 @@ a:hover {
 	margin: 3px;
 	width: 65px;
 	height: 50px;
-	background-image: url(/images/logo_gray.png);
+	background-image: url(/images/logo_yellow.png);
 	background-size: contain;
 	background-repeat: no-repeat;
+	filter: grayscale(100%);
 }
 
 #nav .menu_logo:hover {
-	background-image: url(/images/logo_yellow.png);
+	filter: grayscale(0%);
 }
 
 #nav a {
