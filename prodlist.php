@@ -2,8 +2,9 @@
 	include "data.php";
 
 	$type_name = $type[$_GET["type"]][0];
+	$heading = $type[$_GET["type"]][2];
+	$title = $type[$_GET["type"]][3];
 
-	$title = $type_name;
 	include "header.php";
 
 ?>
@@ -15,6 +16,7 @@
 		<li>/</li>
 		<li><b><?=$type_name?></b></li>
 	</ul>
+	<h1><?=$heading?></h1>
 	<div class="prod_list_wrap">
 
 	<?
