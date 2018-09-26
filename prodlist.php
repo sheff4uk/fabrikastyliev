@@ -3,7 +3,8 @@
 
 	$type_name = $type[$_GET["type"]][0];
 	$heading = $type[$_GET["type"]][2];
-	$title = $type[$_GET["type"]][3];
+	$title = $type[$_GET["type"]][0];
+	$description = $type[$_GET["type"]][3];
 
 	include "header.php";
 

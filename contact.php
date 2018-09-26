@@ -1,5 +1,6 @@
 <?
 	$title = "Контакты";
+	$description = "Местонахождение фабрики Престол";
 	include "header.php";
 ?>
 

@@ -3,8 +3,8 @@
 <head>
 	<meta name="yandex-verification" content="b4130eb718677801" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="description" content="столы и стулья из массива от производителя <?=$title?>">
-	<meta name="keywords" content="столы стулья табуретки массив производитель престол">
+	<meta name="description" content="<?=$description?>">
+	<meta name="keywords" content="мебель, журнальные столы, столы, стулья, зеркала, стул, стол, мебель для дома, престол, фабрикастульев, журнальный стол, кресла, журнальный столик, кухонный стол, стол на кухню">
 	<title><?=$title?></title>
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">

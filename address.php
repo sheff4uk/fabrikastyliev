@@ -1,5 +1,6 @@
 <?
 	$title = "Где купить";
+	$description = "Адреса фирменных магазинов Престол";
 	include "header.php";
 ?>
 
