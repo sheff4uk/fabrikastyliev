@@ -28,8 +28,11 @@
 						<div class='prod_cell_img_wrap'>
 							<img src='images/prodlist/{$k}.png'>
 						</div>
-						<p>{$v[0]}</p>
+						<p style='margin: 30px 0 5px 0;'>{$v[0]}</p>
 					</a>
+					<div class='icon_wrap'>
+						".($v[4] ? "<div class='ic_new'></div>" : "")."
+					</div>
 					<hr>
 				</div>
 			";
