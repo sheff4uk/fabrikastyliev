@@ -28,14 +28,14 @@
 			<li>/</li>
 			<li><a href="/prodlist.php?type=<?=$type?>"><?=$type_name?></a></li>
 			<li>/</li>
-			<li><b><?=$product[0]?></b></li>
+			<li><b id="<?=$name?>"><?=$product[0]?></b></li>
 		</ul>
 		<div>
 			<section id="prod_description">
 				<h2><?=$product[0]?></h2>
 				<p><?=$product[1]?></p>
 				<p><?=$product[2]?></p>
-				<h2>Цена: <span class="price"><?=$product[3]?></span> руб </h2>
+<!--				<h2>Цена: <span class="price"><?=$product[3]?></span> руб </h2>-->
 				<p>Где купить:<a href="address.php"> адреса магазинов. </a></p>
 				<?
 					if ($type == "table") {
@@ -45,7 +45,7 @@
 						echo "<p>Под заказ на выбор ткань и цвет стула по каталогам пластиков  <a href='http://www.plastics-foils.ru/products/18/' target='_blank'>LeMark</a>, <a href='http://www.slotex.ru/products/decor/collection/index.php?ID=9' target='_blank'>Slotex</a>";
 					}
 				?>
-				<p><a href="/price.pdf" target="_blank">Скачать подробный прайс</a></p>
+<!--				<p><a href="/price.pdf" target="_blank">Скачать подробный прайс</a></p>-->
 			</section>
 
 			<section id="prod_photo">
@@ -58,10 +58,10 @@
 		</div>
 	</section>
 
-	<a href="product.php?name=<?=$a[$prev]?>" id="prev" title="Предыдущий <?=$type_n?>">
+	<a href="product.php?name=<?=$a[$prev]?>#<?=$a[$prev]?>" id="prev" title="Предыдущий <?=$type_n?>">
 		<i class="fas fa-chevron-circle-left fa-3x"></i>
 	</a>
-	<a href="product.php?name=<?=$a[$next]?>" id="next" title="Следующий <?=$type_n?>">
+	<a href="product.php?name=<?=$a[$next]?>#<?=$a[$next]?>" id="next" title="Следующий <?=$type_n?>">
 		<i class="fas fa-chevron-circle-right fa-3x"></i>
 	</a>
 </section>
