@@ -28,7 +28,7 @@
 			<li>/</li>
 			<li><a href="/prodlist.php?type=<?=$type?>"><?=$type_name?></a></li>
 			<li>/</li>
-			<li><b id="<?=$name?>"><?=$product[0]?></b></li>
+			<li><b id="<?=$name?>" style="padding-top: 60px;"><?=$product[0]?></b></li>
 		</ul>
 		<div>
 			<section id="prod_description">
@@ -49,13 +49,11 @@
 			</section>
 
 			<section id="prod_photo">
-				<img src='images/prodlist/<?=$name?>.png'>
+				<img src='images/prodlist/<?=$name?>.jpg'>
 			</section>
 		</div>
 
-		<div id="mech">
-			<img src="images/sigma.png">
-		</div>
+		<div id="mech"></div>
 	</section>
 
 	<a href="product.php?name=<?=$a[$prev]?>#<?=$a[$prev]?>" id="prev" title="Предыдущий <?=$type_n?>">
@@ -73,7 +71,15 @@
 
 <script>
 	$(function() {
-		$("#mech").html('<img src="images/'+$(".mech").text()+'.png">');
+
+		var mech = '';
+		if ($(".mech").text() == 'люкс') {
+			mech = '<p>Неподвижная царга. Две половины столешницы скользят на металлических шариковых направляющих. Одна вставка размером <b>[35, 42, 48] см</b> в зависимости от формы столешницы и размера стола.</p><img src="images/люкс.jpg">';
+		}
+		else if ($(".mech").text() == 'сигма') {
+			mech = '<p>Раздвигающаяся царга из металлических направляющих. Вмещается две или три вставки по <b>[40, 50] см</b> в зависимости от размера стола и вида применяемой фурнитуры.</p><img src="images/сигма.jpg">';
+		}
+		$("#mech").html(mech);
 
 		$(".mech").hover(
 			function() {
@@ -83,5 +89,7 @@
 				$("#mech").hide('fast');
 			}
 		);
+
+		$(window).scrollTop(150);
 	});
 </script>

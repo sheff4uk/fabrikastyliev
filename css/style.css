@@ -147,7 +147,8 @@ body {
 }
 
 #table:hover, #chair:hover {
-	opacity: .7;
+/*	opacity: .7;*/
+	filter: saturate(200%);
 	background-size: 110%;
 }
 
@@ -184,6 +185,7 @@ body {
 .prod_cell a:hover {
 	border: 1px solid #CCC;
 	box-shadow: 0 3px 9px #999;
+	filter: saturate(200%);
 }
 
 .prod_cell a {
@@ -334,16 +336,17 @@ footer .footer_phone {
 }
 
 #mech {
+	padding: 10px;
 	background: white;
 	display: none;
-	width: 300px;
-	height: 300px;
+	width: 320px;
+	height: 320px;
 	overflow: hidden;
 	border: 1px solid;
 	position: absolute;
 	top: 120px;
 	right: 0px;
-	opacity: .9;
+/*	opacity: .9;*/
 }
 
 #mech img {
