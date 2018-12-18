@@ -408,3 +408,37 @@ footer .footer_phone {
 .social_icon.vk:hover {
 	background: #54769a;
 }
+
+::-webkit-scrollbar-button {
+background-image:url('');
+background-repeat:no-repeat;
+width:7px;
+height:0px
+}
+
+::-webkit-scrollbar-track {
+background-color:#fff
+}
+
+::-webkit-scrollbar-thumb {
+-webkit-border-radius: 0px;
+border-radius: 0px;
+background-color:#653033;
+}
+
+/*
+::-webkit-scrollbar-thumb:hover{
+background-color:#56999f;
+}
+*/
+
+::-webkit-resizer{
+background-image:url('');
+background-repeat:no-repeat;
+width:6px;
+height:0px
+}
+
+::-webkit-scrollbar{
+width: 6px;
+}
