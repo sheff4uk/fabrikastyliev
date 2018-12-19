@@ -217,10 +217,12 @@ body {
 
 footer {
 	padding: 40px 0;
-	background-color: #653033;
+/*	background-color: #653033;*/
+	background: #653033 url(/images/venge.jpg) repeat-x;
 	color: #ccc;
 	font-size: 15px;
 	height: 200px;
+	box-shadow: 0 0 40px #000;
 }
 
 footer .page {
@@ -456,7 +458,7 @@ width: 6px;
 	text-indent:100%;
 	background:url(images/ui.totop.png) no-repeat left top;
 	text-align: center;
-	opacity: .5;
+	opacity: .8;
 }
 
 #toTopHover {
