@@ -1,6 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="yandex-verification" content="b4130eb718677801" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="description" content="<?=$description?>">
@@ -8,29 +9,13 @@
 	<title><?=$title?></title>
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<link type="text/css" rel="stylesheet" href="/css/style.css?v=12">
+	<link type="text/css" rel="stylesheet" href="/css/style.css?v=13">
 	<link type="text/css" rel="stylesheet" href="/css/jquery.bxslider.css">
 	<script src="/js/jquery-1.11.3.min.js"></script>
 	<script src="/js/jquery.bxslider.js"></script>
-	<script src="/js/script.js?v=1"></script>
+	<script src="/js/script.js?v=2"></script>
 	<script src="/js/easing.js"></script>
 	<script src="/js/jquery.ui.totop.js"></script>
-
-	<script type="text/javascript">
-	$(document).ready(function() {
-	/*
-	var defaults = {
-	containerID: 'toTop', // fading element id
-	containerHoverID: 'toTopHover', // fading element hover id
-	scrollSpeed: 1200,
-	easingType: 'linear'
-	};
-	*/
-
-	$().UItoTop({ easingType: 'easeOutQuart' });
-
-	});
-	</script>
 
 	<!-- Yandex.Metrika counter -->
 	<script type="text/javascript" >
@@ -66,17 +51,28 @@
 <body>
 	<header>
 		<nav id="nav">
+			<div class="menu__icon">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
 			<div class="page">
-				<a class="menu_logo" href="/" title="На главную"></a>
 				<ul>
-					<li><a href="prodlist.php?type=table">СТОЛЫ</a></li>
-					<li><a href="prodlist.php?type=chair">СТУЛЬЯ</a></li>
-					<li> <a href="contact.php">КОНТАКТЫ</a></li>
-					<li> <a href="about.php">О НАС</a></li>
-					<li> <a href="address.php">ГДЕ КУПИТЬ</a></li>
+					<li><a href="address.php">Магазины</a></li>
+					<li><a href="contact.php">Контакты</a></li>
+					<li><a href="about.php">О нас</a></li>
 				</ul>
+				<a href="tel:89091317732" class="footer_phone">8 (909) 131-77-32</a>
 			</div>
 		</nav>
+		<div id="sub_nav">
+			<ul>
+					<li><a href="prodlist.php?type=table">Столы</a></li>
+					<li></li>
+					<li><a href="prodlist.php?type=chair">Стулья</a></li>
+			</ul>
+		</div>
 <!--
 		<a href="advice.php" id="advice">
 			<i class="far fa-question-circle fa-2x"></i>

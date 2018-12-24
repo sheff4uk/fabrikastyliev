@@ -30,12 +30,16 @@
 			<li>/</li>
 			<li><b id="<?=$name?>" style="padding-top: 60px;"><?=$product[0]?></b></li>
 		</ul>
-		<div>
+		<div id="prod_wr">
+			<section id="prod_photo">
+				<img src='images/prodlist/<?=$name?>.jpg'>
+			</section>
+
 			<section id="prod_description">
 				<h2><?=$product[0]?></h2>
 				<p><?=$product[1]?></p>
 				<p><?=$product[2]?></p>
-<!--				<h2>Цена: <span class="price"><?=$product[3]?></span> руб </h2>-->
+				<h2>Цена: <span class="price"><?=$product[3]?></span> руб </h2>
 				<p>Где купить:<a href="address.php"> адреса магазинов. </a></p>
 				<?
 					if ($type == "table") {
@@ -45,21 +49,15 @@
 						echo "<p>Под заказ на выбор ткань и цвет стула по каталогам пластиков  <a href='http://www.plastics-foils.ru/products/18/' target='_blank'>LeMark</a>, <a href='http://www.slotex.ru/products/decor/collection/index.php?ID=9' target='_blank'>Slotex</a>";
 					}
 				?>
-<!--				<p><a href="/price.pdf" target="_blank">Скачать подробный прайс</a></p>-->
-			</section>
-
-			<section id="prod_photo">
-				<img src='images/prodlist/<?=$name?>.jpg'>
+				<p><a href="/price.pdf" target="_blank">Скачать подробный прайс</a></p>
 			</section>
 		</div>
-
-		<div id="mech"></div>
 	</section>
 
-	<a href="product.php?name=<?=$a[$prev]?>#<?=$a[$prev]?>" id="prev" title="Предыдущий <?=$type_n?>">
+	<a href="product.php?name=<?=$a[$prev]?>" id="prev" title="Предыдущий <?=$type_n?>">
 		<i class="fas fa-chevron-circle-left fa-3x"></i>
 	</a>
-	<a href="product.php?name=<?=$a[$next]?>#<?=$a[$next]?>" id="next" title="Следующий <?=$type_n?>">
+	<a href="product.php?name=<?=$a[$next]?>" id="next" title="Следующий <?=$type_n?>">
 		<i class="fas fa-chevron-circle-right fa-3x"></i>
 	</a>
 </section>
@@ -73,15 +71,15 @@
 	$(function() {
 
 		var mech = '';
-		if ($(".mech").text() == 'люкс') {
-			mech = '<p>Неподвижная царга. Две половины столешницы скользят на металлических шариковых направляющих. Одна вставка размером <b>[35, 42, 48] см</b> в зависимости от формы столешницы и размера стола.</p><img src="images/люкс.jpg">';
+		if ($("m").text() == 'люкс') {
+			mech = '<div id="mech"><p>Неподвижная царга. Две половины столешницы скользят на металлических шариковых направляющих. Одна вставка размером <b>[35, 42, 48] см</b> в зависимости от формы столешницы и размера стола.</p><img src="images/люкс.jpg"></div>';
 		}
-		else if ($(".mech").text() == 'сигма') {
-			mech = '<p>Раздвигающаяся царга из металлических направляющих. Вмещается две или три вставки по <b>[40, 50] см</b> в зависимости от размера стола и вида применяемой фурнитуры.</p><img src="images/сигма.jpg">';
+		else if ($("m").text() == 'сигма') {
+			mech = '<div id="mech"><p>Раздвигающаяся царга из металлических направляющих. Вмещается две или три вставки по <b>[40, 50] см</b> в зависимости от размера стола и вида применяемой фурнитуры.</p><img src="images/сигма.jpg"></div>';
 		}
-		$("#mech").html(mech);
+		$("m").html("<a style='cursor: pointer; text-decoration: underline;'>" + $("m").text() + "</a>" + mech);
 
-		$(".mech").hover(
+		$("m a").hover(
 			function() {
 				$("#mech").show('fast');
 			},
@@ -89,7 +87,5 @@
 				$("#mech").hide('fast');
 			}
 		);
-
-		$(window).scrollTop(150);
 	});
 </script>
