@@ -39,7 +39,7 @@
 				<h2><?=$product[0]?></h2>
 				<p><?=$product[1]?></p>
 				<p><?=$product[2]?></p>
-				<h2>Цена: <span class="price"><?=$product[3]?></span> руб </h2>
+<!--				<h2>Цена: <span class="price"><?=$product[3]?></span> руб </h2>-->
 				<p>Где купить:<a href="address.php"> адреса магазинов. </a></p>
 				<?
 					if ($type == "table") {
@@ -49,7 +49,7 @@
 						echo "<p>Под заказ на выбор ткань и цвет стула по каталогам пластиков  <a href='http://www.plastics-foils.ru/products/18/' target='_blank'>LeMark</a>, <a href='http://www.slotex.ru/products/decor/collection/index.php?ID=9' target='_blank'>Slotex</a>";
 					}
 				?>
-				<p><a href="/price.pdf" target="_blank">Скачать подробный прайс</a></p>
+<!--				<p><a href="/price.pdf" target="_blank">Скачать подробный прайс</a></p>-->
 			</section>
 		</div>
 	</section>
