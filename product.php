@@ -19,6 +19,7 @@
 	$pos = array_search ($name,$a);
 	$prev = ($pos == 0) ? ($count - 1) : ($pos - 1);
 	$next = ($pos == $count - 1) ? 0 : ($pos + 1);
+	$pic = "<img src='images/m_logo.png' style='vertical-align: middle;' title='Фирменный салон &laquo;Престол: столы и стулья&raquo;'>";
 ?>
 
 <section id="main">
@@ -40,7 +41,8 @@
 				<p><b>Размеры:</b><br><?=$product[1]?></p>
 				<p><b>Цвет:</b> <?=$product[2]?></p>
 				<p><b>Материалы:</b> <?=$product[3]?></p>
-				<h2>Цена: <span class="price"><?=$product[4]?></span> руб </h2>
+				<h2>Цена: <span class="price"><?=$product[4]?></span><sup>*</sup> руб </h2>
+				<p>* данная цена действительна только в фирменных салонах <a href="address.php">Престол: столы и стулья</a>, помеченных знаком <?=$pic?></p>
 				<p><b>Где купить:</b> <a href="address.php">адреса магазинов</a></p>
 				<?
 					if ($type == "table") {
