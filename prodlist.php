@@ -31,7 +31,7 @@
 						<p style='margin: 30px 0 5px 0;'>{$v[0]}</p>
 					</a>
 					<div class='icon_wrap'>
-						".($v[4] ? "<div class='ic_new'></div>" : "")."
+						".($v[5] ? "<div class='ic_new'></div>" : "")."
 					</div>
 					<hr>
 				</div>
