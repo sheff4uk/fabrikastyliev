@@ -17,5 +17,9 @@ $(function() {
 		$(this).closest('#nav').toggleClass('menu_state_open');
 	});
 
+	$('.fa-map-marked-alt').on('click', function() {
+		$(this).closest('.shop').toggleClass('state_open');
+	});
+
 	$().UItoTop({ easingType: 'easeOutQuart' });
 });

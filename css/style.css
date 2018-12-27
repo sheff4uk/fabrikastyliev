@@ -568,6 +568,22 @@ width: 6px;
 	display: block;
 }
 
+.shop {
+	display: block;
+}
+.map {
+	height: 0px;
+	overflow: hidden;
+	box-shadow: 0px 20px 20px -20px #653033 inset, 0px -20px 20px -20px #653033 inset;
+	transition: .5s ease-in-out;
+}
+.shop.state_open .map {
+	height: 400px;
+}
+.fa-map-marked-alt {
+	cursor: pointer;
+}
+
 @media screen and (max-width: 999px) {
 	.menu__icon{
 		display: inline-block;
