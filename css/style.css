@@ -295,6 +295,10 @@ footer .footer_phone {
 
 .price {
 	color: #C00000;
+	font-size: 1.5em;
+}
+.price sup {
+	color: #333;
 }
 
 #prod_wr {
@@ -302,8 +306,12 @@ footer .footer_phone {
 }
 #prod_description {
 	width: 330px;
-	padding-left: 50px;
+	padding-left: 30px;
 	border-left: 2px dashed #5dc140;
+}
+#prod_description span {
+	display: block;
+	margin-left: 20px;
 }
 
 #prod_photo {
@@ -365,31 +373,32 @@ footer .footer_phone {
 	margin-top: 30px;
 }
 
-#mech {
-	padding: 5px;
+#prod_description span.mech {
+	padding: 0px;
 	background: white;
-	display: none;
 	width: 300px;
-	height: 300px;
+	height: 0px;
 	overflow: hidden;
-	border: 1px solid;
+	border: none;
 	margin: auto;
 	text-align: left;
-/*	position: absolute;*/
-/*	top: 120px;*/
-/*	right: 0px;*/
-/*	opacity: .9;*/
+	transition:all .3s ease-in-out;
+	-moz-transition:all .3s ease-in-out;
+	-webkit-transition:all .3s ease-in-out;
+	-o-transition:all .3s ease-in-out;
 }
-#mech p {
-	margin: 0px;
+#prod_description m:hover .mech{
+	padding: 5px;
+	height: 300px;
+	border: 1px solid;
 }
-#mech img {
+.mech img {
 	width: 100%;
 }
 
 #prev {
 	position: absolute;
-	top: 250px;
+	top: 100px;
 	left: 50px;
 	color: #777;
 	opacity: .5;
@@ -397,7 +406,7 @@ footer .footer_phone {
 
 #next {
 	position: absolute;
-	top: 250px;
+	top: 100px;
 	right: 50px;
 	color: #777;
 	opacity: .5;
@@ -646,5 +655,8 @@ width: 6px;
 		border-left: none;
 		border-top: 2px dashed #5dc140;
 		text-align: center;
+	}
+	#prod_description span {
+		margin: 0;
 	}
 }

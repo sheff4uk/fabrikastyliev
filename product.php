@@ -38,12 +38,36 @@
 
 			<section id="prod_description">
 				<h2><?=$product[0]?></h2>
-				<p><b>Размеры:</b><br><?=$product[1]?></p>
-				<p><b>Цвет:</b> <?=$product[2]?></p>
-				<p><b>Материалы:</b> <?=$product[3]?></p>
-				<h2>Цена: <span class="price"><?=$product[4]?></span><sup>*</sup> руб </h2>
+				<p><b>Размеры:</b><span><?=$product[1]?></span></p>
+<!--				<p><b>Цвет:</b> <?=$product[2]?></p>-->
+				<p><b>Материалы:</b><span><?=$product[3]?></span></p>
+				<?
+					if ($type == "table") {
+						echo "<p><b>Столешница:</b><span>МДФ покрытая мебельным пластиком</span></p>";
+					}
+				?>
+				<p><b>Цена:</b>
+				<?
+					if ($type == "table") {
+						foreach ($product[4] as $k => $v) {
+							if ($k == 1) {
+								$mech = "нераздвижной";
+							}
+							elseif ($k == 2) {
+								$mech = "раздвижной <m><a style='cursor: pointer; text-decoration: underline;'>люкс</a><span class='mech'>Неподвижная царга. Две половины столешницы скользят на металлических шариковых направляющих. Одна вставка размером <b>[35, 42, 48] см</b> в зависимости от формы столешницы и размера стола.<br><img src='images/люкс.jpg'></span></m>";
+							}
+							elseif ($k == 3) {
+								$mech = "раздвижной <m><a style='cursor: pointer; text-decoration: underline;'>сигма</a><span class='mech'>Раздвигающаяся царга из металлических направляющих. Вмещается две или три вставки по <b>[40, 50, 60] см</b> в зависимости от размера стола и вида применяемой фурнитуры.<br><img src='images/сигма.jpg'></span></m>";
+							}
+							echo "<span><b class='price'>{$v}<sup>*</sup></b> руб. {$mech}</span>";
+						}
+					}
+					if ($type == "chair") {
+						echo "<span><b class='price'>{$product[4]}<sup>*</sup></b> руб.</span>";
+					}
+				?>
+				</p>
 				<p>* данная цена действительна только в фирменных салонах <a href="address.php">Престол: столы и стулья</a>, помеченных знаком <?=$pic?></p>
-				<p><b>Где купить:</b> <a href="address.php">адреса магазинов</a></p>
 				<?
 					if ($type == "table") {
 						echo "<p>Под заказ индивидуальный размер и цвет стола по каталогам пластиков <a href='http://www.plastics-foils.ru/products/18/' target='_blank'>LeMark</a>, <a href='http://www.slotex.ru/products/decor/collection/index.php?ID=9' target='_blank'>Slotex</a>";
@@ -68,27 +92,3 @@
 <?
 	include "footer.php";
 ?>
-
-
-<script>
-	$(function() {
-
-		var mech = '';
-		if ($("m").text() == 'люкс') {
-			mech = '<div id="mech"><p>Неподвижная царга. Две половины столешницы скользят на металлических шариковых направляющих. Одна вставка размером <b>[35, 42, 48] см</b> в зависимости от формы столешницы и размера стола.</p><img src="images/люкс.jpg"></div>';
-		}
-		else if ($("m").text() == 'сигма') {
-			mech = '<div id="mech"><p>Раздвигающаяся царга из металлических направляющих. Вмещается две или три вставки по <b>[40, 50] см</b> в зависимости от размера стола и вида применяемой фурнитуры.</p><img src="images/сигма.jpg"></div>';
-		}
-		$("m").html("<a style='cursor: pointer; text-decoration: underline;'>" + $("m").text() + "</a>" + mech);
-
-		$("m a").hover(
-			function() {
-				$("#mech").show('fast');
-			},
-			function() {
-				$("#mech").hide('fast');
-			}
-		);
-	});
-</script>
