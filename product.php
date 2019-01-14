@@ -59,8 +59,9 @@
 							elseif ($k == 3) {
 								$mech = "раздвижной <m><a style='cursor: pointer; text-decoration: underline;'>сигма</a><span class='mech'>Раздвигающаяся царга из металлических направляющих. Вмещается две или три вставки по <b>[40, 50, 60] см</b> в зависимости от размера стола и вида применяемой фурнитуры.<br><img src='images/сигма.jpg'></span></m>";
 							}
-							echo "<span><b class='price'>{$v}<sup>*</sup></b> руб. {$mech}</span>";
+							echo "<span>от <b class='price'>{$v}<sup>*</sup></b> руб. {$mech}</span>";
 						}
+						echo "<br>Конечная цена товара формируется в результате просчета заказа по индивидуальным размерам";
 					}
 					if ($type == "chair") {
 						echo "<span><b class='price'>{$product[4]}<sup>*</sup></b> руб.</span>";
@@ -76,7 +77,7 @@
 						echo "<p>Под заказ на выбор ткань и цвет стула по каталогам пластиков  <a href='http://www.plastics-foils.ru/products/18/' target='_blank'>LeMark</a>, <a href='http://www.slotex.ru/products/decor/collection/index.php?ID=9' target='_blank'>Slotex</a>";
 					}
 				?>
-				<p><a href="/price.pdf" target="_blank">Скачать подробный прайс</a></p>
+<!--				<p><a href="/price.pdf" target="_blank">Скачать подробный прайс</a></p>-->
 			</section>
 		</div>
 	</section>
