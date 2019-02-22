@@ -20,21 +20,16 @@
 			<p>Мы производим мебель по индивидуальным заказам, предлагая на выбор широкий ассортимент цветовых решений и материалов, а так же различные размеры.</p>
 		</div>
 		<div class="slider">
-			<div><img src="images/slider/slide1.jpg" ></div>
-			<div><img src="images/slider/slide2.jpg" ></div>
-			<div><img src="images/slider/slide3.jpg" ></div>
-			<div><img src="images/slider/slide4.jpg" ></div>
-			<div><img src="images/slider/slide5.jpg" ></div>
-			<div><img src="images/slider/slide6.jpg" ></div>
-			<div><img src="images/slider/slide7.jpg" ></div>
-			<div><img src="images/slider/slide8.jpg" ></div>
-			<div><img src="images/slider/slide9.jpg" ></div>
-			<div><img src="images/slider/slide10.jpg" ></div>
-			<div><img src="images/slider/slide11.jpg" ></div>
-			<div><img src="images/slider/slide12.jpg" ></div>
-			<div><img src="images/slider/slide13.jpg" ></div>
-			<div><img src="images/slider/slide14.jpg" ></div>
-			<div><img src="images/slider/slide15.jpg" ></div>
+		<?
+			// Извлекаем из папки слайды
+			$dir = 'images/slider/';
+			$cdir = scandir($dir);
+			foreach ($cdir as $key => $value) {
+				if (!in_array($value,array(".",".."))) {
+					echo "<div><img src='".$dir.$value."'></div>";
+				}
+			}
+		?>
 		</div>
 	</section>
 </section>
