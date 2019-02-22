@@ -2,303 +2,328 @@
 		<!--	created with www.mysitemapgenerator.com	-->
 		<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/</loc>
-	<lastmod>2018-09-18T09:38:49+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/</loc>
+	<lastmod>2019-02-22T11:04:29+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/prodlist.php?type=table</loc>
-	<lastmod>2018-09-18T09:38:49+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/address.php</loc>
+	<lastmod>2019-02-22T11:04:29+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/prodlist.php?type=chair</loc>
-	<lastmod>2018-09-18T09:38:49+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/contact.php</loc>
+	<lastmod>2019-02-22T11:04:30+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/contact.php</loc>
-	<lastmod>2018-09-18T09:38:50+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/about.php</loc>
+	<lastmod>2019-02-22T11:04:31+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/about.php</loc>
-	<lastmod>2018-09-18T09:38:50+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/prodlist.php?type=table</loc>
+	<lastmod>2019-02-22T11:04:31+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/address.php</loc>
-	<lastmod>2018-09-18T09:38:51+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/prodlist.php?type=chair</loc>
+	<lastmod>2019-02-22T11:04:32+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/advice.php</loc>
-	<lastmod>2018-09-18T09:38:51+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=ludovikplus</loc>
+	<lastmod>2019-02-22T11:04:32+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=ludovikplus</loc>
-	<lastmod>2018-09-18T09:38:51+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=ludovik</loc>
+	<lastmod>2019-02-22T11:04:32+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=ludovik</loc>
-	<lastmod>2018-09-18T09:38:52+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=niko-v</loc>
+	<lastmod>2019-02-22T11:04:33+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=niko-v</loc>
-	<lastmod>2018-09-18T09:38:52+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=rihard</loc>
+	<lastmod>2019-02-22T11:04:33+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=rihard</loc>
-	<lastmod>2018-09-18T09:38:53+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=max</loc>
+	<lastmod>2019-02-22T11:04:34+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=max</loc>
-	<lastmod>2018-09-18T09:38:53+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=gulliver</loc>
+	<lastmod>2019-02-22T11:04:34+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=gulliver</loc>
-	<lastmod>2018-09-18T09:38:54+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=gulliver-maxi</loc>
+	<lastmod>2019-02-22T11:04:35+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=charli-m</loc>
-	<lastmod>2018-09-18T09:38:55+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=charli-m</loc>
+	<lastmod>2019-02-22T11:04:36+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=charli-s</loc>
-	<lastmod>2018-09-18T09:38:55+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=charli-s</loc>
+	<lastmod>2019-02-22T11:04:36+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=vinni</loc>
-	<lastmod>2018-09-18T09:38:56+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=vinni</loc>
+	<lastmod>2019-02-22T11:04:37+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=vinninr</loc>
-	<lastmod>2018-09-18T09:38:57+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=vinninr</loc>
+	<lastmod>2019-02-22T11:04:38+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=alex</loc>
-	<lastmod>2018-09-18T09:38:57+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=alex</loc>
+	<lastmod>2019-02-22T11:04:38+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=johny</loc>
-	<lastmod>2018-09-18T09:38:58+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=johny</loc>
+	<lastmod>2019-02-22T11:04:39+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=kaizer</loc>
-	<lastmod>2018-09-18T09:38:59+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=kaizer</loc>
+	<lastmod>2019-02-22T11:04:40+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=monarh</loc>
-	<lastmod>2018-09-18T09:38:59+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=monarh</loc>
+	<lastmod>2019-02-22T11:04:40+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=premier</loc>
-	<lastmod>2018-09-18T09:39:00+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=premier</loc>
+	<lastmod>2019-02-22T11:04:41+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=ivan-v</loc>
-	<lastmod>2018-09-18T09:39:02+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=ivan-v</loc>
+	<lastmod>2019-02-22T11:04:42+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=ivan</loc>
-	<lastmod>2018-09-18T09:39:02+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=ivan</loc>
+	<lastmod>2019-02-22T11:04:42+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=niko</loc>
-	<lastmod>2018-09-18T09:39:02+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=niko</loc>
+	<lastmod>2019-02-22T11:04:43+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=avatar</loc>
-	<lastmod>2018-09-18T09:39:04+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=avatar</loc>
+	<lastmod>2019-02-22T11:04:44+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=console</loc>
-	<lastmod>2018-09-18T09:39:04+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=console</loc>
+	<lastmod>2019-02-22T11:04:44+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=ampir</loc>
-	<lastmod>2018-09-18T09:39:05+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=elvis</loc>
+	<lastmod>2019-02-22T11:04:45+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=cesar</loc>
-	<lastmod>2018-09-18T09:39:06+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=trumo</loc>
+	<lastmod>2019-02-22T11:04:46+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=classic</loc>
-	<lastmod>2018-09-18T09:39:06+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=ampir</loc>
+	<lastmod>2019-02-22T11:04:46+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=avatarmini</loc>
-	<lastmod>2018-09-18T09:39:07+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=cesar</loc>
+	<lastmod>2019-02-22T11:04:47+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=lui</loc>
-	<lastmod>2018-09-18T09:39:08+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=classic</loc>
+	<lastmod>2019-02-22T11:04:48+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=versalplus</loc>
-	<lastmod>2018-09-18T09:39:08+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=avatarmini</loc>
+	<lastmod>2019-02-22T11:04:48+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=markiz</loc>
-	<lastmod>2018-09-18T09:39:09+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=lui</loc>
+	<lastmod>2019-02-22T11:04:49+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=markizkr</loc>
-	<lastmod>2018-09-18T09:39:10+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=chester</loc>
+	<lastmod>2019-02-22T11:04:50+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=vikont</loc>
-	<lastmod>2018-09-18T09:39:10+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=relax</loc>
+	<lastmod>2019-02-22T11:04:50+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=vikontkr</loc>
-	<lastmod>2018-09-18T09:39:11+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=markiz</loc>
+	<lastmod>2019-02-22T11:04:51+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=shevalie</loc>
-	<lastmod>2018-09-18T09:39:12+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=markizkr</loc>
+	<lastmod>2019-02-22T11:04:52+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=amadei</loc>
-	<lastmod>2018-09-18T09:39:12+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=vikont</loc>
+	<lastmod>2019-02-22T11:04:52+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=resnichka</loc>
-	<lastmod>2018-09-18T09:39:13+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=vikontkr</loc>
+	<lastmod>2019-02-22T11:04:53+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=valli</loc>
-	<lastmod>2018-09-18T09:39:14+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=shevalie</loc>
+	<lastmod>2019-02-22T11:04:54+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=mishel</loc>
-	<lastmod>2018-09-18T09:39:14+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=shevaliekr</loc>
+	<lastmod>2019-02-22T11:04:54+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=elegant</loc>
-	<lastmod>2018-09-18T09:39:15+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=amadei</loc>
+	<lastmod>2019-02-22T11:04:55+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=noi</loc>
-	<lastmod>2018-09-18T09:39:16+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=resnichka</loc>
+	<lastmod>2019-02-22T11:04:56+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=haip</loc>
-	<lastmod>2018-09-18T09:39:16+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=valli</loc>
+	<lastmod>2019-02-22T11:04:56+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=alf</loc>
-	<lastmod>2018-09-18T09:39:17+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=mishel</loc>
+	<lastmod>2019-02-22T11:04:57+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=riko</loc>
-	<lastmod>2018-09-18T09:39:18+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=mishelbar</loc>
+	<lastmod>2019-02-22T11:04:58+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=emil</loc>
-	<lastmod>2018-09-18T09:39:18+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=elegant</loc>
+	<lastmod>2019-02-22T11:04:58+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=flash</loc>
-	<lastmod>2018-09-18T09:39:19+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=noi</loc>
+	<lastmod>2019-02-22T11:04:59+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=mishelbar</loc>
-	<lastmod>2018-09-18T09:39:20+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=haip</loc>
+	<lastmod>2019-02-22T11:05:00+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=viola</loc>
-	<lastmod>2018-09-18T09:39:20+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=haipbar</loc>
+	<lastmod>2019-02-22T11:05:00+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=kvadro</loc>
-	<lastmod>2018-09-18T09:39:21+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=alf</loc>
+	<lastmod>2019-02-22T11:05:02+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=jambo</loc>
-	<lastmod>2018-09-18T09:39:22+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=riko</loc>
+	<lastmod>2019-02-22T11:05:02+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=rondo</loc>
-	<lastmod>2018-09-18T09:39:22+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=flash</loc>
+	<lastmod>2019-02-22T11:05:02+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=rondobar</loc>
-	<lastmod>2018-09-18T09:39:23+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=viola</loc>
+	<lastmod>2019-02-22T11:05:04+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=pufik</loc>
-	<lastmod>2018-09-18T09:39:24+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=kvadro</loc>
+	<lastmod>2019-02-22T11:05:04+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=skamia</loc>
-	<lastmod>2018-09-18T09:39:24+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=jambo</loc>
+	<lastmod>2019-02-22T11:05:04+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=maestro</loc>
-	<lastmod>2018-09-18T09:39:25+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=rondo</loc>
+	<lastmod>2019-02-22T11:05:06+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=plechnitsa</loc>
-	<lastmod>2018-09-18T09:39:26+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=rondobar</loc>
+	<lastmod>2019-02-22T11:05:06+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://xn--80aacfoqoj5bnlme6j.xn--p1ai/price.pdf</loc>
-	<lastmod>2018-09-18T09:39:26+01:00</lastmod>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=pufik</loc>
+	<lastmod>2019-02-22T11:05:06+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=exclusive</loc>
+	<lastmod>2019-02-22T11:05:08+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=skamia</loc>
+	<lastmod>2019-02-22T11:05:08+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=maestro</loc>
+	<lastmod>2019-02-22T11:05:08+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=compliment</loc>
+	<lastmod>2019-02-22T11:05:10+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://xn--80aacfoqoj5bnlme6j.xn--p1ai/product.php?name=plechnitsa</loc>
+	<lastmod>2019-02-22T11:05:10+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 </urlset>
