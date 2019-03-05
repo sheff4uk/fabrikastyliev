@@ -5,12 +5,12 @@
 	<meta name="yandex-verification" content="b4130eb718677801" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="description" content="<?=$description?>">
-	<meta name="keywords" content="мебель, журнальные столы, столы, стулья, зеркала, стул, стол, мебель для дома, престол, фабрикастульев, журнальный стол, кресла, журнальный столик, кухонный стол, стол на кухню">
+	<meta name="keywords" content="мебель, журнальные столы, столы, стулья, стул, стол, мебель для дома, престол, фабрикастульев, журнальный стол, кресла, журнальный столик, кухонный стол, стол на кухню">
 	<title><?=$title?></title>
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<link type="text/css" rel="stylesheet" href="/css/style.css?v=15">
-	<link type="text/css" rel="stylesheet" href="/css/jquery.bxslider.css">
+	<link type="text/css" rel="stylesheet" href="/css/style.css?v=16">
+<!--	<link type="text/css" rel="stylesheet" href="/css/jquery.bxslider.css">-->
 	<script src="/js/jquery-1.11.3.min.js"></script>
 	<script src="/js/jquery.bxslider.js"></script>
 	<script src="/js/script.js?v=3"></script>

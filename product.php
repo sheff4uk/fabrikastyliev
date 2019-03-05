@@ -31,9 +31,44 @@
 			<li>/</li>
 			<li><b id="<?=$name?>" style="padding-top: 60px;"><?=$product[0]?></b></li>
 		</ul>
+
+		<section style="display: flex; justify-content: space-between;">
+			<a href="product.php?name=<?=$a[$prev]?>" id="prev" title="Предыдущий <?=$type_n?>">
+				<img src="/images/prodlist/<?=$a[$prev]?>.jpg" alt="<?=$a[$prev]?>" style="height: 100px;">
+			</a>
+			<a href="product.php?name=<?=$a[$next]?>" id="next" title="Следующий <?=$type_n?>">
+				<img src="/images/prodlist/<?=$a[$next]?>.jpg" alt="<?=$a[$next]?>" style="height: 100px;">
+			</a>
+		</section>
+
 		<div id="prod_wr">
 			<section id="prod_photo">
-				<img src='images/prodlist/<?=$name?>.jpg'>
+				<div class="slider">
+					<ul class="bxslider">
+					<?
+						// Извлекаем из папки слайды
+						$dir = 'images/prodlist/'.$name.'/';
+						$cdir = scandir($dir);
+						foreach ($cdir as $key => $value) {
+							if (!in_array($value,array(".",".."))) {
+								echo "<li><img src='".$dir.$value."' /></li>";
+							}
+						}
+					?>
+					</ul>
+					<div id="bx-pager">
+					<?
+						$i = 0;
+						foreach ($cdir as $key => $value) {
+							if (!in_array($value,array(".",".."))) {
+								echo "<a data-slide-index='{$i}' href=''><img src='".$dir.$value."' /></a>";
+								$i++;
+							}
+						}
+					?>
+					</div>
+				</div>
+<!--				<img src='images/prodlist/<?=$name?>.jpg'>-->
 			</section>
 
 			<section id="prod_description">
@@ -81,14 +116,18 @@
 			</section>
 		</div>
 	</section>
-
-	<a href="product.php?name=<?=$a[$prev]?>" id="prev" title="Предыдущий <?=$type_n?>">
-		<i class="fas fa-chevron-circle-left fa-3x"></i>
-	</a>
-	<a href="product.php?name=<?=$a[$next]?>" id="next" title="Следующий <?=$type_n?>">
-		<i class="fas fa-chevron-circle-right fa-3x"></i>
-	</a>
 </section>
+
+<script>
+	$(function(){
+		$('.bxslider').bxSlider({
+			nextText: '',
+			prevText: '',
+			pagerCustom: '#bx-pager',
+			mode: 'fade'
+		});
+	});
+</script>
 
 <?
 	include "footer.php";

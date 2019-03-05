@@ -20,26 +20,29 @@
 			<p>Мы производим мебель по индивидуальным заказам, предлагая на выбор широкий ассортимент цветовых решений и материалов, а так же различные размеры.</p>
 		</div>
 		<div class="slider">
-		<?
-			// Извлекаем из папки слайды
-			$dir = 'images/slider/';
-			$cdir = scandir($dir);
-			foreach ($cdir as $key => $value) {
-				if (!in_array($value,array(".",".."))) {
-					echo "<div><img src='".$dir.$value."'></div>";
+			<ul class="bxslider">
+			<?
+				// Извлекаем из папки слайды
+				$dir = 'images/slider/';
+				$cdir = scandir($dir);
+				foreach ($cdir as $key => $value) {
+					if (!in_array($value,array(".",".."))) {
+						echo "<li><img src='".$dir.$value."'></li>";
+					}
 				}
-			}
-		?>
+			?>
+			</ul>
 		</div>
 	</section>
 </section>
 
 <script>
 	$(function(){
-		$('.slider').bxSlider({
-			mode: 'fade',
-			auto: true,
-			autoControls: true
+		$('.bxslider').bxSlider({
+			nextText: '',
+			prevText: '',
+			pagerCustom: '#bx-pager',
+			auto: true
 		});
 	});
 </script>

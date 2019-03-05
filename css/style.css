@@ -140,6 +140,7 @@ body {
 	margin-bottom: 40px;
 	position: relative;
 	min-height: calc(100vh - 420px);
+	z-index: 0;
 }
 
 .logo img{
@@ -307,7 +308,7 @@ footer .footer_phone {
 #prod_description {
 	width: 330px;
 	padding-left: 30px;
-	border-left: 2px dashed #5dc140;
+/*	border-left: 2px dashed #5dc140;*/
 }
 #prod_description span {
 	display: block;
@@ -322,13 +323,68 @@ footer .footer_phone {
 	width: 100%;
 }
 
+.bx-wrapper {
+	margin: 0 auto;
+	position: relative;
+	margin-bottom: 0px !important;
+}
+.bx-wrapper img {
+	width: 100%;
+	max-width: 100%;
+	display: block;
+}
+#bx-pager {
+	margin-top: 20px;
+	text-align: center;
+}
+#bx-pager a {margin: 0 3px;}
+#bx-pager a img {
+	padding: 3px;
+	border: 1px solid #ccc;
+	width: 80px;
+	transition: .4s ease-in-out;
+}
+#bx-pager a.active img {border: 1px solid #e3d600;}
+.bx-prev, .bx-next {
+	text-decoration: none;
+	position: absolute;
+	top: 50%;
+	margin-top: -40px;
+	background: white;
+	color: #666;
+	width: 30px;
+	height: 80px;
+	text-align: center;
+	transition: .4s linear;
+	opacity: .7;
+	cursor: pointer;
+}
+.bx-prev {
+	left: 0;
+	border-radius: 0 5px 5px 0;
+	z-index: 60;
+}
+.bx-next {
+	right: 0;
+	border-radius: 5px 0 0 5px;
+	z-index: 60;
+}
+.bx-prev:before, .bx-next:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 30px;
+	line-height: 80px;
+	font-weight: 900;
+}
+.bx-next:before {content: "\f105";}
+.bx-prev:before {content: "\f104";}
+
 #advice {
 	display: block;
 	position: absolute;
 	top: 70px;
 	left: 0px;
 	width: 290px;
- 	height: 55px;
+	height: 55px;
 	background-image:url(/images/fon.png);
 	color: #000;
 	border-bottom: none ;
@@ -397,19 +453,21 @@ footer .footer_phone {
 }
 
 #prev {
-	position: absolute;
-	top: 100px;
+	position: fixed;
+	top: 120px;
 	left: 50px;
 	color: #777;
 	opacity: .5;
+	z-index: 100;
 }
 
 #next {
-	position: absolute;
-	top: 100px;
+	position: fixed;
+	top: 120px;
 	right: 50px;
 	color: #777;
 	opacity: .5;
+	z-index: 100;
 }
 
 #prev:hover, #next:hover {
@@ -653,10 +711,14 @@ width: 6px;
 		width: 100%;
 		padding: 0;
 		border-left: none;
-		border-top: 2px dashed #5dc140;
+/*		border-top: 2px dashed #5dc140;*/
 		text-align: center;
 	}
 	#prod_description span {
 		margin: 0;
+	}
+
+	#prev, #next {
+		position: unset;
 	}
 }
