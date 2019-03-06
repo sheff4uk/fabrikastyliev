@@ -80,6 +80,6 @@
 		</a>
 -->
 		<p class="logo">
-			<a href="/" title="На главную"><img src="images/logo.png" alt="Мебельная фабрика ПРЕСТОЛ"></a>
+			<a href="/" title="На главную"><img src="images/logo.svg" alt="Мебельная фабрика ПРЕСТОЛ"></a>
 		</p>
 	</header>
