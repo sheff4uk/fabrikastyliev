@@ -13,11 +13,17 @@ $(function() {
 		}
 	});
 
+	$("header").hover(function(){
+		$("#nav").stop().animate({'height':'35px'},300);
+		$(".logo").stop().animate({'height':'120px', 'width':'120px'},300);
+		$(".logo img").stop().animate({'top':'50%'},300);
+	});
+
 	$('.menu__icon').on('click', function() {
 		$(this).closest('#nav').toggleClass('menu_state_open');
 	});
 
-	$('.fa-map-marked-alt').on('click', function() {
+	$('.map_btn').on('click', function() {
 		$(this).closest('.shop').toggleClass('state_open');
 	});
 

@@ -19,8 +19,8 @@
 			<h1>Где купить:</h1>
 			<h4>Киров</h4>
 			<ul>
-				<li class="shop">
-					<?=$pic?> ТЦ «Мегадом» - корпус В - ул. Блюхера, 39 - т. 8(919)524-16-80 <a title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i></a>
+				<li class="shop" id="megadom">
+					<?=$pic?> ТЦ «Мегадом» - корпус В - ул. Блюхера, 39 - т. 8(919)524-16-80 <a href="#megadom" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>
 					<div class="map">
 						<div style="height: 400px;"><iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=1119708208" width="100%" height="400" frameborder="0"></iframe></div>
 					</div>
@@ -32,26 +32,26 @@
 			</ul>
 			<h4>Екатеринбург</h4>
 			<ul>
-				<li class="shop">
-					<?=$pic?> ТЦ «Ясень» - ул. Красных командиров, 72 - т. 8(904)172-64-64 <a title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i></a>
+				<li class="shop" id="yasen">
+					<?=$pic?> ТЦ «Ясень» - ул. Красных командиров, 72 - т. 8(904)172-64-64 <a href="#yasen" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>
 					<div class="map">
 						<div style="height: 400px;"><iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=1753270602" width="100%" height="400" frameborder="0"></iframe></div>
 					</div>
 				</li>
-				<li class="shop">
-					<?=$pic?> ТЦ «Клён» - ул. П. Лумумбы, 38 - т. 8(982)676-61-58 <a title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i></a>
+				<li class="shop" id="klen">
+					<?=$pic?> ТЦ «Клён» - ул. П. Лумумбы, 38 - т. 8(982)676-61-58 <a href="#klen" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>
 					<div class="map">
 						<div style="height: 400px;"><iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=45085603722" width="100%" height="400" frameborder="0"></iframe></div>
 					</div>
 				</li>
-				<li class="shop">
-					<?=$pic?> ТЦ «Гулливер» - ул. 40 лет ВЛКСМ, 38 - т. 8(900)205-19-27 <a title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i></a>
+				<li class="shop" id="gulliver">
+					<?=$pic?> ТЦ «Гулливер» - ул. 40 лет ВЛКСМ, 38 - т. 8(900)205-19-27 <a href="#gulliver" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>
 					<div class="map">
 						<div style="height: 400px;"><iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=1741635597" width="100%" height="400" frameborder="0"></iframe></div>
 					</div>
 				</li>
-				<li class="shop">
-					<?=$pic?> ТЦ «ЭМА» - Верх-Исетский бульвар, 13 - т. 8(902)879-27-99 <a title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i></a>
+				<li class="shop" id="ema">
+					<?=$pic?> ТЦ «ЭМА» - Верх-Исетский бульвар, 13 - т. 8(902)879-27-99 <a href="#ema" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>
 					<div class="map">
 						<div style="height: 400px;"><iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=229434879909" width="100%" height="400" frameborder="0"></iframe></div>
 					</div>
@@ -59,20 +59,20 @@
 			</ul>
 			<h4>Нижний Новгород</h4>
 			<ul>
-				<li class="shop">
-					<?=$pic?> ТЦ "Открытый Материк" - ул. Ларина, 7 <a title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i></a>
+				<li class="shop" id="materik">
+					<?=$pic?> ТЦ "Открытый Материк" - ул. Ларина, 7 <a href="#materik" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>
 					<div class="map">
 						<div style="height: 400px;"><iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=111126599301" width="100%" height="400" frameborder="0"></iframe></div>
 					</div>
 				</li>
-				<li class="shop">
-					<?=$pic?> ТЦ «Мебельный базар» - ул. Гордеевская, 7 <a title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i></a>
+				<li class="shop" id="bazar">
+					<?=$pic?> ТЦ «Мебельный базар» - ул. Гордеевская, 7 <a href="#bazar" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>
 					<div class="map">
 						<div style="height: 400px;"><iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=1169209411" width="100%" height="400" frameborder="0"></iframe></div>
 					</div>
 				</li>
-				<li class="shop">
-					<?=$pic?> ТЦ «БУМ» - ул. Бекетова, 13к <a title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i></a>
+				<li class="shop" id="bum">
+					<?=$pic?> ТЦ «БУМ» - ул. Бекетова, 13к <a href="#bum" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>
 					<div class="map">
 						<div style="height: 400px;"><iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=187931418140" width="100%" height="400" frameborder="0"></iframe></div>
 					</div>
@@ -80,8 +80,8 @@
 			</ul>
 			<h4>Сыктывкар</h4>
 			<ul>
-				<li class="shop">
-					<?=$pic?> ТЦ «ГигаМарт» - ул. Чкалова, 38 <a title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i></a>
+				<li class="shop" id="gigamart">
+					<?=$pic?> ТЦ «ГигаМарт» - ул. Чкалова, 38 <a href="#gigamart" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>
 					<div class="map">
 						<div style="height: 400px;"><iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=1223313421" width="100%" height="400" frameborder="0"></iframe></div>
 					</div>
@@ -122,6 +122,19 @@
 		</div>
 	</section>
 </section>
+
+<script>
+	$(function(){
+		$("a.map_btn").on("click", function(e){
+			var anchor = $(this);
+			$('html, body').stop().animate({
+				scrollTop: $(anchor.attr('href')).offset().top - 70
+			}, 500);
+			e.preventDefault();
+			return false;
+		});
+	});
+</script>
 
 <?
 	include "footer.php";

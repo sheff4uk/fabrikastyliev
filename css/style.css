@@ -32,7 +32,7 @@ a {
 	-o-transition: none;
 }
 
-a:hover {
+a:hover, .shop.state_open a {
 	color: #e3d600 !important;
 	text-shadow: 1px 1px 1px #653033, -1px -1px 1px #653033, 1px -1px 1px #653033, -1px 1px 1px #653033;
 }
@@ -656,8 +656,8 @@ width: 6px;
 .shop.state_open .map {
 	height: 400px;
 }
-.fa-map-marked-alt {
-	cursor: pointer;
+.map_btn {
+	white-space: nowrap;
 }
 
 @media screen and (max-width: 999px) {
