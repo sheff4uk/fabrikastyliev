@@ -141,6 +141,7 @@ body {
 	position: relative;
 	min-height: calc(100vh - 420px);
 	z-index: 0;
+	display: none;
 }
 
 .logo img{
@@ -260,6 +261,7 @@ footer {
 	font-size: 15px;
 	height: 200px;
 	box-shadow: 0 0 40px #000;
+	display: none;
 }
 
 footer .page {
