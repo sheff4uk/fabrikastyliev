@@ -51,7 +51,7 @@
 						$cdir = scandir($dir);
 						foreach ($cdir as $key => $value) {
 							if (!in_array($value,array(".",".."))) {
-								echo "<li><img alt='{$product[0]}' src='{$dir.$value}' /></li>";
+								echo "<li><img alt='{$product[0]}' src='".$dir.$value."' /></li>";
 							}
 						}
 					?>
@@ -61,7 +61,7 @@
 						$i = 0;
 						foreach ($cdir as $key => $value) {
 							if (!in_array($value,array(".",".."))) {
-								echo "<a data-slide-index='{$i}' href=''><img alt='{$product[0]}' src='{$dir.$value}' /></a>";
+								echo "<a data-slide-index='{$i}' href=''><img alt='{$product[0]}' src='".$dir.$value."' /></a>";
 								$i++;
 							}
 						}
