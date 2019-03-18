@@ -26,7 +26,7 @@
 				<div class='prod_cell'>
 					<a href='product.php?name={$k}'>
 						<div class='prod_cell_img_wrap'>
-							<img src='images/prodlist/{$k}.jpg'>
+							<img alt='{$v[0]}' src='images/prodlist/{$k}.jpg'>
 						</div>
 						<p style='margin: 30px 0 5px 0;'>{$v[0]}</p>
 					</a>

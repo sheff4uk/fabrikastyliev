@@ -19,7 +19,7 @@
 	$pos = array_search ($name,$a);
 	$prev = ($pos == 0) ? ($count - 1) : ($pos - 1);
 	$next = ($pos == $count - 1) ? 0 : ($pos + 1);
-	$pic = "<img src='images/m_logo.png' style='vertical-align: middle;' title='Фирменный салон &laquo;Престол: столы и стулья&raquo;'>";
+	$pic = "<img alt='Престол' src='images/m_logo.png' style='vertical-align: middle;' title='Фирменный салон &laquo;Престол: столы и стулья&raquo;'>";
 ?>
 
 <section id="main">
@@ -34,10 +34,10 @@
 
 		<section style="display: flex; justify-content: space-between;">
 			<a href="product.php?name=<?=$a[$prev]?>" id="prev" title="Предыдущий <?=$type_n?>">
-				<img src="/images/prodlist/<?=$a[$prev]?>.jpg" alt="<?=$a[$prev]?>" style="height: 100px;">
+				<img alt="Предыдущий <?=$type_n?>" src="/images/prodlist/<?=$a[$prev]?>.jpg" alt="<?=$a[$prev]?>" style="height: 100px;">
 			</a>
 			<a href="product.php?name=<?=$a[$next]?>" id="next" title="Следующий <?=$type_n?>">
-				<img src="/images/prodlist/<?=$a[$next]?>.jpg" alt="<?=$a[$next]?>" style="height: 100px;">
+				<img alt="Следующий <?=$type_n?>" src="/images/prodlist/<?=$a[$next]?>.jpg" alt="<?=$a[$next]?>" style="height: 100px;">
 			</a>
 		</section>
 
@@ -47,11 +47,11 @@
 					<ul class="bxslider">
 					<?
 						// Извлекаем из папки слайды
-						$dir = 'images/prodlist/'.$name.'/';
+						$dir = "images/prodlist/{$name}/";
 						$cdir = scandir($dir);
 						foreach ($cdir as $key => $value) {
 							if (!in_array($value,array(".",".."))) {
-								echo "<li><img src='".$dir.$value."' /></li>";
+								echo "<li><img alt='{$product[0]}' src='{$dir.$value}' /></li>";
 							}
 						}
 					?>
@@ -61,7 +61,7 @@
 						$i = 0;
 						foreach ($cdir as $key => $value) {
 							if (!in_array($value,array(".",".."))) {
-								echo "<a data-slide-index='{$i}' href=''><img src='".$dir.$value."' /></a>";
+								echo "<a data-slide-index='{$i}' href=''><img alt='{$product[0]}' src='{$dir.$value}' /></a>";
 								$i++;
 							}
 						}
@@ -89,10 +89,10 @@
 								$mech = "нераздвижной";
 							}
 							elseif ($k == 2) {
-								$mech = "раздвижной <m><a style='cursor: pointer; text-decoration: underline;'>люкс</a><span class='mech'>Неподвижная царга. Две половины столешницы скользят на металлических шариковых направляющих. Одна вставка размером <b>[35, 42, 48] см</b> в зависимости от формы столешницы и размера стола.<br><img src='images/люкс.jpg'></span></m>";
+								$mech = "раздвижной <m><a style='cursor: pointer; text-decoration: underline;'>люкс</a><span class='mech'>Неподвижная царга. Две половины столешницы скользят на металлических шариковых направляющих. Одна вставка размером <b>[35, 42, 48] см</b> в зависимости от формы столешницы и размера стола.<br><img alt='Механизм раздвижки Люкс' src='images/люкс.jpg'></span></m>";
 							}
 							elseif ($k == 3) {
-								$mech = "раздвижной <m><a style='cursor: pointer; text-decoration: underline;'>сигма</a><span class='mech'>Раздвигающаяся царга из металлических направляющих. Вмещается две или три вставки по <b>[40, 50, 60] см</b> в зависимости от размера стола и вида применяемой фурнитуры.<br><img src='images/сигма.jpg'></span></m>";
+								$mech = "раздвижной <m><a style='cursor: pointer; text-decoration: underline;'>сигма</a><span class='mech'>Раздвигающаяся царга из металлических направляющих. Вмещается две или три вставки по <b>[40, 50, 60] см</b> в зависимости от размера стола и вида применяемой фурнитуры.<br><img alt='Механизм раздвижки Сигма' src='images/сигма.jpg'></span></m>";
 							}
 							echo "<span>от <b class='price'>{$v}<sup>*</sup></b> руб. {$mech}</span>";
 						}
@@ -106,13 +106,13 @@
 				<p>* данная цена действительна только в фирменных салонах <a href="address.php">Престол: столы и стулья</a>, помеченных знаком <?=$pic?></p>
 				<?
 					if ($type == "table") {
-						echo "<p>Под заказ индивидуальный размер и цвет стола по каталогам пластиков <a href='http://www.plastics-foils.ru/products/18/' target='_blank'>LeMark</a>, <a href='http://www.slotex.ru/products/decor/collection/index.php?ID=9' target='_blank'>Slotex</a>";
+						echo "<p>Под заказ индивидуальный размер и цвет стола по каталогам пластиков <a href='http://www.plastics-foils.ru/products/18/' target='_blank' rel='noopener'>LeMark</a>, <a href='http://www.slotex.ru/products/decor/collection/index.php?ID=9' target='_blank' rel='noopener'>Slotex</a>";
 					}
 					if ($type == "chair") {
-						echo "<p>Под заказ на выбор ткань и цвет стула по каталогам пластиков  <a href='http://www.plastics-foils.ru/products/18/' target='_blank'>LeMark</a>, <a href='http://www.slotex.ru/products/decor/collection/index.php?ID=9' target='_blank'>Slotex</a>";
+						echo "<p>Под заказ на выбор ткань и цвет стула по каталогам пластиков  <a href='http://www.plastics-foils.ru/products/18/' target='_blank' rel='noopener'>LeMark</a>, <a href='http://www.slotex.ru/products/decor/collection/index.php?ID=9' target='_blank' rel='noopener'>Slotex</a>";
 					}
 				?>
-<!--				<p><a href="/price.pdf" target="_blank">Скачать подробный прайс</a></p>-->
+<!--				<p><a href="/price.pdf" target="_blank" rel="noopener">Скачать подробный прайс</a></p>-->
 			</section>
 		</div>
 	</section>

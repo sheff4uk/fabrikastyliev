@@ -27,7 +27,7 @@
 				$cdir = scandir($dir);
 				foreach ($cdir as $key => $value) {
 					if (!in_array($value,array(".",".."))) {
-						echo "<li><img src='".$dir.$value."'></li>";
+						echo "<li><img alt='Мебельная фабрика ПРЕСТОЛ (Киров)' src='".$dir.$value."'></li>";
 					}
 				}
 			?>

@@ -21,7 +21,7 @@
 			<p>Присоединяйтесь к нам в соц. сетях</p>
 			<ul>
 				<li>
-					<a class="vk social_icon" href="https://vk.com/f_prestol" target="_blank" rel="nofollow">
+					<a class="vk social_icon" href="https://vk.com/f_prestol" target="_blank" rel="nofollow noopener">
 						<i class="fab fa-vk"></i>
 					</a>
 				</li>

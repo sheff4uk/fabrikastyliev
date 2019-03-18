@@ -2,7 +2,7 @@
 	$title = "Где купить";
 	$description = "Адреса фирменных магазинов Престол: столы и стулья";
 	include "header.php";
-	$pic = "<img src='images/m_logo.png' style='vertical-align: middle;' title='Фирменный салон &laquo;Престол: столы и стулья&raquo;'>";
+	$pic = "<img alt='Престол' src='images/m_logo.png' style='vertical-align: middle;' title='Фирменный салон &laquo;Престол: столы и стулья&raquo;'>";
 ?>
 
 <section id="main">
@@ -28,7 +28,7 @@
 			</ul>
 			<h4>Москва</h4>
 			<ul>
-				<li class="shop"><a href="http://fabrikaprestol.ru/" target="_blank">ТЦ «Румянцево» - Киевское шоссе 22км, домовладение 4, блок В, 3-й этаж - т. 8(977)804-60-10</a></li>
+				<li class="shop"><a href="http://fabrikaprestol.ru/" target="_blank" rel="noopener">ТЦ «Румянцево» - Киевское шоссе 22км, домовладение 4, блок В, 3-й этаж - т. 8(977)804-60-10</a></li>
 			</ul>
 			<h4>Екатеринбург</h4>
 			<ul>

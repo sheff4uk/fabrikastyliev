@@ -15,7 +15,7 @@
 		<section class="contact1">
 			<p>Адрес производства: г.Киров, ул.Луганская 59В</p>
 			<p>Телефон: <a href="tel:89091317732">8 (909) 131-77-32</a></p>
-			<p>Email: <a href="mailto:fabrikaprestol@gmail.com" target="_blank">fabrikaprestol@gmail.com</a></p>
+			<p>Email: <a href="mailto:fabrikaprestol@gmail.com" target="_blank" rel="noopener">fabrikaprestol@gmail.com</a></p>
 		</section>
 	</section>
 	<div style="height: 400px; margin-bottom: -40px; text-align: center;">

@@ -1,17 +1,20 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
+	<title><?=$title?></title>
+
+	<meta name="theme-color" content="#653033"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="yandex-verification" content="b4130eb718677801" />
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" charset="utf-8"/>
 	<meta name="description" content="<?=$description?>">
 	<meta name="keywords" content="мебель, журнальные столы, столы, стулья, стул, стол, мебель для дома, престол, фабрикастульев, журнальный стол, кресла, журнальный столик, кухонный стол, стол на кухню">
-	<title><?=$title?></title>
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	<link type="text/css" rel="stylesheet" href="/css/style.css?v=18">
 <!--	<link type="text/css" rel="stylesheet" href="/css/jquery.bxslider.css">-->
-	<script src="/js/jquery-1.11.3.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--	<script src="/js/jquery-1.11.3.min.js"></script>-->
 	<script src="/js/jquery.bxslider.js"></script>
 	<script src="/js/script.js?v=4"></script>
 	<script src="/js/easing.js"></script>
