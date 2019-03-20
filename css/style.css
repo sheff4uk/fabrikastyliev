@@ -130,9 +130,9 @@ header .logo {
 body {
 	color: #333;
 	margin: 0px;
-	font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+/*	font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;*/
 	font-family: 'Helvetica Neue',Arial,sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 #main {
@@ -192,7 +192,7 @@ body {
 
 .icon_wrap {
 	position: absolute;
-	bottom: 40px;
+	bottom: 45px;
 	left: 0;
 	text-align: center;
 	width: 100%;
@@ -207,7 +207,7 @@ body {
 }
 
 .prod_cell {
-	font-size: 14px;
+	font-size: 16px;
 	position: relative;
 }
 
@@ -223,7 +223,6 @@ body {
 .prod_cell a:hover {
 	border: 1px solid #CCC;
 	box-shadow: 0 3px 9px #999;
-	filter: saturate(200%);
 }
 
 .prod_cell a {
@@ -245,12 +244,11 @@ body {
 	-webkit-transition:all .3s ease-in-out;
 	-o-transition:all .3s ease-in-out;
 	width: 194px;
-/*	filter: grayscale(100%);*/
 }
 
 .prod_cell a:hover img {
 	width: 100%;
-/*	filter: grayscale(0%);*/
+	filter: saturate(200%);
 }
 
 footer {
