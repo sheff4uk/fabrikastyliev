@@ -1,6 +1,6 @@
 <?
-	$title = "Где купить";
-	$description = "Адреса фирменных магазинов Престол: столы и стулья";
+	$title = "Где купить - адреса магазинов ПРЕСТОЛ столы и стулья";
+	$description = "Адреса фирменных магазинов ПРЕСТОЛ столы и стулья";
 	include "header.php";
 	$pic = "<img alt='Престол' src='images/m_logo.png' style='vertical-align: middle;' title='Фирменный салон &laquo;Престол: столы и стулья&raquo;'>";
 ?>

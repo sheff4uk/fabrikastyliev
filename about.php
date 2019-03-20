@@ -1,6 +1,6 @@
 <?
 	$title = "О нас";
-	$description = "О компании Престол";
+	$description = "О мебельной фабрике ПРЕСТОЛ";
 	include "header.php";
 ?>
 

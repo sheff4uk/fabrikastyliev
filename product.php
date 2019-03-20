@@ -10,8 +10,8 @@
 	}
 	$product = $products[$type][$name];
 
-	$title = $product[0];
-	$description = $type_n." ".$product[0];
+	$title = $type_n." ".$product[0]." от кировской фабрики ПРЕСТОЛ";
+	$description = $type_n." ".$product[0]." ".$product[3];
 	include "header.php";
 
 	$a = array_keys($products[$type]);
