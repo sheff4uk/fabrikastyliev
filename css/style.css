@@ -248,7 +248,7 @@ body {
 
 .prod_cell a:hover img {
 	width: 100%;
-	filter: saturate(200%);
+	filter: saturate(150%);
 }
 
 footer {

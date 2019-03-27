@@ -11,7 +11,7 @@
 				<ul>
 					<li><a href="prodlist.php?type=table">СТОЛЫ</a></li>
 					<li><a href="prodlist.php?type=chair">СТУЛЬЯ</a></li>
-					<li><a href="address.php">МАГАЗИНЫ</a></li>
+					<li><a href="address.php">ГДЕ КУПИТЬ</a></li>
 					<li><a href="contact.php">КОНТАКТЫ</a></li>
 					<li><a href="about.php">О НАС</a></li>
 				</ul>
