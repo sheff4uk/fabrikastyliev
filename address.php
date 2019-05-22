@@ -61,19 +61,19 @@
 			<h4>Нижний Новгород</h4>
 			<ul>
 				<li class="shop" id="materik">
-					<?=$pic?> ТЦ "Открытый Материк" - ул. Ларина, 7 <a href="#materik" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>
+					<?=$pic?> ТЦ "Открытый Материк" - ул. Ларина, 7 - т. 8(964)839-51-32 <a href="#materik" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>
 					<div class="map">
 						<div style="height: 400px;"><iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=111126599301" width="100%" height="400" frameborder="0"></iframe></div>
 					</div>
 				</li>
 				<li class="shop" id="bazar">
-					<?=$pic?> ТЦ «Мебельный базар» - ул. Гордеевская, 7 <a href="#bazar" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>
+					<?=$pic?> ТЦ «Мебельный базар» - ул. Гордеевская, 7 - т. 8(920)072-20-67 <a href="#bazar" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>
 					<div class="map">
 						<div style="height: 400px;"><iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=1169209411" width="100%" height="400" frameborder="0"></iframe></div>
 					</div>
 				</li>
 				<li class="shop" id="bum">
-					<?=$pic?> ТЦ «БУМ» - ул. Бекетова, 13к <a href="#bum" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>
+					<?=$pic?> ТЦ «БУМ» - ул. Бекетова, 13к - т. 8(960)195-02-85 <a href="#bum" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>
 					<div class="map">
 						<div style="height: 400px;"><iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=187931418140" width="100%" height="400" frameborder="0"></iframe></div>
 					</div>
@@ -82,7 +82,7 @@
 			<h4>Сыктывкар</h4>
 			<ul>
 				<li class="shop" id="gigamart">
-					<?=$pic?> ТЦ «ГигаМарт» - ул. Чкалова, 38 <a href="#gigamart" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>
+					<?=$pic?> ТЦ «ГигаМарт» - ул. Чкалова, 38 - т. 8(904)221-30-55 <a href="#gigamart" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>
 					<div class="map">
 						<div style="height: 400px;"><iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=1223313421" width="100%" height="400" frameborder="0"></iframe></div>
 					</div>
