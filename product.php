@@ -48,7 +48,8 @@
 					<?
 						// Извлекаем из папки слайды
 						$dir = "images/prodlist/{$name}/";
-						$cdir = scandir($dir);
+						//$cdir = scandir($dir);
+						$cdir = preg_grep('~\.(jpeg|jpg|png)$~', scandir($dir));
 						foreach ($cdir as $key => $value) {
 							if (!in_array($value,array(".",".."))) {
 								echo "<li><img alt='{$product[0]}' src='".$dir.$value."' /></li>";
