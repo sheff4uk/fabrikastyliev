@@ -11,7 +11,7 @@
 	<meta name="keywords" content="мебель, журнальные столы, столы, стулья, стул, стол, мебель для дома, престол, фабрикастульев, журнальный стол, кресла, журнальный столик, кухонный стол, стол на кухню">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<link type="text/css" rel="stylesheet" href="/css/style.css?v=21">
+	<link type="text/css" rel="stylesheet" href="/css/style.css?v=22">
 	<link rel='stylesheet' type='text/css' href='css/loading.css'>
 <!--	<link type="text/css" rel="stylesheet" href="/css/jquery.bxslider.css">-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -75,6 +75,7 @@
 					<li><a href="address.php">Где купить</a></li>
 					<li><a href="contact.php">Контакты</a></li>
 					<li><a href="about.php">О нас</a></li>
+					<li><a href="certificates.php">Сертификаты</a></li>
 				</ul>
 				<a href="tel:89091317732" class="footer_phone">8 (909) 131-77-32</a>
 			</div>
