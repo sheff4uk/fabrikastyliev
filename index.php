@@ -42,7 +42,7 @@
 		}
 
 		// Топ стульев
-		$topchair = array("mishel", "shevalie", "vikont", "valli");
+		$topchair = array("orfey", "shevalie", "resnichka", "valli");
 		foreach ($products["chair"] as $k => $v) {
 			if (in_array($k, $topchair)) {
 				echo "
