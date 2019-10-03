@@ -52,12 +52,14 @@
 						<p>ASD (Турция)</p>
 					</a>
 				</section>
+<!--
 				<section class="prod_cell">
 					<a href="/files/Abet.pdf" target="_blank">
 						<p><i class="fas fa-file-pdf fa-5x"></i></p>
 						<p>Abet (Италия)</p>
 					</a>
 				</section>
+-->
 			</div>
 
 			<h3>МДФ (столешница):</h3>
