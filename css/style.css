@@ -1,6 +1,7 @@
 @font-face {
 	font-family: "Helvetica Neue";
 	src: url('/fonts/HelveticaNeue.ttf') format('truetype');
+	font-display: swap;
 }
 
 .page {
