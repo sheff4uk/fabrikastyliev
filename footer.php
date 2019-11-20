@@ -36,14 +36,6 @@
 
 <!-- VK Widget -->
 <div id="vk_community_messages"></div>
-<script type="text/javascript">
-VK.Widgets.CommunityMessages("vk_community_messages", 171248798, {disableExpandChatSound: "1",tooltipButtonText: "Есть вопрос?"});
-</script>
 
-<script type="text/javascript">
-	VK.init({
-		apiId: 7216520
-	});
-</script>
 </body>
 </html>
