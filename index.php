@@ -21,7 +21,7 @@
 
 	<?
 		// Топ столов
-		$toptable = array("alex", "charli-s", "avatar", "niko");
+		$toptable = array("alex", "charli-s", "niko", "johny", "max", "vinni");
 		foreach ($products["table"] as $k => $v) {
 			if (in_array($k, $toptable)) {
 				echo "
@@ -42,7 +42,7 @@
 		}
 
 		// Топ стульев
-		$topchair = array("orfey", "shevalie", "resnichka", "valli");
+		$topchair = array("valli", "shevalie", "resnichka", "orfey", "mishel", "elegant");
 		foreach ($products["chair"] as $k => $v) {
 			if (in_array($k, $topchair)) {
 				echo "
