@@ -61,7 +61,7 @@
 			<h4>Нижний Новгород</h4>
 			<ul>
 				<li class="shop" id="materik">
-					<?=$pic?> ТЦ "Открытый Материк" - ул. Ларина, 7 - т. 8(964)839-51-32 <a href="#materik" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>
+					<?=$pic?> ТЦ "Открытый Материк" - ул. Ларина, 7 - т. 8(999)076-17-55 <a href="#materik" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>
 					<div class="map">
 						<div style="height: 400px;"><iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=111126599301" width="100%" height="400" frameborder="0"></iframe></div>
 					</div>
