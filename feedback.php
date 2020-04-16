@@ -4,9 +4,30 @@ $description = "Заказать звонок";
 include "header.php";
 
 if( isset($_POST["submit"]) ) {
-	$message = "{$_POST["client"]}\n{$_POST["mtel"]}\n{$_POST["city"]}\n{$_POST["text"]}";
-	message_to_telegram($message);
-	exit ('<meta http-equiv="refresh" content="0; url=/">');
+	$response = $_POST["g-recaptcha-response"];
+	$url = 'https://www.google.com/recaptcha/api/siteverify';
+	$data = [
+		'secret' => RECAPTCHA_SECRET,
+		'response' => $response
+	];
+	$options = [
+		'http' => [
+			'method' => 'POST',
+			'content' => http_build_query($data)
+		]
+	];
+	$context  = stream_context_create($options);
+	$verify = file_get_contents($url, false, $context);
+	$captcha_success=json_decode($verify);
+	if ($captcha_success->success==false) {
+		echo "Проверка reCAPTCHA не пройдена!";
+	} else if ($captcha_success->success==true) {
+		// Отправляем сообщение при помощи телеграм бота
+		$message = "{$_POST["client"]}\n{$_POST["mtel"]}\n{$_POST["city"]}\n{$_POST["text"]}";
+		message_to_telegram($message);
+		exit ('<meta http-equiv="refresh" content="0; url=/">');
+	}
+
 }
 
 function message_to_telegram($text) {
@@ -22,8 +43,8 @@ function message_to_telegram($text) {
 				'chat_id' => TELEGRAM_CHATID,
 				'text' => $text,
 			),
-			CURLOPT_PROXY => '185.211.246.65:34513',
-			CURLOPT_PROXYUSERPWD => 'sheff4ukF1:T3v0CcL',
+			CURLOPT_PROXY => PROXY_SERVER,
+			CURLOPT_PROXYUSERPWD => PROXY_USER,
 			CURLOPT_PROXYTYPE => CURLPROXY_SOCKS5,
 			CURLOPT_PROXYAUTH => CURLAUTH_BASIC,
 		)
@@ -141,8 +162,8 @@ function message_to_telegram($text) {
 			<div class="circle"></div>
 			<div class="form-inner">
 				<h3>Оставьте номер<br>и мы Вам перезвоним</h3>
-				<input type="text" name="client" autocomplete="off" required placeholder="Ваше имя">
-				<input type="text" id="mtel" name="mtel" autocomplete="off" required placeholder="Мобильный телефон">
+				<input type="text" name="client" autocomplete="off" required placeholder="Имя (обязательно)">
+				<input type="text" id="mtel" name="mtel" autocomplete="off" required placeholder="Телефон (обязательно)">
 				<select name="city" required>
 					<option value="">--выберите город--</option>
 					<option value="Киров">Киров</option>
@@ -152,11 +173,28 @@ function message_to_telegram($text) {
 					<option value="Другой">другой (напишите в сообщении)</option>
 				</select>
 				<textarea name="text" rows="3" placeholder="Сообщение..."></textarea>
+
+				<div class="captcha_wrapper">
+					<script src='https://www.google.com/recaptcha/api.js'></script>
+					<div class="g-recaptcha" data-sitekey="6LdZB-oUAAAAAA8oV4Sht3IvE0F0_VfkZ6arlTjd"></div>
+				</div>
+
 				<input type="submit" value="Жду звонка!" name="submit">
 			</div>
 		</form>
 	</section>
 </section>
+
+<script>
+	$(document).ready(function() {
+		$("form.decor").on("submit", function() {
+			if( !grecaptcha.getResponse() ) {
+				alert('Вы не заполнили поле Я не робот!');
+				return false;
+			}
+		});
+	});
+</script>
 
 <?
 	include "footer.php";
