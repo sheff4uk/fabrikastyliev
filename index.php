@@ -7,6 +7,11 @@
 
 <section id="main">
 <section class="page">
+	<div style="background: lightgoldenrodyellow; border-radius: 20px; padding: 10px;">
+		<h3 style="color: #911; text-align: center;">Уважаемые покупатели!</h3>
+		<h3 style="line-height: 2em;">В связи со сложившейся ситуацией, вызванной коронавирусом, временно закрыты наши фирменные салоны. Но мы продолжаем работать для вас. Будем рады принять заказ на изготовление столов и стульев. Просто оставьте свой номер через форму <a href="/feedback.php" style="background: #fd8134; color: #fff; text-decoration: none; padding: 5px 10px; border-radius: 10px; white-space: nowrap;">Заказать звонок</a> и продавец-консультант перезвонит вам.</h3>
+	</div>
+
 	<div class="prod_list_wrap">
 		<a id="table" href="prodlist.php?type=table" alt="столы">
 			<h2>Столы</h2>
@@ -17,8 +22,6 @@
 	</div>
 
 <!--		<h3 style="color: #911;">Акция! Весь февраль скидка 10% на всю продукцию с выставки в наших <a style="color: #911;" href="/address.php">фирменных салонах</a>.</h3>-->
-	<h3 style="color: #911; text-align: center;">Уважаемые покупатели!</h3>
-	<h3 style="line-height: 2em;">В связи со сложившейся ситуацией, вызванной коронавирусом, временно закрыты наши фирменные салоны. Но мы продолжаем работать для вас. Будем рады принять заказ на изготовление столов и стульев. Просто оставьте свой номер через форму <a href="/feedback.php" style="background: #fd8134; color: #fff; text-decoration: none; padding: 5px 10px; border-radius: 10px; white-space: nowrap;">Заказать звонок</a> и продавец-консультант перезвонит вам.</h3>
 
 	<h1>Лидеры продаж</h1>
 	<div class="prod_list_wrap">
