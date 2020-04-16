@@ -147,6 +147,7 @@ h1 {
 	min-height: calc(100vh - 420px);
 	z-index: 0;
 	display: none;
+	overflow: hidden;
 }
 
 .logo img{

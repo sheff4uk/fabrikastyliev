@@ -1,3 +1,7 @@
+<?
+include "config.php";
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -11,7 +15,7 @@
 	<meta name="keywords" content="мебель, журнальные столы, столы, стулья, стул, стол, мебель для дома, престол, фабрикастульев, журнальный стол, кресла, журнальный столик, кухонный стол, стол на кухню">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<link type="text/css" rel="stylesheet" href="/css/style.css?v=23">
+	<link type="text/css" rel="stylesheet" href="/css/style.css?v=24">
 	<link rel='stylesheet' type='text/css' href='css/loading.css'>
 <!--	<link type="text/css" rel="stylesheet" href="/css/jquery.bxslider.css">-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -20,11 +24,14 @@
 	<script src="/js/script.js?v=4"></script>
 	<script src="/js/easing.js"></script>
 	<script src="/js/jquery.ui.totop.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
 	<script>
 		$(document).ready(function(){
 			$('#main').fadeIn('slow');
 			$('footer').fadeIn('slow');
 			$('#loading').hide();
+
+			$("#mtel").mask("+7 (999) 999 99 99");
 		});
 	</script>
 
@@ -96,7 +103,8 @@
 					<li><a href="about.php">О нас</a></li>
 					<li><a href="certificates.php">Сертификаты</a></li>
 				</ul>
-				<a href="tel:89091317732" class="footer_phone">8 (909) 131-77-32</a>
+				<a href="/feedback.php" style="color: #fff; background: #fd8134;"><i class="fas fa-phone"></i> Заказать звонок</a>
+<!--				<a href="tel:89091317732" class="footer_phone">8 (909) 131-77-32</a>-->
 			</div>
 		</nav>
 		<div id="sub_nav">
