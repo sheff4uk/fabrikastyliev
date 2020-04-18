@@ -107,10 +107,12 @@
 				<p>* данная цена действительна только в фирменных салонах <a href="address.php">Престол: столы и стулья</a>, помеченных знаком <?=$pic?></p>
 				<?
 					if ($type == "table") {
-						echo "<p>Под заказ индивидуальный размер и цвет стола по каталогам пластиков <a href='http://www.plastics-foils.ru/products/18/' target='_blank' rel='noopener'>LeMark</a>, <a href='http://www.slotex.ru/products/decor/collection/index.php?ID=9' target='_blank' rel='noopener'>Slotex</a>";
+						//echo "<p>Под заказ индивидуальный размер и цвет стола по каталогам пластиков <a href='http://www.plastics-foils.ru/products/18/' target='_blank' rel='noopener'>LeMark</a>, <a href='http://www.slotex.ru/products/decor/collection/index.php?ID=9' target='_blank' rel='noopener'>Slotex</a>";
+						echo "<p><b>Под заказ индивидуальный размер и цвет стола.</b></p>";
 					}
 					if ($type == "chair") {
-						echo "<p>Под заказ на выбор ткань и цвет стула по каталогам пластиков  <a href='http://www.plastics-foils.ru/products/18/' target='_blank' rel='noopener'>LeMark</a>, <a href='http://www.slotex.ru/products/decor/collection/index.php?ID=9' target='_blank' rel='noopener'>Slotex</a>";
+						//echo "<p>Под заказ на выбор ткань и цвет стула по каталогам пластиков  <a href='http://www.plastics-foils.ru/products/18/' target='_blank' rel='noopener'>LeMark</a>, <a href='http://www.slotex.ru/products/decor/collection/index.php?ID=9' target='_blank' rel='noopener'>Slotex</a>";
+						echo "<p><b>Под заказ на выбор ткань и цвет изделия.</b></p>";
 					}
 				?>
 <!--				<p><a href="/price.pdf" target="_blank" rel="noopener">Скачать подробный прайс</a></p>-->
