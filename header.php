@@ -15,12 +15,12 @@ include "config.php";
 	<meta name="keywords" content="мебель, журнальные столы, столы, стулья, стул, стол, мебель для дома, престол, фабрикастульев, журнальный стол, кресла, журнальный столик, кухонный стол, стол на кухню">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<link type="text/css" rel="stylesheet" href="/css/style.css?v=25">
+	<link type="text/css" rel="stylesheet" href="/css/style.css?v=26">
 	<link rel='stylesheet' type='text/css' href='css/loading.css'>
-<!--	<link type="text/css" rel="stylesheet" href="/css/jquery.bxslider.css">-->
+	<link type="text/css" rel="stylesheet" href="/css/jquery.bxslider.css?v=1">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!--	<script src="/js/jquery-1.11.3.min.js"></script>-->
-	<script src="/js/jquery.bxslider.js"></script>
+	<script src="/js/jquery.bxslider.js?v=1"></script>
 	<script src="/js/script.js?v=4"></script>
 	<script src="/js/easing.js"></script>
 	<script src="/js/jquery.ui.totop.js"></script>

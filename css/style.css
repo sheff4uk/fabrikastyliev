@@ -28,10 +28,7 @@ a {
 }
 
 .bx-wrapper a {
-	transition: none;
-	-moz-transition: none;
-	-webkit-transition: none;
-	-o-transition: none;
+	color: #fff;
 }
 
 a:hover, .shop.state_open a {
@@ -340,16 +337,6 @@ footer .footer_phone {
 	width: 100%;
 }
 
-.bx-wrapper {
-	margin: 0 auto;
-	position: relative;
-	margin-bottom: 0px !important;
-}
-.bx-wrapper img {
-	width: 100%;
-	max-width: 100%;
-	display: block;
-}
 #bx-pager {
 	margin-top: 20px;
 	text-align: center;
@@ -362,38 +349,6 @@ footer .footer_phone {
 	transition: .4s ease-in-out;
 }
 #bx-pager a.active img {border: 1px solid #e3d600;}
-.bx-prev, .bx-next {
-	text-decoration: none;
-	position: absolute;
-	top: 50%;
-	margin-top: -40px;
-	background: white;
-	color: #666;
-	width: 30px;
-	height: 80px;
-	text-align: center;
-	transition: .4s linear;
-	opacity: .7;
-	cursor: pointer;
-}
-.bx-prev {
-	left: 0;
-	border-radius: 0 5px 5px 0;
-	z-index: 60;
-}
-.bx-next {
-	right: 0;
-	border-radius: 5px 0 0 5px;
-	z-index: 60;
-}
-.bx-prev:before, .bx-next:before {
-	font-family: "Font Awesome 5 Free";
-	font-size: 30px;
-	line-height: 80px;
-	font-weight: 900;
-}
-.bx-next:before {content: "\f105";}
-.bx-prev:before {content: "\f104";}
 
 #advice {
 	display: block;
@@ -449,6 +404,7 @@ footer .footer_phone {
 }
 
 #prod_description span.mech {
+	font-size: .9em;
 	padding: 0px;
 	background: white;
 	width: 300px;

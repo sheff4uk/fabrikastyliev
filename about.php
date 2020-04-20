@@ -41,8 +41,8 @@
 		$('.bxslider').bxSlider({
 			nextText: '',
 			prevText: '',
-			pagerCustom: '#bx-pager',
-			auto: true
+			auto: true,
+			stopAutoOnClick: true,
 		});
 	});
 </script>
