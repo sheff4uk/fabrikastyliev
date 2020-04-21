@@ -21,11 +21,12 @@
 		</a>
 	</div>
 
-	<div style="margin: 25px; line-height: 1.5em; text-align: justify;">
-		<img src="/images/propertis/8797031563294.jpeg" alt="Бумажно-слоистый пластик HPL" style="width: 50%; max-width: 310px; float: right; margin-left: 20px;">
+	<div style="margin: 25px; line-height: 1.5em; text-align: justify; display: table;">
 
+		<img src="/images/propertis/textile.jpg" alt="Обивочная ткань" style="width: 50%; max-width: 300px; float: right; margin-left: 20px;">
 		<p>Фабрика <b>«Престол»</b> производит столы и стулья для кухни и гостиной <b>по индивидуальным заказам</b>. Предлагается выбор из нескольких десятков моделей столов и стульев, различные размеры и формы столешниц, сотни наименований тканей для обивки, сотни вариантов декоров столешниц, индивидуальный подбор краски по образцу. Применяем лакокрасочное покрыте от ведущего немецкого производителя HESSE! Все образцы материалов представлены в наших <a href="/address.php">фирменных салонах</a>. Продавец-консультант поможет оформить заказ. Предлагаем услугу доставки и сборки нашей мебели. Предоставляем гарантийное и после гарантийное обслуживание.</p>
 
+		<img src="/images/propertis/Decorative_laminate.jpg" alt="Бумажно-слоистый пластик HPL" style="width: 50%; max-width: 300px; float: left; margin-right: 20px;">
 		<p>Для облицовки столешниц мы используем <b>декоративный бумажно-слоистый пластик HPL</b> от ведущих отечественных и иностранных производителей, таких как: <a href="https://www.egger.com/shop/ru_RU/interior/decors" target="_blank" rel="noopener">EGGER (Германия)</a>, <a href="http://arcoplastica.ru/decors/" target="_blank" rel="noopener">arcobaleno (Россия)</a>, <a href="http://www.slotex.ru/products/decor/" target="_blank" rel="noopener">Слотекс (Россия)</a>, <a href="http://www.asdlaminat.com/search/decor-and-design" target="_blank" rel="noopener">ASD (Турция)</a>, <a href="http://lemarkllc.ru/dekory" target="_blank" rel="noopener">Lemark (Россия)</a>, <a href="https://www.arpaindustriale.com/en/aps/general-collection" target="_blank" rel="noopener">Arpa (Италия)</a>, <a href="https://www.wilsonart.com/laminate/design-library" target="_blank" rel="noopener">Wilsonart (США)</a>. Огромный выбор всевозможных декоров (дерево, камень, металлик, монохром и др.) позволит изготовить стол, который гармонично впишется в любой интерьер.</p>
 	</div>
 
