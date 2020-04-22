@@ -105,7 +105,7 @@
 							<div><img src="/images/hpl/1572-M_Antique_White_4.jpg" title="Wilsonart 1572-60 ANTIQUE WHITE"></div>
 							<div><img src="/images/hpl/1111_1_%D0%91%D0%B5%D0%BB%D1%8B%D0%B9.jpg" title="Слотекс 1111/S Белый"></div>
 							<div><img src="/images/hpl/3331_S_puft-ovldllbl_A4.jpg" title="Слотекс 3331/S Клен Ванкувер"></div>
-							<div><img src="/images/hpl/8803449045022.jpeg" title="<a href='' target='_blank'>EGGER U222 ST9 Крем бежевый</a>"></div>
+							<div><img src="/images/hpl/8803457237022.jpeg" title="<a href='https://www.egger.com/shop/ru_RU/interior/decor-detail/U222_9' target='_blank'>EGGER U222 ST9 Крем бежевый</a>"></div>
 							<div><img src="/images/hpl/8803448324126.jpeg" title="<a href='https://www.egger.com/shop/ru_RU/interior/decor-detail/H1113_10' target='_blank'>EGGER H1113 ST10 Дуб Канзас коричневый</a>"></div>
 							<div><img src="/images/hpl/8803448520734.jpeg" title="<a href='https://www.egger.com/shop/ru_RU/interior/decor-detail/H1122_22' target='_blank'>EGGER H1122 ST22 Древесина белая</a>"></div>
 							<div><img src="/images/hpl/3830_C_%D0%9F%D0%B8%D0%BD%D0%BE.jpg" title="Слотекс 3830/C Пино"></div>
