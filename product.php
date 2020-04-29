@@ -26,22 +26,16 @@
 	<section class="page">
 		<ul class="breadcrumbs">
 			<li><a href="/">Главная</a></li>
-			<li>/</li>
+			<li><i class="fas fa-long-arrow-alt-left"></i></li>
 			<li><a href="/prodlist.php?type=<?=$type?>"><?=$type_name?></a></li>
-			<li>/</li>
+			<li><i class="fas fa-long-arrow-alt-left"></i></li>
 			<li><b id="<?=$name?>" style="padding-top: 60px;"><?=$product[0]?></b></li>
 		</ul>
 
-<!--
-		<section style="display: flex; justify-content: space-between;">
-			<a href="product.php?name=<?=$a[$prev]?>" id="prev" title="Предыдущий <?=$type_n?>">
-				<img alt="Предыдущий <?=$type_n?>" src="/images/prodlist/<?=$a[$prev]?>.jpg" alt="<?=$a[$prev]?>" style="height: 100px;">
-			</a>
-			<a href="product.php?name=<?=$a[$next]?>" id="next" title="Следующий <?=$type_n?>">
-				<img alt="Следующий <?=$type_n?>" src="/images/prodlist/<?=$a[$next]?>.jpg" alt="<?=$a[$next]?>" style="height: 100px;">
-			</a>
+		<section style="margin-bottom: 10px; text-align: center;">
+			<a href="product.php?name=<?=$a[$prev]?>">Предыдущий товар</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="product.php?name=<?=$a[$next]?>">Следующий товар</a>
 		</section>
--->
 
 		<div id="prod_wr">
 			<section id="prod_photo">
@@ -71,7 +65,6 @@
 					?>
 					</div>
 				</div>
-<!--				<img src='images/prodlist/<?=$name?>.jpg'>-->
 			</section>
 
 			<section id="prod_description">
@@ -117,6 +110,8 @@
 						</div>
 						<p><b style="color: #C00000;">Важно!</b> Отображение цвета на вашем мониторе может отличаться от реального цвета.</p>
 
+						<p><b>Производители пластиков:</b> <a href="https://www.egger.com/shop/ru_RU/interior/decors" target="_blank" rel="noopener">EGGER (Германия)</a>, <a href="http://arcoplastica.ru/decors/" target="_blank" rel="noopener">arcobaleno (Россия)</a>, <a href="http://www.slotex.ru/products/decor/" target="_blank" rel="noopener">Слотекс (Россия)</a>, <a href="http://www.asdlaminat.com/search/decor-and-design" target="_blank" rel="noopener">ASD (Турция)</a>, <a href="http://lemarkllc.ru/dekory" target="_blank" rel="noopener">Lemark (Россия)</a>, <a href="https://www.arpaindustriale.com/en/aps/general-collection" target="_blank" rel="noopener">Arpa (Италия)</a>, <a href="https://www.wilsonart.com/laminate/design-library" target="_blank" rel="noopener">Wilsonart (США)</a>.</p>
+
 						<p><b>Под заказ индивидуальный размер и цвет стола.</b></p>
 						<?
 					}
@@ -124,40 +119,42 @@
 						?>
 						<p><b>Популярная обивочная ткань:</b></p>
 						<div class="mtslider">
-							<div><img src="/images/tex/Emmanuelle%20Lux%20Desert.jpg" title="<a href='https://www.ltex.ru/textile/1448' target='_blank'>Эммануэль Люкс Десерт</a>"></div>
-							<div><img src="/images/tex/Emmanuelle%20Lux%20Cloud.jpg" title="<a href='https://www.ltex.ru/textile/1446' target='_blank'>Эммануэль Люкс Клауд</a>"></div>
-							<div><img src="/images/tex/Emmanuelle%20Lux%20Salmon.jpg" title="<a href='https://www.ltex.ru/textile/1453' target='_blank'>Эммануэль Люкс Салмон</a>"></div>
-							<div><img src="/images/tex/lambre16_570x480.jpg" title="<a href='http://favorittextil.ru/katalog/mebelnye-tkani/mikrovelyur/lambre-detail#gallery-19' target='_blank'>Lambre 16</a>"></div>
-							<div><img src="/images/tex/Emmanuelle%20Lux%20Gravel.jpg" title="<a href='https://www.ltex.ru/textile/1449' target='_blank'>Эммануэль Люкс Гравел</a>"></div>
-							<div><img src="/images/tex/f8091000de3f026d209837e21bc2e700_3_XL.jpg" title="Soprano cream"></div>
-							<div><img src="/images/tex/lambre05.jpg" title="<a href='http://favorittextil.ru/katalog/mebelnye-tkani/mikrovelyur/lambre-detail#gallery-8' target='_blank'>Lambre 05</a>"></div>
-							<div><img src="/images/tex/lambre015.jpg" title="<a href='http://favorittextil.ru/katalog/mebelnye-tkani/mikrovelyur/lambre-detail#gallery-4' target='_blank'>Lambre 01</a>"></div>
-							<div><img src="/images/tex/f8091000de3f026d209837e21bc2e700_5_XL.jpg" title="Soprano silk"></div>
-							<div><img src="/images/tex/Emmanuelle%20Lux%20Lilac.jpg" title="<a href='https://www.ltex.ru/textile/1450' target='_blank'>Эммануэль Люкс Лайлак</a>"></div>
-							<div><img src="/images/tex/chateau_monogramme_cheri.jpg" title="Chateau Monogramme cheri"></div>
-							<div><img src="/images/tex/f8091000de3f026d209837e21bc2e700_10_XL.jpg" title="Soprano graphite"></div>
-							<div><img src="/images/tex/Emmanuelle%20Lux%20Cocoa.jpg" title="<a href='https://www.ltex.ru/textile/1447' target='_blank'>Эммануэль Люкс Кокоа</a>"></div>
-							<div><img src="/images/tex/Emmanuelle%20Lux%20Milk.jpg" title="<a href='https://www.ltex.ru/textile/1452' target='_blank'>Эммануэль Люкс Милк</a>"></div>
-							<div><img src="/images/tex/f8091000de3f026d209837e21bc2e700_16_XL.jpg" title="Soprano com nefrit"></div>
-							<div><img src="/images/tex/ae265ec8d02add74bcb0f72e47ec001b_6_XL.jpg" title="Medea mocco"></div>
-							<div><img src="/images/tex/Emmanuelle%20Lux%20Bone.jpg" title="<a href='https://www.ltex.ru/textile/1444' target='_blank'>Эммануэль Люкс Боне</a>"></div>
-							<div><img src="/images/tex/lambre04.jpg" title="<a href='http://favorittextil.ru/katalog/mebelnye-tkani/mikrovelyur/lambre-detail#gallery-7' target='_blank'>Lambre 04</a>"></div>
-							<div><img src="/images/tex/f8091000de3f026d209837e21bc2e700_4_XL.jpg" title="Soprano gold"></div>
-							<div><img src="/images/tex/Verso-Pebble.jpg" title="<a href='http://favorittextil.ru/katalog/mebelnye-tkani/rogozhki/verso-detail#gallery-4' target='_blank'>Verso Pebble</a>"></div>
-							<div><img src="/images/tex/Matador%20Sand.jpg" title="<a href='https://www.ltex.ru/textile/1512' target='_blank'>Матадор Сэнд</a>"></div>
-							<div><img src="/images/tex/a07bb170c4a36161aa1f8f4859c19794_5_XL.jpg" title="Triumf caramel"></div>
-							<div><img src="/images/tex/f8091000de3f026d209837e21bc2e700_13_XL.jpg" title="Soprano lazur"></div>
-							<div><img src="/images/tex/lambre13_570x480.jpg" title="<a href='http://favorittextil.ru/katalog/mebelnye-tkani/mikrovelyur/lambre-detail#gallery-16' target='_blank'>Lambre 13</a>"></div>
-							<div><img src="/images/tex/ae265ec8d02add74bcb0f72e47ec001b_11_XL.jpg" title="Medea com vanilla"></div>
-							<div><img src="/images/tex/chateau_monogramme_chocolat.jpg" title="Chateau Monogramme chocolat"></div>
-							<div><img src="/images/tex/Emmanuelle%20Lux%20Lime.jpg" title="<a href='https://www.ltex.ru/textile/1451' target='_blank'>Эммануэль Люкс Лайм</a>"></div>
-							<div><img src="/images/tex/lambre08.jpg" title="<a href='http://favorittextil.ru/katalog/mebelnye-tkani/mikrovelyur/lambre-detail#gallery-11' target='_blank'>Lambre 08</a>"></div>
-							<div><img src="/images/tex/bristol_romb_01.jpg" title="<a href='http://favorittextil.ru/katalog/mebelnye-tkani/zhakkard/bristol-detail#gallery-5' target='_blank'>Bristol romb 01</a>"></div>
-							<div><img src="/images/tex/f8091000de3f026d209837e21bc2e700_11_XL.jpg" title="Soprano chocolate"></div>
-							<div><img src="/images/tex/AirBoss15.jpg" title="<a href='http://favorittextil.ru/katalog/mebelnye-tkani/mikrovelyur/airboss-detail#gallery-5' target='_blank'>airBoss 15 grey</a>"></div>
-							<div><img src="/images/tex/Diamond-022.jpg" title="Diamond 022"></div>
+							<div><img src="/images/tex/Emmanuelle%20Lux%20Desert.jpg" title="<a href='https://www.ltex.ru/textile/1448' target='_blank'>Лэзертач Эммануэль Люкс Десерт</a>"></div>
+							<div><img src="/images/tex/Emmanuelle%20Lux%20Cloud.jpg" title="<a href='https://www.ltex.ru/textile/1446' target='_blank'>Лэзертач Эммануэль Люкс Клауд</a>"></div>
+							<div><img src="/images/tex/Emmanuelle%20Lux%20Salmon.jpg" title="<a href='https://www.ltex.ru/textile/1453' target='_blank'>Лэзертач Эммануэль Люкс Салмон</a>"></div>
+							<div><img src="/images/tex/lambre16_570x480.jpg" title="<a href='http://favorittextil.ru/katalog/mebelnye-tkani/mikrovelyur/lambre-detail#gallery-19' target='_blank'>Фаворит Lambre 16</a>"></div>
+							<div><img src="/images/tex/Emmanuelle%20Lux%20Gravel.jpg" title="<a href='https://www.ltex.ru/textile/1449' target='_blank'>Лэзертач Эммануэль Люкс Гравел</a>"></div>
+							<div><img src="/images/tex/f8091000de3f026d209837e21bc2e700_3_XL.jpg" title="VIP-Текстиль Soprano cream"></div>
+							<div><img src="/images/tex/lambre05.jpg" title="<a href='http://favorittextil.ru/katalog/mebelnye-tkani/mikrovelyur/lambre-detail#gallery-8' target='_blank'>Фаворит Lambre 05</a>"></div>
+							<div><img src="/images/tex/lambre015.jpg" title="<a href='http://favorittextil.ru/katalog/mebelnye-tkani/mikrovelyur/lambre-detail#gallery-4' target='_blank'>Фаворит Lambre 01</a>"></div>
+							<div><img src="/images/tex/f8091000de3f026d209837e21bc2e700_5_XL.jpg" title="VIP-Текстиль Soprano silk"></div>
+							<div><img src="/images/tex/Emmanuelle%20Lux%20Lilac.jpg" title="<a href='https://www.ltex.ru/textile/1450' target='_blank'>Лэзертач Эммануэль Люкс Лайлак</a>"></div>
+							<div><img src="/images/tex/chateau_monogramme_cheri.jpg" title="Домфорт Chateau Monogramme cheri"></div>
+							<div><img src="/images/tex/f8091000de3f026d209837e21bc2e700_10_XL.jpg" title="VIP-Текстиль Soprano graphite"></div>
+							<div><img src="/images/tex/Emmanuelle%20Lux%20Cocoa.jpg" title="<a href='https://www.ltex.ru/textile/1447' target='_blank'>Лэзертач Эммануэль Люкс Кокоа</a>"></div>
+							<div><img src="/images/tex/Emmanuelle%20Lux%20Milk.jpg" title="<a href='https://www.ltex.ru/textile/1452' target='_blank'>Лэзертач Эммануэль Люкс Милк</a>"></div>
+							<div><img src="/images/tex/f8091000de3f026d209837e21bc2e700_16_XL.jpg" title="VIP-Текстиль Soprano com nefrit"></div>
+							<div><img src="/images/tex/ae265ec8d02add74bcb0f72e47ec001b_6_XL.jpg" title="VIP-Текстиль Medea mocco"></div>
+							<div><img src="/images/tex/Emmanuelle%20Lux%20Bone.jpg" title="<a href='https://www.ltex.ru/textile/1444' target='_blank'>Лэзертач Эммануэль Люкс Боне</a>"></div>
+							<div><img src="/images/tex/lambre04.jpg" title="<a href='http://favorittextil.ru/katalog/mebelnye-tkani/mikrovelyur/lambre-detail#gallery-7' target='_blank'>Фаворит Lambre 04</a>"></div>
+							<div><img src="/images/tex/f8091000de3f026d209837e21bc2e700_4_XL.jpg" title="VIP-Текстиль Soprano gold"></div>
+							<div><img src="/images/tex/Verso-Pebble.jpg" title="<a href='http://favorittextil.ru/katalog/mebelnye-tkani/rogozhki/verso-detail#gallery-4' target='_blank'>Фаворит Verso Pebble</a>"></div>
+							<div><img src="/images/tex/Matador%20Sand.jpg" title="<a href='https://www.ltex.ru/textile/1512' target='_blank'>Лэзертач Матадор Сэнд</a>"></div>
+							<div><img src="/images/tex/a07bb170c4a36161aa1f8f4859c19794_5_XL.jpg" title="VIP-Текстиль Triumf caramel"></div>
+							<div><img src="/images/tex/f8091000de3f026d209837e21bc2e700_13_XL.jpg" title="VIP-Текстиль Soprano lazur"></div>
+							<div><img src="/images/tex/lambre13_570x480.jpg" title="<a href='http://favorittextil.ru/katalog/mebelnye-tkani/mikrovelyur/lambre-detail#gallery-16' target='_blank'>Фаворит Lambre 13</a>"></div>
+							<div><img src="/images/tex/ae265ec8d02add74bcb0f72e47ec001b_11_XL.jpg" title="VIP-Текстиль Medea com vanilla"></div>
+							<div><img src="/images/tex/chateau_monogramme_chocolat.jpg" title="Домфорт Chateau Monogramme chocolat"></div>
+							<div><img src="/images/tex/Emmanuelle%20Lux%20Lime.jpg" title="<a href='https://www.ltex.ru/textile/1451' target='_blank'>Лэзертач Эммануэль Люкс Лайм</a>"></div>
+							<div><img src="/images/tex/lambre08.jpg" title="<a href='http://favorittextil.ru/katalog/mebelnye-tkani/mikrovelyur/lambre-detail#gallery-11' target='_blank'>Фаворит Lambre 08</a>"></div>
+							<div><img src="/images/tex/bristol_romb_01.jpg" title="<a href='http://favorittextil.ru/katalog/mebelnye-tkani/zhakkard/bristol-detail#gallery-5' target='_blank'>Фаворит Bristol romb 01</a>"></div>
+							<div><img src="/images/tex/f8091000de3f026d209837e21bc2e700_11_XL.jpg" title="VIP-Текстиль Soprano chocolate"></div>
+							<div><img src="/images/tex/AirBoss15.jpg" title="<a href='http://favorittextil.ru/katalog/mebelnye-tkani/mikrovelyur/airboss-detail#gallery-5' target='_blank'>Фаворит airBoss 15 grey</a>"></div>
+							<div><img src="/images/tex/Versal%20Desert.jpg" title="<a href='https://www.ltex.ru/textile/1466' target='_blank'>Лэзертач Версаль Десерт</a>"></div>
 						</div>
 						<p><b style="color: #C00000;">Важно!</b> Отображение цвета на вашем мониторе может отличаться от реального цвета.</p>
+
+						<p><b>Поставщики тканей:</b> <a href="https://www.ltex.ru/textile?c=1" target="_blank" rel="noopener">Лэзертач</a>, <a href="https://favorittextil.ru/katalog/mebelnye-tkani" target="_blank" rel="noopener">Фаворит</a>, <a href="https://viptextil.ru/material" target="_blank" rel="noopener">VIP-Текстиль</a>, <a href="https://ametist-store.ru/catalog/materialy-dlya-mebeli/mebelnye-tkani/" target="_blank" rel="noopener">Домфорт</a>.</p>
 
 						<p><b>Под заказ на выбор ткань и цвет изделия.</b></p>
 						<?

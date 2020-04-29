@@ -8,7 +8,7 @@
 	<section class="page">
 		<ul class="breadcrumbs">
 			<li><a href="/">Главная</a></li>
-			<li>/</li>
+			<li><i class="fas fa-long-arrow-alt-left"></i></li>
 			<li><b>Контакты</b></li>
 		</ul>
 		<h1>Контакты</h1>

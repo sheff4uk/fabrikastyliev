@@ -14,7 +14,7 @@
 <section class="page">
 	<ul class="breadcrumbs">
 		<li><a href="/">Главная</a></li>
-		<li>/</li>
+		<li><i class="fas fa-long-arrow-alt-left"></i></li>
 		<li><b><?=$type_name?></b></li>
 	</ul>
 	<h1><?=$heading?></h1>

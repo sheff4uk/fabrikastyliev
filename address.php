@@ -9,7 +9,7 @@
 	<section class="page">
 		<ul class="breadcrumbs">
 			<li><a href="/">Главная</a></li>
-			<li>/</li>
+			<li><i class="fas fa-long-arrow-alt-left"></i></li>
 			<li><b>Где купить</b></li>
 		</ul>
 

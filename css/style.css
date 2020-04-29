@@ -427,28 +427,6 @@ footer .footer_phone {
 	width: 100%;
 }
 
-#prev {
-	position: fixed;
-	top: 120px;
-	left: 50px;
-	color: #777;
-	opacity: .5;
-	z-index: 100;
-}
-
-#next {
-	position: fixed;
-	top: 120px;
-	right: 50px;
-	color: #777;
-	opacity: .5;
-	z-index: 100;
-}
-
-#prev:hover, #next:hover {
-	opacity: 1;
-}
-
 .social ul li {
 	display: inline-block;
 	margin-right: 5px;
