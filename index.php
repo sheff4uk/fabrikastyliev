@@ -93,17 +93,20 @@
 		$toptable = array("alex", "charli-s", "niko", "johny", "max", "vinni");
 		foreach ($products["table"] as $k => $v) {
 			if (in_array($k, $toptable)) {
+				$price = number_format(min($v[4]), 0, '', ' ');
+				$pref = "от ";
 				echo "
 					<div class='prod_cell'>
 						<a href='product.php?name={$k}'>
 							<div class='prod_cell_img_wrap'>
 								<img alt='{$v[0]}' src='images/prodlist/{$k}.jpg'>
 							</div>
-							<p style='margin: 30px 0 5px 0;'>{$v[0]}</p>
+							<p style='margin: 30px 0 30px 0;'>{$v[0]}</p>
 						</a>
 						<div class='icon_wrap'>
 							".($v[5] ? "<div class='ic_new'></div>" : "")."
 						</div>
+						<div style='text-align: center; position: absolute; bottom: 20px; width: 100%; white-space: nowrap;'>{$pref}<span class='price'>{$price}</span> р.</div>
 						<hr>
 					</div>
 				";
@@ -114,17 +117,19 @@
 		$topchair = array("valli", "shevalie", "resnichka", "orfey", "mishel", "elegant");
 		foreach ($products["chair"] as $k => $v) {
 			if (in_array($k, $topchair)) {
+				$price = number_format($v[4], 0, '', ' ');
 				echo "
 					<div class='prod_cell'>
 						<a href='product.php?name={$k}'>
 							<div class='prod_cell_img_wrap'>
 								<img alt='{$v[0]}' src='images/prodlist/{$k}.jpg'>
 							</div>
-							<p style='margin: 30px 0 5px 0;'>{$v[0]}</p>
+							<p style='margin: 30px 0 30px 0;'>{$v[0]}</p>
 						</a>
 						<div class='icon_wrap'>
 							".($v[5] ? "<div class='ic_new'></div>" : "")."
 						</div>
+						<div style='text-align: center; position: absolute; bottom: 20px; width: 100%; white-space: nowrap;'><span class='price'>{$price}</span> р.</div>
 						<hr>
 					</div>
 				";

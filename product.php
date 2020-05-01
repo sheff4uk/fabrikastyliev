@@ -182,12 +182,14 @@
 							elseif ($k == 3) {
 								$mech = "раздвижной <m><a style='cursor: pointer; text-decoration: underline;'>сигма</a><span class='mech'>Раздвигающаяся царга из металлических направляющих. Вмещается две или три вставки по <b>[40, 50, 60] см</b> в зависимости от размера стола и вида применяемой фурнитуры.<br><img alt='Механизм раздвижки Сигма' src='images/сигма.jpg'></span></m>";
 							}
-							echo "<span>от <b class='price'>{$v}<sup>*</sup></b> руб. {$mech}</span>";
+							$price = number_format($v, 0, '', ' ');
+							echo "<span>от <b class='price'>{$price}<sup>*</sup></b> р. {$mech}</span>";
 						}
 						echo "<br>Конечная цена товара формируется в результате просчета заказа по индивидуальным размерам";
 					}
 					if ($type == "chair") {
-						echo "<span><b class='price'>{$product[4]}<sup>*</sup></b> руб.</span>";
+						$price = number_format($product[4], 0, '', ' ');
+						echo "<span><b class='price'>{$price}<sup>*</sup></b> р.</span>";
 					}
 				?>
 				</p>
