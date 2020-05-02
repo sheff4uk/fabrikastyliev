@@ -32,8 +32,7 @@ a {
 }
 
 a:hover, .shop.state_open a {
-	color: #e3d600 !important;
-	text-shadow: 1px 1px 1px #653033, -1px -1px 1px #653033, 1px -1px 1px #653033, -1px 1px 1px #653033;
+	color: #D65C4F !important
 }
 
 .breadcrumbs {
