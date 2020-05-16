@@ -37,5 +37,12 @@
 <!-- VK Widget -->
 <div id="vk_community_messages"></div>
 
+<?
+if( $_SESSION["alert"] ) {
+	echo "<script>alert('{$_SESSION["alert"]}');</script>";
+	unset($_SESSION["alert"]);
+}
+?>
+
 </body>
 </html>

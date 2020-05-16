@@ -15,7 +15,7 @@
 
 		<div style="background: lightgoldenrodyellow; border-radius: 20px; padding: 10px;">
 			<h3 style="color: #911; text-align: center;">Уважаемые покупатели!</h3>
-			<h3 style="line-height: 2em;">В связи со сложившейся ситуацией, вызванной коронавирусом, временно закрыты наши фирменные салоны. Но мы продолжаем работать для вас. Будем рады принять заказ на изготовление столов и стульев. Просто оставьте свой номер через форму <a href="/feedback.php" style="background: #fd8134; color: #fff; text-decoration: none; padding: 5px 10px; border-radius: 10px; white-space: nowrap;">Заказать звонок</a> и продавец-консультант перезвонит вам.</h3>
+			<h3 style="line-height: 2em;">В связи со сложившейся ситуацией, вызванной коронавирусом, временно закрыты некоторые наши фирменные салоны. Но мы продолжаем работать для вас. Будем рады принять заказ на изготовление столов и стульев. Просто оставьте свой номер через форму <a href="/feedback.php?location=<?=$_SERVER['REQUEST_URI']?>" style="background: #fd8134; color: #fff; text-decoration: none; padding: 5px 10px; border-radius: 10px; white-space: nowrap;">Заказать звонок</a> и продавец-консультант перезвонит вам.</h3>
 		</div>
 	</section>
 
@@ -25,7 +25,7 @@
 			<h4>Киров</h4>
 			<ul>
 				<li class="shop" id="megadom">
-					<?=$pic?> ТЦ «Мегадом» - корпус В - ул. Блюхера, 39 - т. 8(919)524-16-80 <a href="#megadom" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>
+					<span style="color: #C00000; font-weight: bold;">РАБОТАЕТ</span> <?=$pic?> ТЦ «Мегадом» - корпус В - ул. Блюхера, 39 - т. 8(919)524-16-80 <a href="#megadom" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>
 					<div class="map">
 						<div style="height: 400px;"><iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=1119708208" width="100%" height="400" frameborder="0"></iframe></div>
 					</div>

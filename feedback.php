@@ -25,7 +25,9 @@ if( isset($_POST["submit"]) ) {
 		// Отправляем сообщение при помощи телеграм бота
 		$message = "{$_POST["client"]}\n{$_POST["mtel"]}\n{$_POST["city"]}\n{$_POST["text"]}";
 		message_to_telegram($message);
-		exit ('<meta http-equiv="refresh" content="0; url=/">');
+		$_SESSION["alert"] = "Благодарим за обращение! С Вами обязательно свяжуться.";
+
+		exit ('<meta http-equiv="refresh" content="0; url='.$_GET["location"].'">');
 	}
 
 }
@@ -172,7 +174,7 @@ function message_to_telegram($text) {
 					<option value="Сыктывкар">Сыктывкар</option>
 					<option value="Другой">другой (напишите в сообщении)</option>
 				</select>
-				<textarea name="text" rows="3" placeholder="Сообщение..."></textarea>
+				<textarea name="text" rows="3" placeholder="Сообщение..."><?=($_GET["model"] ? "Интересует модель \"{$_GET["model"]}\"" : "")?></textarea>
 
 				<div class="captcha_wrapper">
 					<script src='https://www.google.com/recaptcha/api.js'></script>
