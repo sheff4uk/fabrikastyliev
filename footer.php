@@ -39,7 +39,15 @@
 
 <?
 if( $_SESSION["alert"] ) {
-	echo "<script>alert('{$_SESSION["alert"]}');</script>";
+	?>
+	<script>
+		$(document).ready(function() {
+			ym(50341759,'reachGoal','FEEDBACK');
+			alert('<?=$_SESSION["alert"]?>');
+		});
+	</script>
+
+	<?
 	unset($_SESSION["alert"]);
 }
 ?>
