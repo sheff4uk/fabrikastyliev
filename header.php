@@ -90,7 +90,11 @@ session_start();
 					<li><a href="about.php">О нас</a></li>
 					<li><a href="certificates.php">Сертификаты</a></li>
 				</ul>
-				<a href="/feedback.php?location=<?=$_SERVER['REQUEST_URI']?>" style="color: #fff; background: #fd8134;"><i class="fas fa-phone"></i> Заказать звонок</a>
+				<?
+					if( !strpos($_SERVER["REQUEST_URI"], 'feedback.php') ) {
+						echo "<a href='/feedback.php?location={$_SERVER['REQUEST_URI']}' style='color: #fff; background: #fd8134;'><i class='fas fa-phone'></i> Заказать звонок</a>";
+					}
+				?>
 <!--				<a href="tel:89091317732" class="footer_phone">8 (909) 131-77-32</a>-->
 			</div>
 		</nav>
