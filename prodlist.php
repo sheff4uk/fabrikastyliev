@@ -17,6 +17,9 @@
 		<li><i class="fas fa-long-arrow-alt-left"></i></li>
 		<li><b><?=$type_name?></b></li>
 	</ul>
+
+	<? include "shop_baner.php"; ?>
+
 	<h1><?=$heading?></h1>
 	<div class="prod_list_wrap">
 
