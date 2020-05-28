@@ -21,10 +21,17 @@
 		#shop:hover {
 			background-position: bottom center;
 		}
+		#shop h2 { z-index: 2; }
+		#shop img {
+			position: absolute;
+			top: -10px;
+			right: 20px;
+		}
 	</style>
-	<div style="padding: 10px;">
+	<div style="padding: 10px; position: relative;">
 		<a href="https://vk.com/market-171248798" target="_blank" id="shop">
-			<h2>Товар в наличии в нашем интернет магазине</h2>
+			<h2>Товары в наличии в нашем интернет магазине</h2>
+			<img src="/images/sale.png" alt="Скидки">
 		</a>
 	</div>
 
