@@ -43,7 +43,7 @@
 				<section class="prod_cell">
 					<a href="/files/EGGER.pdf" target="_blank">
 						<p><i class="fas fa-file-pdf fa-5x"></i></p>
-						<p>EGGER (Германия)</p>
+						<p>EGGER (Австрия)</p>
 					</a>
 				</section>
 				<section class="prod_cell">
