@@ -171,6 +171,7 @@ function message_to_telegram($text) {
 					<option value="Киров">Киров</option>
 					<option value="Екатеринбург">Екатеринбург</option>
 					<option value="Нижний Новгород">Нижний Новгород</option>
+					<option value="Москва">Москва</option>
 					<option value="Сыктывкар">Сыктывкар</option>
 					<option value="Другой">другой (напишите в сообщении)</option>
 				</select>

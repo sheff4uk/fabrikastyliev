@@ -25,7 +25,7 @@
 			<h4>Киров</h4>
 			<ul>
 				<li class="shop" id="megadom">
-					<span style="color: #C00000; font-weight: bold;">РАБОТАЕТ</span> <?=$pic?> ТЦ «Мегадом» - корпус В - ул. Блюхера, 39 - т. 8(919)524-16-80 <a href="#megadom" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>
+					<?=$pic?> ТЦ «Мегадом» - корпус В - ул. Блюхера, 39 - т. 8(919)524-16-80 <a href="#megadom" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>
 					<div class="map">
 						<div style="height: 400px;"><iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=1119708208" width="100%" height="400" frameborder="0"></iframe></div>
 					</div>
@@ -33,8 +33,8 @@
 			</ul>
 			<h4>Москва</h4>
 			<ul>
-				<li class="shop"><a href="http://fabrikaprestol.ru/" target="_blank" rel="noopener">ТЦ «Румянцево» - Киевское шоссе 22км, домовладение 4, блок В, 3-й этаж - т. 8(977)804-60-10</a></li>
-				<li class="shop"><a href="http://fabrikaprestol.ru/" target="_blank" rel="noopener">ТЦ "Принц Плаза" м. Теплый стан, Профсоюзная 129а 5 этаж - т. 8(977)804-60-10</a></li>
+				<li class="shop"><a href="https://www.instagram.com/fabrikaprestol/" target="_blank" rel="noopener">ТЦ «Румянцево» - Киевское шоссе 22км, домовладение 4, блок В, 3-й этаж - т. 8(977)804-60-10</a></li>
+				<li class="shop"><a href="https://www.instagram.com/fabrikaprestol/" target="_blank" rel="noopener">ТЦ "Принц Плаза" м. Теплый стан, Профсоюзная 129а 5 этаж - т. 8(977)804-60-10</a></li>
 			</ul>
 			<h4>Екатеринбург</h4>
 			<ul>
