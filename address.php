@@ -13,10 +13,12 @@
 			<li><b>Где купить</b></li>
 		</ul>
 
+<!--
 		<div style="background: lightgoldenrodyellow; border-radius: 20px; padding: 10px;">
 			<h3 style="color: #911; text-align: center;">Уважаемые покупатели!</h3>
 			<h3 style="line-height: 2em;">В связи со сложившейся ситуацией, вызванной коронавирусом, временно закрыты некоторые наши фирменные салоны. Но мы продолжаем работать для вас. Будем рады принять заказ на изготовление столов и стульев. Просто оставьте свой номер через форму <a href="/feedback.php?location=<?=$_SERVER['REQUEST_URI']?>" style="background: #fd8134; color: #fff; text-decoration: none; padding: 5px 10px; border-radius: 10px; white-space: nowrap;">Заказать звонок</a> и продавец-консультант перезвонит вам.</h3>
 		</div>
+-->
 	</section>
 
 	<section>
