@@ -61,6 +61,7 @@ session_start();
 		window.vkAsyncInit = function() {
 			VK.init({apiId: 7216520});
 			VK.Widgets.CommunityMessages("vk_community_messages", 171248798, {disableExpandChatSound: "1",tooltipButtonText: "Есть вопрос?"});
+			VK.Retargeting.Init('VK-RTRG-500735-818ez');
 		};
 
 		setTimeout(function() {
