@@ -29,7 +29,7 @@
 			</ul>
 			<br>
 			<br>
-			<a href="https://webmaster.yandex.ru/sqi?host=фабрикастульев.рф"><img width="88" height="31" alt="" border="0" src="https://yandex.ru/cycounter?%D1%84%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D0%B0%D1%81%D1%82%D1%83%D0%BB%D1%8C%D0%B5%D0%B2.%D1%80%D1%84&theme=light&lang=ru"/></a>
+			<a href="https://webmaster.yandex.ru/siteinfo/?site=https://fabrikaprestol.ru"><img width="88" height="31" alt="" border="0" src="https://yandex.ru/cycounter?https://fabrikaprestol.ru&theme=light&lang=ru"/></a>
 		</section>
 	</div>
 </footer>
