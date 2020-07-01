@@ -31,7 +31,7 @@
 	<div style="padding: 10px; position: relative;">
 		<a href="https://vk.com/market-171248798" target="_blank" id="shop">
 			<h2>Товары в наличии в нашем интернет магазине</h2>
-			<img src="/images/sale.png" alt="Скидки">
+<!--			<img src="/images/sale.png" alt="Скидки">-->
 		</a>
 	</div>
 
