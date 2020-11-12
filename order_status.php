@@ -158,7 +158,7 @@
 				}
 				?>
 				<form method="post" action="?mtel=<?=$_GET["mtel"]?>">
-					<textarea name="question" style="width: 100%; border-radius: 20px; padding: 10px; box-sizing: border-box;" rows="5" placeholder="Задать вопрос по заказу"></textarea>
+					<textarea name="question" style="width: 100%; border-radius: 20px; padding: 10px; box-sizing: border-box; box-shadow: 0px 0px 15px #fc9;" rows="5" placeholder="Задать вопрос по заказу"></textarea>
 
 					<div class="captcha_wrapper" style="width: 304px; margin: 20px auto;">
 						<script src='https://www.google.com/recaptcha/api.js'></script>
