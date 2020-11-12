@@ -1,6 +1,30 @@
 <?
 include "config.php";
 session_start();
+
+// Функция отправки сообщения телеграм боту
+function message_to_telegram($text) {
+	$ch = curl_init();
+	curl_setopt_array(
+		$ch,
+		array(
+			CURLOPT_URL => 'https://api.telegram.org/bot' . TELEGRAM_TOKEN . '/sendMessage',
+			CURLOPT_POST => TRUE,
+			CURLOPT_RETURNTRANSFER => TRUE,
+			CURLOPT_TIMEOUT => 10,
+			CURLOPT_POSTFIELDS => array(
+				'chat_id' => TELEGRAM_CHATID,
+				'parse_mode' => HTML,
+				'text' => $text,
+			),
+			CURLOPT_PROXY => PROXY_SERVER,
+			CURLOPT_PROXYUSERPWD => PROXY_USER,
+			CURLOPT_PROXYTYPE => CURLPROXY_SOCKS5,
+			CURLOPT_PROXYAUTH => CURLAUTH_BASIC,
+		)
+	);
+	curl_exec($ch);
+}
 ?>
 
 <!DOCTYPE html>
@@ -16,11 +40,13 @@ session_start();
 	<meta name="keywords" content="мебель, журнальные столы, столы, стулья, стул, стол, мебель для дома, престол, фабрикастульев, журнальный стол, кресла, журнальный столик, кухонный стол, стол на кухню">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<link type="text/css" rel="stylesheet" href="/css/style.css?v=28">
+	<link type="text/css" rel="stylesheet" href="/css/style.css?v=29">
+	<link rel="stylesheet" type='text/css' href="js/ui/jquery-ui.css">
 	<link rel='stylesheet' type='text/css' href='css/loading.css'>
 	<link type="text/css" rel="stylesheet" href="/css/jquery.bxslider.css?v=1">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!--	<script src="/js/jquery-1.11.3.min.js"></script>-->
+	<script src="js/ui/jquery-ui.js"></script>
 	<script src="/js/jquery.bxslider.js?v=1"></script>
 	<script src="/js/script.js?v=4"></script>
 	<script src="/js/easing.js"></script>
@@ -94,6 +120,9 @@ session_start();
 				<?
 					if( !strpos($_SERVER["REQUEST_URI"], 'feedback.php') ) {
 						echo "<a href='/feedback.php?location={$_SERVER['REQUEST_URI']}' style='color: #fff; background: #fd8134;'><i class='fas fa-phone'></i> Заказать звонок</a>";
+					}
+					if( !strpos($_SERVER["REQUEST_URI"], 'order_status.php') ) {
+						echo "<a href='/order_status.php' style='color: #fff; background: #C00000;'><i class='fas fa-info'></i> Статус заказа</a>";
 					}
 				?>
 <!--				<a href="tel:89091317732" class="footer_phone">8 (909) 131-77-32</a>-->

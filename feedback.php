@@ -31,28 +31,6 @@ if( isset($_POST["submit"]) ) {
 	}
 
 }
-
-function message_to_telegram($text) {
-	$ch = curl_init();
-	curl_setopt_array(
-		$ch,
-		array(
-			CURLOPT_URL => 'https://api.telegram.org/bot' . TELEGRAM_TOKEN . '/sendMessage',
-			CURLOPT_POST => TRUE,
-			CURLOPT_RETURNTRANSFER => TRUE,
-			CURLOPT_TIMEOUT => 10,
-			CURLOPT_POSTFIELDS => array(
-				'chat_id' => TELEGRAM_CHATID,
-				'text' => $text,
-			),
-			CURLOPT_PROXY => PROXY_SERVER,
-			CURLOPT_PROXYUSERPWD => PROXY_USER,
-			CURLOPT_PROXYTYPE => CURLPROXY_SOCKS5,
-			CURLOPT_PROXYAUTH => CURLAUTH_BASIC,
-		)
-	);
-	curl_exec($ch);
-}
 ?>
 <style>
 	.decor * {box-sizing: border-box;}
