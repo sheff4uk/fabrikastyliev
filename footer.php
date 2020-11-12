@@ -2,8 +2,8 @@
 	<div class="page">
 		<section class="footer-section-navigation">
 			<img src="images/logo_gray.png" alt="Мебельная фабрика ПРЕСТОЛ">
-			<span class="copyright">2011-<?=( date("Y") )?> &copy; ООО "Престол"</span>
-			<span class="address">610044, г.Киров, ул.Луганская 59в</span>
+<!--			<span class="copyright">2011-<?=( date("Y") )?> &copy; ООО "Престол"</span>-->
+			<span class="address copyright">610044, г.Киров, ул.Луганская 59в</span>
 <!--			<a href="tel:89091317732" class="footer_phone">8 (909) 131-77-32</a>-->
 		</section>
 		<section class="footer-section-navigation">
