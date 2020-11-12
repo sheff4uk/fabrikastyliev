@@ -86,7 +86,7 @@
 			$query = "
 				SELECT OD.OD_ID
 					,OD.Code
-					,CONCAT(CL.color, IF(CL.clear, ' <i>с эффектом дерева</i>', ' непрозрачная эмаль')) color
+					,CONCAT(CL.color, IF(CL.clear, ' <i>с эффектом дерева</i>', ' <i>непрозрачная эмаль</i>')) color
 					,DATE_FORMAT(StartDate, '%d.%m.%Y') StartDate_format
 					,DATE_FORMAT(EndDate, '%d.%m.%Y') EndDate_format
 				FROM OrdersData OD
