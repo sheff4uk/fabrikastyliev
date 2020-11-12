@@ -121,9 +121,9 @@ function message_to_telegram($text) {
 					if( !strpos($_SERVER["REQUEST_URI"], 'feedback.php') ) {
 						echo "<a href='/feedback.php?location={$_SERVER['REQUEST_URI']}' style='color: #fff; background: #fd8134;'><i class='fas fa-phone'></i> Заказать звонок</a>";
 					}
-					if( !strpos($_SERVER["REQUEST_URI"], 'order_status.php') ) {
+					//if( !strpos($_SERVER["REQUEST_URI"], 'order_status.php') ) {
 						echo "<a href='/order_status.php' style='color: #fff; background: #C00000;'><i class='fas fa-info'></i> Статус заказа</a>";
-					}
+					//}
 				?>
 <!--				<a href="tel:89091317732" class="footer_phone">8 (909) 131-77-32</a>-->
 			</div>
