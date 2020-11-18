@@ -26,7 +26,7 @@
 		}
 		else if ($captcha_success->success==true) {
 			$chars = array("+", " ", "(", ")"); // Символы, которые требуется удалить из строки с телефоном
-			$mtel = str_replace($chars, "", $_GET["mtel"]);
+			$mtel = str_replace($chars, "", $_POST["mtel"]);
 
 			// Получаем информацию по заказу
 			$query = "
@@ -48,13 +48,13 @@
 			$res = mysqli_query( $mysqli, $query ) or die("Invalid query: " .mysqli_error( $mysqli ));
 			$row = mysqli_fetch_array($res);
 
-			$message = "<a href='https://kis.fabrikaprestol.ru/orderdetail.php?id={$row["OD_ID"]}'><b>{$row["code"]}</b></a> ← ссылка\n<b>Клиент:</b> {$row["client"]} {$_GET["mtel"]}\n<b>Салон:</b> {$row["city"]} {$row["shop"]}\n<b>Продажа:</b> {$row["sd_format"]}\n<b>Сдача:</b> {$row["ed_format"]}\n<b>Вопрос:</b> {$_POST["question"]}";
+			$message = "<a href='https://kis.fabrikaprestol.ru/orderdetail.php?id={$row["OD_ID"]}'><b>{$row["code"]}</b></a> ← ссылка\n<b>Клиент:</b> {$row["client"]} {$_POST["mtel"]}\n<b>Салон:</b> {$row["city"]} {$row["shop"]}\n<b>Продажа:</b> {$row["sd_format"]}\n<b>Сдача:</b> {$row["ed_format"]}\n<b>Вопрос:</b> {$_POST["question"]}";
 
 			// Отправляем сообщение при помощи телеграм бота
 			message_to_telegram($message);
 			$_SESSION["alert"] = "Благодарим за обращение! С Вами обязательно свяжуться.";
 
-			exit ('<meta http-equiv="refresh" content="0; url=order_status.php?mtel='.$_GET["mtel"].'">');
+			exit ('<meta http-equiv="refresh" content="0; url=order_status.php?mtel='.$_POST["mtel"].'">');
 		}
 	}
 ?>
@@ -77,6 +77,8 @@
 	<section class="page">
 		<?
 		if($_GET["mtel"]) {
+			echo "<br><br><br>";
+			echo $_GET["mtel"];
 			echo "<h2>Добрый день!</h2>";
 			echo "<h3>Вот что нам удалось найти по Вашему заказу:</h3>";
 
@@ -157,7 +159,8 @@
 					echo "</div>";
 				}
 				?>
-				<form method="post" action="?mtel=<?=$_GET["mtel"]?>">
+				<form method="post">
+					<input type="hidden" name="mtel" value="<?=$_GET["mtel"]?>">
 					<textarea name="question" style="width: 100%; border-radius: 20px; padding: 10px; box-sizing: border-box; box-shadow: 0px 0px 15px #fc9;" rows="5" placeholder="Задать вопрос по заказу"></textarea>
 
 					<div class="captcha_wrapper" style="width: 304px; margin: 20px auto;">
