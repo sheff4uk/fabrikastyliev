@@ -617,9 +617,9 @@ width: 6px;
 .Property img {
 	display: inline-block;
 	vertical-align: middle;
-	width: 15%;
+/*	width: 15%;*/
 	max-width: 70px;
-	filter: sepia(1) drop-shadow(2px 4px 6px black);
+	filter: drop-shadow(2px 2px 3px #0009);
 }
 
 .textProperty {

@@ -28,12 +28,14 @@
 			right: 20px;
 		}
 	</style>
+<!--
 	<div style="padding: 10px; position: relative;">
 		<a href="https://vk.com/market-171248798" target="_blank" id="shop">
 			<h2>Товары в наличии в нашем интернет магазине</h2>
-<!--			<img src="/images/sale.png" alt="Скидки">-->
+			<img src="/images/sale.png" alt="Скидки">
 		</a>
 	</div>
+-->
 
 	<div style="background: lightgoldenrodyellow; border-radius: 20px; padding: 10px;">
 		<h2 style="color: #911; text-align: center;">Фабрика производит столы и стулья по индивидуальным заказам</h2>

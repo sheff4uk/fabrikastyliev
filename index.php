@@ -37,49 +37,49 @@
 	<h2>Преимущества бумажно-слоистого пластика HPL</h2>
 	<div class="prod_list_wrap">
 		<div class="Property">
-			<img src="/images/propertis/ico_resistente_impatto.png" alt="Ударопрочный">
+			<img src="/images/propertis/ico_resistente_impatto.png?1" alt="Ударопрочный">
 			<div class="textProperty">
 				<h4>Ударопрочный</h4>
 				Способен выдерживать удары тупыми предметами без повреждений
 			</div>
 		</div>
 		<div class="Property">
-			<img src="/images/propertis/ico_resistente_usura_graffi.png" alt="Устойчивый к царапинам и износу">
+			<img src="/images/propertis/ico_resistente_usura_graffi.png?1" alt="Устойчивый к царапинам и износу">
 			<div class="textProperty">
 				<h4>Устойчивый к царапинам и износу</h4>
 				Значительная плотность делает его устойчивым к царапинам и износу
 			</div>
 		</div>
 		<div class="Property">
-			<img src="/images/propertis/ico_stabile_luce.png" alt="Светостойкий">
+			<img src="/images/propertis/ico_stabile_luce.png?1" alt="Светостойкий">
 			<div class="textProperty">
 				<h4>Светостойкий</h4>
 				Устойчив к ультрафиолетовому излучению и не подвержен обесцвечиванию
 			</div>
 		</div>
 		<div class="Property">
-			<img src="/images/propertis/ico_facile_da_pulire.png" alt="Легко чистить">
+			<img src="/images/propertis/ico_facile_da_pulire.png?1" alt="Легко чистить">
 			<div class="textProperty">
 				<h4>Легко чистить</h4>
 				Его гладкая поверхность не позволяет грязи прилипать
 			</div>
 		</div>
 		<div class="Property">
-			<img src="/images/propertis/ico_termoresistente.png" alt="Термостойкий">
+			<img src="/images/propertis/ico_termoresistente.png?1" alt="Термостойкий">
 			<div class="textProperty">
 				<h4>Термостойкий</h4>
 				Широкий диапазон температурного применения
 			</div>
 		</div>
 		<div class="Property">
-			<img src="/images/propertis/ico_igienico.png" alt="Гигиеничный">
+			<img src="/images/propertis/ico_igienico.png?1" alt="Гигиеничный">
 			<div class="textProperty">
 				<h4>Гигиеничный</h4>
 				Благодаря непористой поверхности он гигиеничен и прост в уходе
 			</div>
 		</div>
 		<div class="Property">
-			<img src="/images/propertis/ico_adatto_contatto_dei_cibi.png" alt="Подходит для контакта с едой">
+			<img src="/images/propertis/ico_adatto_contatto_dei_cibi.png?1" alt="Подходит для контакта с едой">
 			<div class="textProperty">
 				<h4>Подходит для контакта с едой</h4>
 				Будучи гигиеничным и термостойким, подходит для контакта с пищевыми продуктами
