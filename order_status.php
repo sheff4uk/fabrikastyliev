@@ -54,7 +54,7 @@
 			message_to_telegram($message);
 			$_SESSION["alert"] = "Благодарим за обращение! С Вами обязательно свяжуться.";
 
-			exit ('<meta http-equiv="refresh" content="0; url=order_status.php?mtel='.$_POST["mtel"].'">');
+			exit ('<meta http-equiv="refresh" content="0; url=/">');
 		}
 	}
 ?>
@@ -76,14 +76,14 @@
 <section style="background-color: #653033; padding: 100px 0; color: white; text-align: center; font-size: 1em;">
 	<section class="page">
 		<?
-		if($_GET["mtel"]) {
-			echo "<br><br><br>";
-			echo $_GET["mtel"];
+		if($_POST["mtel"]) {
+			echo "<br><br>";
+			echo $_POST["mtel"];
 			echo "<h2>Добрый день!</h2>";
 			echo "<h3>Вот что нам удалось найти по Вашему заказу:</h3>";
 
 			$chars = array("+", " ", "(", ")"); // Символы, которые требуется удалить из строки с телефоном
-			$mtel = str_replace($chars, "", $_GET["mtel"]);
+			$mtel = str_replace($chars, "", $_POST["mtel"]);
 
 			$query = "
 				SELECT OD.OD_ID
@@ -160,7 +160,7 @@
 				}
 				?>
 				<form method="post">
-					<input type="hidden" name="mtel" value="<?=$_GET["mtel"]?>">
+					<input type="hidden" name="mtel" value="<?=$_POST["mtel"]?>">
 					<textarea name="question" style="width: 100%; border-radius: 20px; padding: 10px; box-sizing: border-box; box-shadow: 0px 0px 15px #fc9;" rows="5" placeholder="Задать вопрос по заказу"></textarea>
 
 					<div class="captcha_wrapper" style="width: 304px; margin: 20px auto;">
@@ -179,7 +179,7 @@
 		}
 		else {
 			?>
-			<form style="text-align: center; margin: 100px 0">
+			<form method="post" style="text-align: center; margin: 100px 0">
 				<h1 style="color: #fc9; line-height: 2em;">Введите номер телефона,<br>который Вы сообщали при заключении договора.</h1>
 				<input type="text" id="mtel" name="mtel" style="font-size: 2em; width: 300px;" value="" autocomplete="on" placeholder="Моб. телефон">
 				<br>
