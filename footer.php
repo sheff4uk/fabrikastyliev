@@ -15,6 +15,7 @@
 					<li><a href="contact.php">КОНТАКТЫ</a></li>
 					<li><a href="about.php">О НАС</a></li>
 					<li><a href="certificates.php">СЕРТИФИКАТЫ</a></li>
+					<li><a href="sout.php">СОУТ</a></li>
 				</ul>
 			</nav>
 		</section>
