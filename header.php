@@ -17,10 +17,10 @@ function message_to_telegram($text) {
 				'parse_mode' => HTML,
 				'text' => $text,
 			),
-			CURLOPT_PROXY => PROXY_SERVER,
-			CURLOPT_PROXYUSERPWD => PROXY_USER,
-			CURLOPT_PROXYTYPE => CURLPROXY_SOCKS5,
-			CURLOPT_PROXYAUTH => CURLAUTH_BASIC,
+			//CURLOPT_PROXY => PROXY_SERVER,
+			//CURLOPT_PROXYUSERPWD => PROXY_USER,
+			//CURLOPT_PROXYTYPE => CURLPROXY_SOCKS5,
+			//CURLOPT_PROXYAUTH => CURLAUTH_BASIC,
 		)
 	);
 	curl_exec($ch);
