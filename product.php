@@ -190,7 +190,7 @@
 							$price = number_format($v, 0, '', ' ');
 							echo "<span>от <b class='price'>{$price}<sup>*</sup></b> р. {$mech}</span>";
 						}
-						echo "<br>Конечная цена товара формируется в результате просчета заказа по индивидуальным размерам";
+						echo "<br><span style='color: #911;'>Для вычисления точной стоимости нужно учесть требуемый размер стола и другие параметры.</span>";
 					}
 					if ($type == "chair") {
 						$price = number_format($product[4], 0, '', ' ');
