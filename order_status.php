@@ -123,7 +123,7 @@
 					$subres = mysqli_query( $mysqli, $query ) or die("Invalid query: " .mysqli_error( $mysqli ));
 					while( $subrow = mysqli_fetch_array($subres) ) {
 						echo "<div style='display: table; width: 100%; text-align: left;'>";
-						echo ($subrow["code"] ? "<img style='width: 100px; float: left; margin-right: 20px; margin: 0 20px 20px 0; border-radius: 10px; box-shadow: 5px 5px 15px #333;' src='https://fabrikaprestol.ru/images/prodlist/{$subrow["code"]}.jpg'/>" : "");
+						echo ($subrow["code"] ? "<img style='width: 100px; float: left; margin-right: 20px; margin: 0 20px 20px 0; border-radius: 10px; box-shadow: 5px 5px 15px #333;' src='/images/prodlist/{$subrow["code"]}.jpg'/>" : "");
 						?>
 						<script>
 							$( function() {
