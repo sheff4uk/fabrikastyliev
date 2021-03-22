@@ -149,7 +149,7 @@ if( isset($_POST["submit"]) ) {
 					<option value="Киров">Киров</option>
 					<option value="Екатеринбург">Екатеринбург</option>
 					<option value="Нижний Новгород">Нижний Новгород</option>
-					<option value="Москва">Москва</option>
+<!--					<option value="Москва">Москва</option>-->
 					<option value="Сыктывкар">Сыктывкар</option>
 					<option value="Другой">другой (напишите в сообщении)</option>
 				</select>

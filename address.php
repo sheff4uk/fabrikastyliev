@@ -33,11 +33,13 @@
 					</div>
 				</li>
 			</ul>
+<!--
 			<h4>Москва</h4>
 			<ul>
 				<li class="shop"><a href="https://www.instagram.com/fabrikaprestol/" target="_blank" rel="noopener">ТЦ «Румянцево» - Киевское шоссе 22км, домовладение 4, блок В, 3-й этаж - т. 8(977)804-60-10</a></li>
 				<li class="shop"><a href="https://www.instagram.com/fabrikaprestol/" target="_blank" rel="noopener">ТЦ "Принц Плаза" м. Теплый стан, Профсоюзная 129а 5 этаж - т. 8(977)804-60-10</a></li>
 			</ul>
+-->
 			<h4>Екатеринбург</h4>
 			<ul>
 				<li class="shop" id="yasen">
