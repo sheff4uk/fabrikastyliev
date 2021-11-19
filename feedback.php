@@ -22,10 +22,13 @@ if( isset($_POST["submit"]) ) {
 	if ($captcha_success->success==false) {
 		echo "Проверка reCAPTCHA не пройдена!";
 	} else if ($captcha_success->success==true) {
-		// Отправляем сообщение при помощи телеграм бота
-		$message = "{$_POST["client"]}\n{$_POST["mtel"]}\n{$_POST["city"]}\n{$_POST["text"]}";
-		message_to_telegram($message);
-		$_SESSION["alert"] = "Благодарим за обращение! С Вами обязательно свяжуться.";
+		// Проверка на спам
+		if( stripos($_POST["text"], '.com') === false) {
+			// Отправляем сообщение при помощи телеграм бота
+			$message = "{$_POST["client"]}\n{$_POST["mtel"]}\n{$_POST["city"]}\n{$_POST["text"]}";
+			message_to_telegram($message);
+			$_SESSION["alert"] = "Благодарим за обращение! С Вами обязательно свяжуться.";
+		}
 
 		exit ('<meta http-equiv="refresh" content="0; url='.$_GET["location"].'">');
 	}
