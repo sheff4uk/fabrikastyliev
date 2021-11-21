@@ -115,7 +115,7 @@ function message_to_telegram($text) {
 					<li><a href="address.php">Где купить</a></li>
 					<li><a href="contact.php">Контакты</a></li>
 					<li><a href="about.php">О нас</a></li>
-					<li><a href="certificates.php">Сертификаты</a></li>
+					<li><a href="gallery.php">Галерея</a></li>
 				</ul>
 				<?
 					if( !strpos($_SERVER["REQUEST_URI"], 'feedback.php') ) {
