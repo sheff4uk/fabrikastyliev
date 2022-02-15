@@ -21,9 +21,11 @@
 			<p>Email: <a href="mailto:fabrikaprestol@gmail.com" target="_blank" rel="noopener">fabrikaprestol@gmail.com</a></p>
 		</section>
 	</section>
+<!--
 	<div style="height: 400px; margin-bottom: -40px; text-align: center;">
 		<iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=157680774230" width="100%" height="400" frameborder="0"></iframe>
 	</div>
+-->
 </section>
 
 <?
