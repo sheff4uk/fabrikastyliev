@@ -40,7 +40,7 @@ function message_to_telegram($text) {
 	<meta name="keywords" content="мебель, журнальные столы, столы, стулья, стул, стол, мебель для дома, престол, фабрикастульев, журнальный стол, кресла, журнальный столик, кухонный стол, стол на кухню">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<link type="text/css" rel="stylesheet" href="/css/style.css?v=31">
+	<link type="text/css" rel="stylesheet" href="/css/style.css?v=32">
 	<link rel="stylesheet" type='text/css' href="js/ui/jquery-ui.css">
 	<link rel='stylesheet' type='text/css' href='css/loading.css'>
 	<link type="text/css" rel="stylesheet" href="/css/jquery.bxslider.css?v=1">

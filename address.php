@@ -23,7 +23,12 @@
 	<section>
 		<div style="line-height: 1.5em; text-align: center">
 			<h1>Где купить:</h1>
-			<h4>Нижний Новгород</h4>
+			<h4>
+				Нижний Новгород
+				<a class="vk social_icon" href="https://vk.com/id14124754" target="_blank" rel="nofollow noopener">
+					<i class="fab fa-vk"></i>
+				</a>
+			</h4>
 			<ul>
 				<li class="shop" id="materik">
 					ТЦ "Открытый Материк" - ул. Ларина, 7 - т. 8(999)076-17-55 <a href="#materik" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>

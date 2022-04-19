@@ -442,7 +442,7 @@ footer .footer_phone {
 	font-size: 20px;
 	font-style: normal;
 	font-weight: normal;
-	display: block;
+	display: inline-block;
 	height: 42px;
 	line-height: 44px;
 	text-align: center;
