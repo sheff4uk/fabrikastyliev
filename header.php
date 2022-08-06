@@ -14,7 +14,7 @@ function message_to_telegram($text) {
 			CURLOPT_TIMEOUT => 10,
 			CURLOPT_POSTFIELDS => array(
 				'chat_id' => TELEGRAM_CHATID,
-				'parse_mode' => HTML,
+				'parse_mode' => 'HTML',
 				'text' => $text,
 			),
 			//CURLOPT_PROXY => PROXY_SERVER,
