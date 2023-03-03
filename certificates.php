@@ -29,12 +29,6 @@
 					</a>
 				</section>
 				<section class="prod_cell">
-					<a href="/files/Lemark.pdf" target="_blank">
-						<p><i class="fas fa-file-pdf fa-5x"></i></p>
-						<p>Lemark (Россия)</p>
-					</a>
-				</section>
-				<section class="prod_cell">
 					<a href="/files/Wilsonart.pdf" target="_blank">
 						<p><i class="fas fa-file-pdf fa-5x"></i></p>
 						<p>Wilsonart (США)</p>
