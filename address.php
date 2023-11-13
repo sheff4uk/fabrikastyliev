@@ -23,6 +23,48 @@
 	<section>
 		<div style="line-height: 1.5em; text-align: center">
 			<h1>Где купить:</h1>
+			<h4>Киров</h4>
+			<ul>
+				<li class="shop" id="megadom">
+					ТЦ «Мегадом» - корпус В - ул. Блюхера, 39 <a href="tel:+79195241680"><i class="fas fa-phone"></i>+7 919 524 16 80</a>
+					<a href="#megadom" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>
+					<div class="map">
+						<div style="height: 400px;">
+							<iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=121917433788" width="100%" height="400" frameborder="0"></iframe>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<h4>Екатеринбург</h4>
+			<ul>
+				<li class="shop" id="klen">
+					ТЦ «Клён» - ул. П. Лумумбы, 38 <a href="tel:+79506329090"><i class="fas fa-phone"></i>+7 950 632 90 90</a>
+					<a href="#klen" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>
+					<div class="map">
+						<div style="height: 400px;">
+							<iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=101225294556" width="100%" height="400" frameborder="0"></iframe>
+						</div>
+					</div>
+				</li>
+				<li class="shop" id="gulliver">
+					ТЦ «Гулливер» - ул. 40 лет ВЛКСМ, 38 <a href="tel:+79002051927"><i class="fas fa-phone"></i>+7 900 205 19 27</a>
+					<a href="#gulliver" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>
+					<div class="map">
+						<div style="height: 400px;">
+							<iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=73717768691" width="100%" height="400" frameborder="0"></iframe>
+						</div>
+					</div>
+				</li>
+				<li class="shop" id="ema">
+					ТЦ «ЭМА» - Верх-Исетский бульвар, 13 <a href="tel:+79028792799"><i class="fas fa-phone"></i>+7 902 879 27 99</a>
+					<a href="#ema" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>
+					<div class="map">
+						<div style="height: 400px;">
+							<iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=187273769375" width="100%" height="400" frameborder="0"></iframe>
+						</div>
+					</div>
+				</li>
+			</ul>
 			<h4>
 				Нижний Новгород
 				<a class="vk social_icon" href="https://vk.com/id14124754" target="_blank" rel="nofollow noopener">
