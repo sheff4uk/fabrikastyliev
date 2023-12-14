@@ -42,16 +42,16 @@
 					<a href="#klen" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>
 					<div class="map">
 						<div style="height: 400px;">
-							<iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=101225294556" width="100%" height="400" frameborder="0"></iframe>
+							<iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=45085603722" width="100%" height="400" frameborder="0"></iframe>
 						</div>
 					</div>
 				</li>
 				<li class="shop" id="gulliver">
-					ТЦ «Гулливер» - ул. 40 лет ВЛКСМ, 38 <a href="tel:+79002051927"><i class="fas fa-phone"></i>+7 900 205 19 27</a>
+					ТЦ «Гулливер» - ул. 40 лет ВЛКСМ, 38Л <a href="tel:+79002051927"><i class="fas fa-phone"></i>+7 900 205 19 27</a>
 					<a href="#gulliver" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>
 					<div class="map">
 						<div style="height: 400px;">
-							<iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=73717768691" width="100%" height="400" frameborder="0"></iframe>
+							<iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=41645296744" width="100%" height="400" frameborder="0"></iframe>
 						</div>
 					</div>
 				</li>
@@ -60,7 +60,7 @@
 					<a href="#ema" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>
 					<div class="map">
 						<div style="height: 400px;">
-							<iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=187273769375" width="100%" height="400" frameborder="0"></iframe>
+							<iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=224603920261" width="100%" height="400" frameborder="0"></iframe>
 						</div>
 					</div>
 				</li>
@@ -79,7 +79,7 @@
 					</div>
 				</li>
 				<li class="shop" id="bazar">
-					ТЦ «Мебельный базар» - ул. Гордеевская, 7 <a href="tel:+79697621587">+7 969 762 15 87</a> <a href="#bazar" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>
+					ТЦ «Мебельный базар» - ул. Гордеевская, 7А <a href="tel:+79697621587">+7 969 762 15 87</a> <a href="#bazar" class="map_btn" title="Посмотреть на карте"><i class="fas fa-map-marked-alt"></i> Карта</a>
 					<div class="map">
 						<div style="height: 400px;"><iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=1169209411" width="100%" height="400" frameborder="0"></iframe></div>
 					</div>
