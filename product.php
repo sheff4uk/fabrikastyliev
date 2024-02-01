@@ -84,22 +84,22 @@
 							<div><img src="/images/hpl/8803465691166.jpeg" title="<a href='https://www.egger.com/shop/ru_RU/interior/decor-detail/W1100_9' target='_blank'>EGGER W1100 ST9 Белый альпийский</a>"></div>
 							<div><img src="/images/hpl/20470-800x800.jpg" title="arcobaleno 2047 Кантри"></div>
 							<div><img src="/images/hpl/3230_S_Дуб-Сонома-светлый.jpg" title="Слотекс 3230/S Дуб Сонома светлый"></div>
-							<div><img src="/images/hpl/1050-313x500-c-default.jpg" title="ASD 1050 Белый"></div>
+							<!-- <div><img src="/images/hpl/1050-313x500-c-default.jpg" title="ASD 1050 Белый"></div> -->
 							<div><img src="/images/hpl/8803449045022.jpeg" title="<a href='https://www.egger.com/shop/ru_RU/interior/decor-detail/H1180_37' target='_blank'>EGGER H1180 ST37 Дуб Галифакс натуральный</a>"></div>
-							<div><img src="/images/hpl/1039P.jpeg" title="ASD 1039 Ванильный"></div>
+							<!-- <div><img src="/images/hpl/1039P.jpeg" title="ASD 1039 Ванильный"></div> -->
 							<div><img src="/images/hpl/3847_S_zlcdu-kzwrn_A4.jpg" title="Слотекс 3847/S Венге Линум"></div>
 							<div><img src="/images/hpl/8803456319518.jpeg" title="<a href='https://www.egger.com/shop/ru_RU/interior/decor-detail/U104_9' target='_blank'>EGGER U104 ST9 Алебастр белый</a>"></div>
-							<div><img src="/images/hpl/3162.jpg" title="ASD 3162 WGR 2 Дуб текстурный"></div>
-							<div><img src="/images/hpl/1039_FLR.jpg" title="ASD 1039 FLR Ваниль флора"></div>
+							<!-- <div><img src="/images/hpl/3162.jpg" title="ASD 3162 WGR 2 Дуб текстурный"></div> -->
+							<!-- <div><img src="/images/hpl/1039_FLR.jpg" title="ASD 1039 FLR Ваниль флора"></div> -->
 							<div><img src="/images/hpl/14-01037-005_10141541_Altai_Laerche-1-800x800.jpg" title="arcobaleno 2045 Лиственница"></div>
 							<div><img src="/images/hpl/2017-800x800.jpg" title="arcobaleno 2017 Венге"></div>
-							<div><img src="/images/hpl/1050_CRC.jpg" title="ASD 1050 CRC Белый керамика"></div>
+							<!-- <div><img src="/images/hpl/1050_CRC.jpg" title="ASD 1050 CRC Белый керамика"></div> -->
 							<div><img src="/images/hpl/8803451207710.jpeg" title="<a href='https://www.egger.com/shop/ru_RU/interior/decor-detail/H1424_22' target='_blank'>EGGER H1424 ST22 Файнлайн крем</a>"></div>
 							<div><img src="/images/hpl/8803456450590.jpeg" title="<a href='https://www.egger.com/shop/ru_RU/interior/decor-detail/U108_9' target='_blank'>EGGER U108 ST9 Ванильный жёлтый</a>"></div>
 							<div><img src="/images/hpl/8803456516126.jpeg" title="<a href='https://www.egger.com/shop/ru_RU/interior/decor-detail/U113_9' target='_blank'>EGGER U113 ST9 Коттон бежевый</a>"></div>
 							<div><img src="/images/hpl/8803451338782.jpeg" title="<a href='https://www.egger.com/shop/ru_RU/interior/decor-detail/H1486_36' target='_blank'>EGGER H1486 ST36 Сосна Пасадена</a>"></div>
 							<div><img src="/images/hpl/8803448717342.jpeg" title="<a href='https://www.egger.com/shop/ru_RU/interior/decor-detail/H1145_10' target='_blank'>EGGER H1145 ST10 Дуб Бардолино натуральный</a>"></div>
-							<div><img src="/images/hpl/1572-M_Antique_White_4.jpg" title="Wilsonart 1572-60 ANTIQUE WHITE"></div>
+							<!-- <div><img src="/images/hpl/1572-M_Antique_White_4.jpg" title="Wilsonart 1572-60 ANTIQUE WHITE"></div> -->
 							<div><img src="/images/hpl/1111_1_%D0%91%D0%B5%D0%BB%D1%8B%D0%B9.jpg" title="Слотекс 1111/S Белый"></div>
 							<div><img src="/images/hpl/3331_S_puft-ovldllbl_A4.jpg" title="Слотекс 3331/S Клен Ванкувер"></div>
 							<div><img src="/images/hpl/8803457237022.jpeg" title="<a href='https://www.egger.com/shop/ru_RU/interior/decor-detail/U222_9' target='_blank'>EGGER U222 ST9 Крем бежевый</a>"></div>
@@ -113,7 +113,7 @@
 						</div>
 						<p><b style="color: #C00000;">Важно!</b> Отображение цвета на вашем мониторе может отличаться от реального цвета.</p>
 
-						<p><b>Производители пластиков:</b> <a href="https://www.egger.com/shop/ru_RU/interior/decors" target="_blank" rel="noopener">EGGER (Австрия)</a>, <a href="http://arcoplastica.ru/decors/" target="_blank" rel="noopener">arcobaleno (Россия)</a>, <a href="http://www.slotex.ru/products/decor/" target="_blank" rel="noopener">Слотекс (Россия)</a>, <a href="http://www.asdlaminat.com/search/decor-and-design" target="_blank" rel="noopener">ASD (Турция)</a>, <a href="https://www.arpaindustriale.com/en/aps/general-collection" target="_blank" rel="noopener">Arpa (Италия)</a>, <a href="https://www.wilsonart.com/laminate/design-library" target="_blank" rel="noopener">Wilsonart (США)</a>.</p>
+						<p><b>Производители пластиков:</b> <a href="https://www.egger.com/shop/ru_RU/interior/decors" target="_blank" rel="noopener">EGGER (Австрия)</a>, <a href="http://arcoplastica.ru/decors/" target="_blank" rel="noopener">arcobaleno (Россия)</a>, <a href="http://www.slotex.ru/products/decor/" target="_blank" rel="noopener">Слотекс (Россия)</a><!--, <a href="http://www.asdlaminat.com/search/decor-and-design" target="_blank" rel="noopener">ASD (Турция)</a>-->, <a href="https://www.arpaindustriale.com/en/aps/general-collection" target="_blank" rel="noopener">Arpa (Италия)</a><!--, <a href="https://www.wilsonart.com/laminate/design-library" target="_blank" rel="noopener">Wilsonart (США)</a>-->.</p>
 
 						<p><b>Под заказ индивидуальный размер и цвет стола.</b></p>
 						<?
