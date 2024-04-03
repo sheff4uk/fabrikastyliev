@@ -23,7 +23,7 @@ if( isset($_POST["submit"]) ) {
 		echo "Проверка reCAPTCHA не пройдена!";
 	} else if ($captcha_success->success==true) {
 		// Проверка на спам
-		if( stripos($_POST["text"], '.com') === false) {
+		if( stripos($_POST["text"], 'http') === false && stripos($_POST["text"], '@') === false ) {
 			// Отправляем сообщение при помощи телеграм бота
 			$message = "{$_POST["client"]}\n{$_POST["mtel"]}\n{$_POST["city"]}\n{$_POST["text"]}";
 			message_to_telegram($message);
@@ -149,6 +149,8 @@ if( isset($_POST["submit"]) ) {
 				<input type="text" id="mtel" name="mtel" autocomplete="off" required placeholder="Телефон (обязательно)">
 				<select name="city" required>
 					<option value="">--выберите город--</option>
+					<option value="Киров">Киров</option>
+					<option value="Екатеринбург">Екатеринбург</option>
 					<option value="Нижний Новгород">Нижний Новгород</option>
 					<option value="Сыктывкар">Сыктывкар</option>
 					<option value="Другой">другой (напишите в сообщении)</option>
