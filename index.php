@@ -94,7 +94,7 @@
 
 	<?
 		// Топ столов
-		$toptable = array("johny", "deny", "alex", "charli-s", "avatar", "charli-m");
+		$toptable = array("johny", "deni", "alex", "charli-s", "avatar", "charli-m");
 		foreach ($products["table"] as $k => $v) {
 			if (in_array($k, $toptable)) {
 				$price = number_format(min($v[4]), 0, '', ' ');
