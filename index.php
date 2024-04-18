@@ -94,7 +94,7 @@
 
 	<?
 		// Топ столов
-		$toptable = array("alex", "charli-s", "niko", "johny", "max", "vinni");
+		$toptable = array("johny", "deny", "alex", "charli-s", "avatar", "charli-m");
 		foreach ($products["table"] as $k => $v) {
 			if (in_array($k, $toptable)) {
 				$price = number_format(min($v[4]), 0, '', ' ');
@@ -118,7 +118,7 @@
 		}
 
 		// Топ стульев
-		$topchair = array("valli", "shevalie", "resnichka", "orfey", "mishel", "elegant");
+		$topchair = array("resnichka", "alf", "orfey", "elegant", "bingo", "shevalie", "jambo", "valli", "mishel", "riko");
 		foreach ($products["chair"] as $k => $v) {
 			if (in_array($k, $topchair)) {
 				$price = number_format($v[4], 0, '', ' ');
