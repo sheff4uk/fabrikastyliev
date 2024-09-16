@@ -1,4 +1,4 @@
-<?
+<?php
 	include "data.php";
 	$title = "ПРЕСТОЛ столы и стулья официальный сайт кировской фабрики";
 	$description = "Торговый каталог Мебельной фабрики Престол. Столы и стулья для кухни по индивидуальным заказам.";
@@ -75,7 +75,7 @@
 
 <section style="background-color: #653033; padding: 100px 0; color: white; text-align: center; font-size: 1em;">
 	<section class="page">
-		<?
+		<?php
 		if($_POST["mtel"]) {
 			echo "<br><br>";
 			echo $_POST["mtel"];
@@ -151,7 +151,7 @@
 							} );
 						</script>
 						<div id="progressbar<?=$subrow["ODD_ID"]?>" style="width: calc(100% - 125px);"><div class="progress-label">Загрузка...</div></div>
-						<?
+						<?php
 						echo "<p><b>{$subrow["zakaz"]} <n style='font-size: 1.5em;'>{$subrow["amount"]}</n></b></p>";
 						if( $subrow["Material"] ) echo "<p><b>{$subrow["mtype"]}</b> <n style='color: #fc9;'>{$subrow["Material"]}</n></p>";
 						echo "</div>";
@@ -170,7 +170,7 @@
 
 					<input type="submit" style="color: #fff; background: #C00000; padding: 10px; text-decoration: none; border-radius: 10px; border: none; font-size: 1.2em;" value="Отправить">
 				</form>
-				<?
+				<?php
 			}
 			else {
 				echo "<h1 style='color: #fc9; line-height: 2em;'>К сожалению, с этим номером телефона не связан ни один из производимых заказов.</h1>";
@@ -187,7 +187,7 @@
 				<br>
 				<input type="submit" style="color: #fff; background: #C00000; padding: 10px; text-decoration: none; border-radius: 10px; border: none; font-size: 1.2em;" value="Вперед!">
 			</form>
-			<?
+			<?php
 		}
 		?>
 	</section>
@@ -204,6 +204,6 @@
 	});
 </script>
 
-<?
+<?php
 	include "footer.php";
 ?>

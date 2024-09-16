@@ -1,4 +1,4 @@
-<?
+<?php
 $title = "Заказать звонок";
 $description = "Заказать звонок";
 include "header.php";
@@ -179,6 +179,6 @@ if( isset($_POST["submit"]) ) {
 	});
 </script>
 
-<?
+<?php
 	include "footer.php";
 ?>

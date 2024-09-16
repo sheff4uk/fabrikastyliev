@@ -1,4 +1,4 @@
-<?
+<?php
 	$title = "О нас";
 	$description = "О мебельной фабрике ПРЕСТОЛ";
 	include "header.php";
@@ -21,7 +21,7 @@
 		</div>
 		<div class="slider">
 			<ul class="bxslider">
-			<?
+			<?php
 				// Извлекаем из папки слайды
 				$dir = 'images/slider/';
 				$cdir = scandir($dir);
@@ -47,6 +47,6 @@
 	});
 </script>
 
-<?
+<?php
 	include "footer.php";
 ?>

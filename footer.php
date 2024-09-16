@@ -39,7 +39,7 @@
 <!-- VK Widget -->
 <div id="vk_community_messages"></div>
 
-<?
+<?php
 if( $_SESSION["alert"] ) {
 	?>
 	<script>
@@ -49,7 +49,7 @@ if( $_SESSION["alert"] ) {
 		});
 	</script>
 
-	<?
+	<?php
 	unset($_SESSION["alert"]);
 }
 ?>

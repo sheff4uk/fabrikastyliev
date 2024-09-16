@@ -1,4 +1,4 @@
-<?
+<?php
 	include "data.php";
 
 	$type_name = $type[$_GET["type"]][0];
@@ -23,7 +23,7 @@
 	<h1><?=$heading?></h1>
 	<div class="prod_list_wrap">
 
-	<?
+	<?php
 		foreach ($products[$_GET["type"]] as $k => $v) {
 			if($_GET["type"] == "table") {
 				$price = number_format(min($v[4]), 0, '', ' ');
@@ -54,6 +54,6 @@
 </section>
 </section>
 
-<?
+<?php
 	include "footer.php";
 ?>

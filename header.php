@@ -1,4 +1,4 @@
-<?
+<?php
 include "config.php";
 session_start();
 
@@ -117,7 +117,7 @@ function message_to_telegram($text) {
 					<li><a href="about.php">О нас</a></li>
 					<li><a href="gallery.php">Галерея</a></li>
 				</ul>
-				<?
+				<?php
 					if( !strpos($_SERVER["REQUEST_URI"], 'feedback.php') ) {
 						echo "<a href='/feedback.php?location={$_SERVER['REQUEST_URI']}' style='color: #fff; background: #fd8134;'><i class='fas fa-phone'></i> Заказать звонок</a>";
 					}

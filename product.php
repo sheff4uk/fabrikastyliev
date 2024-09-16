@@ -1,4 +1,4 @@
-<?
+<?php
 	include "data.php";
 	$name = $_GET["name"];
 	foreach ($type as $k => $v) {
@@ -41,7 +41,7 @@
 			<section id="prod_photo">
 				<div class="slider">
 					<ul class="bxslider">
-					<?
+					<?php
 						// Извлекаем из папки слайды
 						$dir = "images/prodlist/{$name}/";
 						//$cdir = scandir($dir);
@@ -54,7 +54,7 @@
 					?>
 					</ul>
 					<div id="bx-pager">
-					<?
+					<?php
 						$i = 0;
 						foreach ($cdir as $key => $value) {
 							if (!in_array($value,array(".",".."))) {
@@ -75,7 +75,7 @@
 			<section id="prod_description">
 				<h2><?=$product[0]?></h2>
 
-				<?
+				<?php
 					if ($type == "table") {
 						?>
 						<p><b>Популярные декоры столешниц:</b></p>
@@ -116,7 +116,7 @@
 						<p><b>Производители пластиков:</b> <a href="https://www.egger.com/shop/ru_RU/interior/decors" target="_blank" rel="noopener">EGGER (Австрия)</a>, <a href="http://arcoplastica.ru/decors/" target="_blank" rel="noopener">arcobaleno (Россия)</a>, <a href="http://www.slotex.ru/products/decor/" target="_blank" rel="noopener">Слотекс (Россия)</a><!--, <a href="http://www.asdlaminat.com/search/decor-and-design" target="_blank" rel="noopener">ASD (Турция)</a>-->, <a href="https://www.arpaindustriale.com/en/aps/general-collection" target="_blank" rel="noopener">Arpa (Италия)</a><!--, <a href="https://www.wilsonart.com/laminate/design-library" target="_blank" rel="noopener">Wilsonart (США)</a>-->.</p>
 
 						<p><b>Под заказ индивидуальный размер и цвет стола.</b></p>
-						<?
+						<?php
 					}
 					if ($type == "chair") {
 						?>
@@ -160,20 +160,20 @@
 						<p><b>Поставщики тканей:</b> <a href="https://www.ltex.ru/textile?c=1" target="_blank" rel="noopener">Лэзертач</a>, <a href="https://favorittextil.ru/katalog/mebelnye-tkani" target="_blank" rel="noopener">Фаворит</a>, <a href="https://viptextil.ru/material" target="_blank" rel="noopener">VIP-Текстиль</a>, <a href="https://ametist-store.ru/catalog/materialy-dlya-mebeli/mebelnye-tkani/" target="_blank" rel="noopener">Домфорт</a>.</p>
 
 						<p><b>Под заказ на выбор ткань и цвет изделия.</b></p>
-						<?
+						<?php
 					}
 				?>
 
 				<p><b>Размеры:</b><span><?=$product[1]?></span></p>
 
 				<p><b>Материалы:</b><span><?=$product[3]?></span></p>
-				<?
+				<?php
 					if ($type == "table") {
 						echo "<p><b>Столешница:</b><span>МДФ покрытая мебельным пластиком</span></p>";
 					}
 				?>
 				<p><b>Цена:</b>
-				<?
+				<?php
 					if ($type == "table") {
 						foreach ($product[4] as $k => $v) {
 							if ($k == 1) {
@@ -223,6 +223,6 @@
 	});
 </script>
 
-<?
+<?php
 	include "footer.php";
 ?>

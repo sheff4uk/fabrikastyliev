@@ -1,4 +1,4 @@
-<?
+<?php
 	include "data.php";
 	$title = "ПРЕСТОЛ столы и стулья официальный сайт кировской фабрики";
 	$description = "Торговый каталог Мебельной фабрики Престол. Столы и стулья для кухни по индивидуальным заказам.";
@@ -92,7 +92,7 @@
 	<h2>Лидеры продаж</h2>
 	<div class="prod_list_wrap">
 
-	<?
+	<?php
 		// Топ столов
 		$toptable = array("johny", "deni", "alex", "charli-s", "avatar", "charli-m");
 		foreach ($products["table"] as $k => $v) {
@@ -146,6 +146,6 @@
 </section>
 </section>
 
-<?
+<?php
 	include "footer.php";
 ?>

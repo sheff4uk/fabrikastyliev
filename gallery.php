@@ -1,4 +1,4 @@
-<?
+<?php
 	$title = "Галерея";
 	$description = "Наши работы";
 	include "header.php";
@@ -14,7 +14,7 @@
 		<h1>Галерея</h1>
 		<div class="slider" style="max-width: 600px; margin: auto;">
 			<ul class="bxslider">
-			<?
+			<?php
 				// Извлекаем из папки слайды
 				$dir = 'images/gallery/';
 				$cdir = scandir($dir);
@@ -40,6 +40,6 @@
 	});
 </script>
 
-<?
+<?php
 	include "footer.php";
 ?>
