@@ -67,8 +67,13 @@
 				</div>
 				<div style="margin: 30px 0;">
 					<h3 class="price">Изготавливаем мебель на заказ по индивидуальным параметрам.</h3>
-					<p><a href="/feedback.php?location=<?=$_SERVER['REQUEST_URI']?>&model=<?=$product[0]?>" style="background: #fd8134; color: #fff; text-decoration: none; padding: 10px; border-radius: 10px; white-space: nowrap; float: left; margin: 5px;">Оставить заявку</a><i class="fas fa-long-arrow-alt-left"></i> С вами свяжется специалист для уточнения деталей.</p>
-
+					<div style="display: flex;">
+						<a href="/feedback.php?location=<?=$_SERVER['REQUEST_URI']?>&model=<?=$product[0]?>" style="background: #fd8134; color: #fff; text-decoration: none; padding: 10px; border-radius: 10px; white-space: nowrap; float: left; margin: 5px;">Оставить заявку</a>
+						<div style="margin: 14px 0;">
+							<i class="fas fa-long-arrow-alt-left"></i>
+							С вами свяжется специалист для уточнения деталей.
+						</div>
+					</div>
 				</div>
 			</section>
 
