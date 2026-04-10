@@ -16,8 +16,7 @@
 			<p>Адрес производства: г.Киров, ул.Луганская 59</p>
 			<p>Производство (Киров): <a href="tel:+79091317732">+7 909 131 77 32</a></p>
 			<p>Представитель в Екатеринбурге: <a href="tel:+79089113195">+7 908 911 31 95</a></p>
-			<p>Представитель в Нижнем Новгороде: <a href="tel:+79601620881">+7 960 162 08 81</a></p>
-			<p>Представитель в Сыктывкаре: <a href="tel:+79042213055">+7 904 221 30 55</a></p>
+			<p>Представитель в Нижнем Новгороде: <a href="tel:+79601620881">+7 960 162 08 81</a>&nbsp;<a href="https://t.me/+eNYAT_b6x2pkYjE6"><i class="fa-lg fab fa-telegram"></i></a>&nbsp;<a href="https://max.ru/join/Z7rAFoeoJ8iugBoGB4L03Fr9PN-ZZpBEEZ16wu7QIWY" style="position: relative;"><img src="/MAX.svg" width="24" height="24" style="position: absolute; bottom: -2px;"></a></p>
 			<p>Email: <a href="mailto:fabrikaprestol@gmail.com" target="_blank" rel="noopener">fabrikaprestol@gmail.com</a></p>
 		</section>
 	</section>

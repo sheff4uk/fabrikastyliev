@@ -94,7 +94,7 @@
 
 	<?php
 		// Топ столов
-		$toptable = array("johny", "deni", "alex", "charli-s", "avatar", "charli-m");
+		$toptable = array("johny", "deni", "charli-s", "mario", "alex", "saimon");
 		foreach ($products["table"] as $k => $v) {
 			if (in_array($k, $toptable)) {
 				$price = number_format(min($v[4]), 0, '', ' ');
@@ -103,7 +103,7 @@
 					<div class='prod_cell'>
 						<a href='product.php?name={$k}'>
 							<div class='prod_cell_img_wrap'>
-								<img alt='{$v[0]}' src='images/prodlist/{$k}.jpg'>
+								<img alt='{$v[0]}' src='images/prodlist/{$k}.jpg?v=1'>
 							</div>
 							<p style='margin: 30px 0 30px 0;'>{$v[0]}</p>
 						</a>
@@ -118,7 +118,7 @@
 		}
 
 		// Топ стульев
-		$topchair = array("resnichka", "alf", "orfey", "elegant", "bingo", "shevalie", "jambo", "valli", "mishel", "riko");
+		$topchair = array("bingo", "resnichka", "alf", "jambo", "elegant", "shevalie", "riko", "orfey", "mishel", "rony");
 		foreach ($products["chair"] as $k => $v) {
 			if (in_array($k, $topchair)) {
 				$price = number_format($v[4], 0, '', ' ');
@@ -126,7 +126,7 @@
 					<div class='prod_cell'>
 						<a href='product.php?name={$k}'>
 							<div class='prod_cell_img_wrap'>
-								<img alt='{$v[0]}' src='images/prodlist/{$k}.jpg'>
+								<img alt='{$v[0]}' src='images/prodlist/{$k}.jpg?v=1'>
 							</div>
 							<p style='margin: 30px 0 30px 0;'>{$v[0]}</p>
 						</a>

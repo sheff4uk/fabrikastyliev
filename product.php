@@ -48,7 +48,7 @@
 						$cdir = preg_grep('~\.(jpeg|jpg|png)$~', scandir($dir));
 						foreach ($cdir as $key => $value) {
 							if (!in_array($value,array(".",".."))) {
-								echo "<li><img alt='{$product[0]}' src='".$dir.$value."' /></li>";
+								echo "<li><img alt='{$product[0]}' src='".$dir.$value."?v=1' /></li>";
 							}
 						}
 					?>
@@ -58,7 +58,7 @@
 						$i = 0;
 						foreach ($cdir as $key => $value) {
 							if (!in_array($value,array(".",".."))) {
-								echo "<a data-slide-index='{$i}' href=''><img alt='{$product[0]}' src='".$dir.$value."' /></a>";
+								echo "<a data-slide-index='{$i}' href=''><img alt='{$product[0]}' src='".$dir.$value."?v=1' /></a>";
 								$i++;
 							}
 						}
@@ -118,7 +118,7 @@
 						</div>
 						<p><b style="color: #C00000;">Важно!</b> Отображение цвета на вашем мониторе может отличаться от реального цвета.</p>
 
-						<p><b>Производители пластиков:</b> <a href="https://www.egger.com/shop/ru_RU/interior/decors" target="_blank" rel="noopener">EGGER (Австрия)</a>, <a href="http://arcoplastica.ru/decors/" target="_blank" rel="noopener">arcobaleno (Россия)</a>, <a href="http://www.slotex.ru/products/decor/" target="_blank" rel="noopener">Слотекс (Россия)</a><!--, <a href="http://www.asdlaminat.com/search/decor-and-design" target="_blank" rel="noopener">ASD (Турция)</a>-->, <a href="https://www.arpaindustriale.com/en/aps/general-collection" target="_blank" rel="noopener">Arpa (Италия)</a><!--, <a href="https://www.wilsonart.com/laminate/design-library" target="_blank" rel="noopener">Wilsonart (США)</a>-->.</p>
+						<!-- <p><b>Производители пластиков:</b> <a href="https://www.egger.com/shop/ru_RU/interior/decors" target="_blank" rel="noopener">EGGER (Австрия)</a>, <a href="http://arcoplastica.ru/decors/" target="_blank" rel="noopener">arcobaleno (Россия)</a>, <a href="http://www.slotex.ru/products/decor/" target="_blank" rel="noopener">Слотекс (Россия)</a>, <a href="http://www.asdlaminat.com/search/decor-and-design" target="_blank" rel="noopener">ASD (Турция)</a>, <a href="https://www.arpaindustriale.com/en/aps/general-collection" target="_blank" rel="noopener">Arpa (Италия)</a>, <a href="https://www.wilsonart.com/laminate/design-library" target="_blank" rel="noopener">Wilsonart (США)</a>.</p> -->
 
 						<p><b>Под заказ индивидуальный размер и цвет стола.</b></p>
 						<?php
@@ -127,56 +127,48 @@
 						?>
 						<p><b>Популярная обивочная ткань:</b></p>
 						<div class="mtslider">
-							<div><img src="/images/tex/Emmanuelle%20Lux%20Desert.jpg" title="<a href='https://www.ltex.ru/textile/1448' target='_blank'>Лэзертач Эммануэль Люкс Десерт</a>"></div>
-							<div><img src="/images/tex/Emmanuelle%20Lux%20Cloud.jpg" title="<a href='https://www.ltex.ru/textile/1446' target='_blank'>Лэзертач Эммануэль Люкс Клауд</a>"></div>
-							<div><img src="/images/tex/Emmanuelle%20Lux%20Salmon.jpg" title="<a href='https://www.ltex.ru/textile/1453' target='_blank'>Лэзертач Эммануэль Люкс Салмон</a>"></div>
-							<div><img src="/images/tex/lambre16_570x480.jpg" title="<a href='http://favorittextil.ru/katalog/mebelnye-tkani/mikrovelyur/lambre-detail#gallery-19' target='_blank'>Фаворит Lambre 16</a>"></div>
-							<div><img src="/images/tex/Emmanuelle%20Lux%20Gravel.jpg" title="<a href='https://www.ltex.ru/textile/1449' target='_blank'>Лэзертач Эммануэль Люкс Гравел</a>"></div>
-							<div><img src="/images/tex/f8091000de3f026d209837e21bc2e700_3_XL.jpg" title="VIP-Текстиль Soprano cream"></div>
-							<div><img src="/images/tex/lambre05.jpg" title="<a href='http://favorittextil.ru/katalog/mebelnye-tkani/mikrovelyur/lambre-detail#gallery-8' target='_blank'>Фаворит Lambre 05</a>"></div>
-							<div><img src="/images/tex/lambre015.jpg" title="<a href='http://favorittextil.ru/katalog/mebelnye-tkani/mikrovelyur/lambre-detail#gallery-4' target='_blank'>Фаворит Lambre 01</a>"></div>
-							<div><img src="/images/tex/f8091000de3f026d209837e21bc2e700_5_XL.jpg" title="VIP-Текстиль Soprano silk"></div>
-							<div><img src="/images/tex/Emmanuelle%20Lux%20Lilac.jpg" title="<a href='https://www.ltex.ru/textile/1450' target='_blank'>Лэзертач Эммануэль Люкс Лайлак</a>"></div>
-							<div><img src="/images/tex/chateau_monogramme_cheri.jpg" title="Домфорт Chateau Monogramme cheri"></div>
-							<div><img src="/images/tex/f8091000de3f026d209837e21bc2e700_10_XL.jpg" title="VIP-Текстиль Soprano graphite"></div>
-							<div><img src="/images/tex/Emmanuelle%20Lux%20Cocoa.jpg" title="<a href='https://www.ltex.ru/textile/1447' target='_blank'>Лэзертач Эммануэль Люкс Кокоа</a>"></div>
-							<div><img src="/images/tex/Emmanuelle%20Lux%20Milk.jpg" title="<a href='https://www.ltex.ru/textile/1452' target='_blank'>Лэзертач Эммануэль Люкс Милк</a>"></div>
-							<div><img src="/images/tex/f8091000de3f026d209837e21bc2e700_16_XL.jpg" title="VIP-Текстиль Soprano com nefrit"></div>
-							<div><img src="/images/tex/ae265ec8d02add74bcb0f72e47ec001b_6_XL.jpg" title="VIP-Текстиль Medea mocco"></div>
-							<div><img src="/images/tex/Emmanuelle%20Lux%20Bone.jpg" title="<a href='https://www.ltex.ru/textile/1444' target='_blank'>Лэзертач Эммануэль Люкс Боне</a>"></div>
-							<div><img src="/images/tex/lambre04.jpg" title="<a href='http://favorittextil.ru/katalog/mebelnye-tkani/mikrovelyur/lambre-detail#gallery-7' target='_blank'>Фаворит Lambre 04</a>"></div>
-							<div><img src="/images/tex/f8091000de3f026d209837e21bc2e700_4_XL.jpg" title="VIP-Текстиль Soprano gold"></div>
-							<div><img src="/images/tex/Verso-Pebble.jpg" title="<a href='http://favorittextil.ru/katalog/mebelnye-tkani/rogozhki/verso-detail#gallery-4' target='_blank'>Фаворит Verso Pebble</a>"></div>
-							<div><img src="/images/tex/Matador%20Sand.jpg" title="<a href='https://www.ltex.ru/textile/1512' target='_blank'>Лэзертач Матадор Сэнд</a>"></div>
-							<div><img src="/images/tex/a07bb170c4a36161aa1f8f4859c19794_5_XL.jpg" title="VIP-Текстиль Triumf caramel"></div>
-							<div><img src="/images/tex/f8091000de3f026d209837e21bc2e700_13_XL.jpg" title="VIP-Текстиль Soprano lazur"></div>
-							<div><img src="/images/tex/lambre13_570x480.jpg" title="<a href='http://favorittextil.ru/katalog/mebelnye-tkani/mikrovelyur/lambre-detail#gallery-16' target='_blank'>Фаворит Lambre 13</a>"></div>
-							<div><img src="/images/tex/ae265ec8d02add74bcb0f72e47ec001b_11_XL.jpg" title="VIP-Текстиль Medea com vanilla"></div>
-							<div><img src="/images/tex/chateau_monogramme_chocolat.jpg" title="Домфорт Chateau Monogramme chocolat"></div>
-							<div><img src="/images/tex/Emmanuelle%20Lux%20Lime.jpg" title="<a href='https://www.ltex.ru/textile/1451' target='_blank'>Лэзертач Эммануэль Люкс Лайм</a>"></div>
-							<div><img src="/images/tex/lambre08.jpg" title="<a href='http://favorittextil.ru/katalog/mebelnye-tkani/mikrovelyur/lambre-detail#gallery-11' target='_blank'>Фаворит Lambre 08</a>"></div>
-							<div><img src="/images/tex/bristol_romb_01.jpg" title="<a href='http://favorittextil.ru/katalog/mebelnye-tkani/zhakkard/bristol-detail#gallery-5' target='_blank'>Фаворит Bristol romb 01</a>"></div>
-							<div><img src="/images/tex/f8091000de3f026d209837e21bc2e700_11_XL.jpg" title="VIP-Текстиль Soprano chocolate"></div>
-							<div><img src="/images/tex/AirBoss15.jpg" title="<a href='http://favorittextil.ru/katalog/mebelnye-tkani/mikrovelyur/airboss-detail#gallery-5' target='_blank'>Фаворит airBoss 15 grey</a>"></div>
-							<div><img src="/images/tex/Versal%20Desert.jpg" title="<a href='https://www.ltex.ru/textile/1466' target='_blank'>Лэзертач Версаль Десерт</a>"></div>
+							<div><img src="/images/tex/Suffle latte.jpg" title="Микровелюр<p style='font-size: 1.5em; margin: 0;'>Suffle latte</p>"></div>
+							<div><img src="/images/tex/Vatican cream.jpg" title="Жаккард<p style='font-size: 1.5em; margin: 0;'>Vatican cream</p>"></div>
+							<div><img src="/images/tex/Teddy 305.jpg" title="Велюр<p style='font-size: 1.5em; margin: 0;'>Teddy 305</p>"></div>
+							<div><img src="/images/tex/Levays 12.jpg" title="Микровелюр<p style='font-size: 1.5em; margin: 0;'>Левайс 12</p>"></div>
+							<div><img src="/images/tex/Lambre 01.jpg" title="Микровелюр<p style='font-size: 1.5em; margin: 0;'>Lambre 01</p>"></div>
+							<div><img src="/images/tex/Tenerife beige.jpg" title="Микровелюр<p style='font-size: 1.5em; margin: 0;'>Tenerife beige</p>"></div>
+							<div><img src="/images/tex/Cosmo moonlight.jpg" title="Микровелюр<p style='font-size: 1.5em; margin: 0;'>Cosmo moonlight</p>"></div>
+							<div><img src="/images/tex/Nebby 305.jpg" title="Велюр<p style='font-size: 1.5em; margin: 0;'>Nebby 305</p>"></div>
+							<div><img src="/images/tex/Lambre 04.jpg" title="Микровелюр<p style='font-size: 1.5em; margin: 0;'>Lambre 04</p>"></div>
+							<div><img src="/images/tex/Nebby 014.jpg" title="Велюр<p style='font-size: 1.5em; margin: 0;'>Nebby 014</p>"></div>
+							<div><img src="/images/tex/Nebby 211.jpg" title="Велюр<p style='font-size: 1.5em; margin: 0;'>Nebby 211</p>"></div>
+							<div><img src="/images/tex/Nebby 019.jpg" title="Велюр<p style='font-size: 1.5em; margin: 0;'>Nebby 019</p>"></div>
+							<div><img src="/images/tex/Nebby 245.jpg" title="Велюр<p style='font-size: 1.5em; margin: 0;'>Nebby 245</p>"></div>
+							<div><img src="/images/tex/Nebby 915.jpg" title="Велюр<p style='font-size: 1.5em; margin: 0;'>Nebby 915</p>"></div>
+							<div><img src="/images/tex/Nebby 304.jpg" title="Велюр<p style='font-size: 1.5em; margin: 0;'>Nebby 304</p>"></div>
+							<div><img src="/images/tex/Nebby 231.jpg" title="Велюр<p style='font-size: 1.5em; margin: 0;'>Nebby 231</p>"></div>
+							<div><img src="/images/tex/Lambre 15.jpg" title="Микровелюр<p style='font-size: 1.5em; margin: 0;'>Lambre 15</p>"></div>
+							<div><img src="/images/tex/Lambre 16.jpg" title="Микровелюр<p style='font-size: 1.5em; margin: 0;'>Lambre 16</p>"></div>
+							<div><img src="/images/tex/Florida latte.jpg" title="Жаккард<p style='font-size: 1.5em; margin: 0;'>Florida latte</p>"></div>
+							<div><img src="/images/tex/Estetica mineral shell.jpg" title="Шенилл<p style='font-size: 1.5em; margin: 0;'>Estetica mineral shell</p>"></div>
+							<div><img src="/images/tex/Сlever Romb brown.jpg" title="Микровелюр<p style='font-size: 1.5em; margin: 0;'>Сlever Romb brown</p>"></div>
+							<div><img src="/images/tex/FLY col 20.jpg" title="Микровелюр<p style='font-size: 1.5em; margin: 0;'>FLY col 20</p>"></div>
+							<div><img src="/images/tex/Triumf chocolate.jpg" title="Искусственная замша<p style='font-size: 1.5em; margin: 0;'>Triumf chocolate</p>"></div>
+							<div><img src="/images/tex/Nebby 235.jpg" title="Велюр<p style='font-size: 1.5em; margin: 0;'>Nebby 235</p>"></div>
+							<div><img src="/images/tex/Palermo 223 mouse.jpg" title="Шенилл<p style='font-size: 1.5em; margin: 0;'>Palermo 223 mouse</p>"></div>
+							<div><img src="/images/tex/Suffle mocco.jpg" title="Микровелюр<p style='font-size: 1.5em; margin: 0;'>Suffle mocco</p>"></div>
+							<div><img src="/images/tex/Nebby 221.jpg" title="Велюр<p style='font-size: 1.5em; margin: 0;'>Nebby 221</p>"></div>
+							<div><img src="/images/tex/Teddy 007.jpg" title="Велюр<p style='font-size: 1.5em; margin: 0;'>Teddy 007</p>"></div>
+							<div><img src="/images/tex/Elefante 11.jpg" title="Флок<p style='font-size: 1.5em; margin: 0;'>Elefante 11</p>"></div>
+							<div><img src="/images/tex/VINUELA 2 beige.jpg" title="Шенилл<p style='font-size: 1.5em; margin: 0;'>VINUELA 2 beige</p>"></div>
+							<div><img src="/images/tex/FLY col 03.jpg" title="Микровелюр<p style='font-size: 1.5em; margin: 0;'>FLY col 03</p>"></div>
+							<div><img src="/images/tex/Vatican chocolate.jpg" title="Жаккард<p style='font-size: 1.5em; margin: 0;'>Vatican chocolate</p>"></div>
 						</div>
 						<p><b style="color: #C00000;">Важно!</b> Отображение цвета на вашем мониторе может отличаться от реального цвета.</p>
 
-						<p><b>Поставщики тканей:</b> <a href="https://www.ltex.ru/textile?c=1" target="_blank" rel="noopener">Лэзертач</a>, <a href="https://favorittextil.ru/katalog/mebelnye-tkani" target="_blank" rel="noopener">Фаворит</a>, <a href="https://viptextil.ru/material" target="_blank" rel="noopener">VIP-Текстиль</a>, <a href="https://ametist-store.ru/catalog/materialy-dlya-mebeli/mebelnye-tkani/" target="_blank" rel="noopener">Домфорт</a>.</p>
+						<!-- <p><b>Поставщики тканей:</b> <a href="https://www.ltex.ru/textile?c=1" target="_blank" rel="noopener">Лэзертач</a>, <a href="https://favorittextil.ru/katalog/mebelnye-tkani" target="_blank" rel="noopener">Фаворит</a>, <a href="https://viptextil.ru/material" target="_blank" rel="noopener">VIP-Текстиль</a>, <a href="https://ametist-store.ru/catalog/materialy-dlya-mebeli/mebelnye-tkani/" target="_blank" rel="noopener">Домфорт</a>.</p> -->
 
 						<p><b>Под заказ на выбор ткань и цвет изделия.</b></p>
 						<?php
 					}
 				?>
 
-				<p><b>Размеры:</b><span><?=$product[1]?></span></p>
-
-				<p><b>Материалы:</b><span><?=$product[3]?></span></p>
-				<?php
-					if ($type == "table") {
-						echo "<p><b>Столешница:</b><span>МДФ покрытая мебельным пластиком</span></p>";
-					}
-				?>
 				<p><b>Цена:</b>
 				<?php
 					if ($type == "table") {
@@ -191,17 +183,25 @@
 								$mech = "раздвижной <m><a style='cursor: pointer; text-decoration: underline;'>сигма</a><span class='mech'>Раздвигающаяся царга из металлических направляющих. Вмещается две или три вставки по <b>[40, 50, 60] см</b> в зависимости от размера стола и вида применяемой фурнитуры.<br><img alt='Механизм раздвижки Сигма' src='images/сигма.jpg'></span></m>";
 							}
 							$price = number_format($v, 0, '', ' ');
-							echo "<span>от <b class='price'>{$price}<sup>*</sup></b> р. {$mech}</span>";
+							echo "<span style='margin-top: 10px;'>от <b class='price' style='font-size: 2em'>{$price}</b> р. {$mech}</span>";
 						}
 						echo "<br><span style='color: #911;'>Для вычисления точной стоимости нужно учесть требуемый размер стола и другие параметры.</span>";
 					}
 					if ($type == "chair") {
 						$price = number_format($product[4], 0, '', ' ');
-						echo "<span><b class='price'>{$price}<sup>*</sup></b> р.</span>";
+						echo "<span style='margin-top: 10px;'><b class='price' style='font-size: 2em'>{$price}</b> р.</span>";
 					}
 				?>
 				</p>
-<!--				<p>* данная цена действительна только в фирменных салонах <a href="address.php">Престол: столы и стулья</a>, помеченных знаком <?=$pic?></p>-->
+
+				<p><b>Размеры:</b><span><?=$product[1]?></span></p>
+
+				<p><b>Материалы:</b><span><?=$product[3]?></span></p>
+				<?php
+					if ($type == "table") {
+						echo "<p><b>Столешница:</b><span>МДФ покрытая мебельным пластиком</span></p>";
+					}
+				?>
 			</section>
 		</div>
 	</section>
