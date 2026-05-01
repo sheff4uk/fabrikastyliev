@@ -103,7 +103,7 @@
 					<div class='prod_cell'>
 						<a href='product.php?name={$k}'>
 							<div class='prod_cell_img_wrap'>
-								<img alt='{$v[0]}' src='images/prodlist/{$k}.jpg?v=1'>
+								<img alt='{$v[0]}' src='images/prodlist/{$k}.jpg?v=2'>
 							</div>
 							<p style='margin: 30px 0 30px 0;'>{$v[0]}</p>
 						</a>
@@ -126,7 +126,7 @@
 					<div class='prod_cell'>
 						<a href='product.php?name={$k}'>
 							<div class='prod_cell_img_wrap'>
-								<img alt='{$v[0]}' src='images/prodlist/{$k}.jpg?v=1'>
+								<img alt='{$v[0]}' src='images/prodlist/{$k}.jpg?v=2'>
 							</div>
 							<p style='margin: 30px 0 30px 0;'>{$v[0]}</p>
 						</a>

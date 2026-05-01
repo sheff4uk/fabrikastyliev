@@ -48,7 +48,7 @@
 						$cdir = preg_grep('~\.(jpeg|jpg|png)$~', scandir($dir));
 						foreach ($cdir as $key => $value) {
 							if (!in_array($value,array(".",".."))) {
-								echo "<li><img alt='{$product[0]}' src='".$dir.$value."?v=1' /></li>";
+								echo "<li><img alt='{$product[0]}' src='".$dir.$value."?v=2' /></li>";
 							}
 						}
 					?>
@@ -58,7 +58,7 @@
 						$i = 0;
 						foreach ($cdir as $key => $value) {
 							if (!in_array($value,array(".",".."))) {
-								echo "<a data-slide-index='{$i}' href=''><img alt='{$product[0]}' src='".$dir.$value."?v=1' /></a>";
+								echo "<a data-slide-index='{$i}' href=''><img alt='{$product[0]}' src='".$dir.$value."?v=2' /></a>";
 								$i++;
 							}
 						}
