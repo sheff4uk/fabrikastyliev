@@ -32,13 +32,17 @@ function message_to_telegram($text) {
 <head>
 	<title><?=$title?></title>
 
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+
 	<meta name="theme-color" content="#653033"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="yandex-verification" content="b4130eb718677801" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" charset="utf-8"/>
 	<meta name="description" content="<?=$description?>">
 	<meta name="keywords" content="мебель, журнальные столы, столы, стулья, стул, стол, мебель для дома, престол, фабрикастульев, журнальный стол, кресла, журнальный столик, кухонный стол, стол на кухню">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	<link type="text/css" rel="stylesheet" href="/css/style.css?v=33">
 	<link rel="stylesheet" type='text/css' href="js/ui/jquery-ui.css">
