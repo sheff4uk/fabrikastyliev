@@ -1,59 +1,71 @@
 <?php
 	include "data.php";
+	require_once "functions.php";
 
-	$type_name = $type[$_GET["type"]][0];
-	$heading = $type[$_GET["type"]][2];
-	$title = $type[$_GET["type"]][2];
-	$description = $type[$_GET["type"]][3];
+	$t = isset($_GET["type"]) && is_string($_GET["type"]) ? $_GET["type"] : "";
+	if (!isset($type[$t])) {
+		not_found();
+	}
 
+	$type_name = $type[$t][0];
+	$heading = $type[$t][2];
+	$title = $type[$t][2];
+	$description = $type[$t][3];
+	$path = list_url($t);
+	$path_drop = array("type");
+	$has_lead = true;
 	include "header.php";
 
+	if ($t == "table") {
+		$filters = array("all" => "Все", "razdv" => "Раздвижные", "nerazdv" => "Нераздвижные", "round" => "Круглые", "coffee" => "Журнальные", "new" => "Новинки");
+		$intro = "Изготавливаем столы по индивидуальным размерам и в нужном цвете. В каталоге — цены стандартных размеров; точную стоимость рассчитаем с учётом размера, формы столешницы и механизма раздвижки.";
+	}
+	else {
+		$filters = array("all" => "Все", "bar" => "Барные", "swivel" => "Поворотные", "new" => "Новинки");
+		$intro = "Ткань обивки и цвет изделия — на выбор, под заказ. Сотни тканей и образцы покраски — в наших фирменных салонах.";
+	}
 ?>
 
-<section id="main">
-<section class="page">
-	<ul class="breadcrumbs">
-		<li><a href="/">Главная</a></li>
-		<li><i class="fas fa-long-arrow-alt-left"></i></li>
-		<li><b><?=$type_name?></b></li>
-	</ul>
+<div class="container page-top">
+	<?php breadcrumbs(array(array("Главная", "/"), array($type_name))); ?>
 
-	<? include "shop_baner.php"; ?>
+	<div class="page-head">
+		<h1><?=h($heading)?></h1>
+		<p><?=h($intro)?></p>
+	</div>
 
-	<h1><?=$heading?></h1>
-	<div class="prod_list_wrap">
+	<div class="toolbar">
+		<div class="chips" role="group" aria-label="Фильтр">
+		<?php foreach ($filters as $f => $label) { ?>
+			<button class="chip<?=($f == "all" ? " is-active" : "")?>" type="button" data-filter="<?=$f?>" aria-pressed="<?=($f == "all" ? "true" : "false")?>"><?=$label?></button>
+		<?php } ?>
+		</div>
+		<label>
+			<span class="visually-hidden">Сортировка</span>
+			<select class="select" data-sort>
+				<option value="">По популярности</option>
+				<option value="asc">Сначала дешевле</option>
+				<option value="desc">Сначала дороже</option>
+			</select>
+		</label>
+	</div>
 
+	<div class="cards" data-catalog>
 	<?php
-		foreach ($products[$_GET["type"]] as $k => $v) {
-			if($_GET["type"] == "table") {
-				$price = number_format(min($v[4]), 0, '', ' ');
-				$pref = "от ";
-			}
-			else {
-				$price = number_format($v[4], 0, '', ' ');
-			}
-			echo "
-				<div class='prod_cell'>
-					<a href='product.php?name={$k}'>
-						<div class='prod_cell_img_wrap'>
-							<img alt='{$v[0]}' src='images/prodlist/{$k}.jpg?v=2'>
-						</div>
-						<p style='margin: 30px 0 30px 0;'>{$v[0]}</p>
-					</a>
-					<div class='icon_wrap'>
-						".($v[5] ? "<div class='ic_new'></div>" : "")."
-					</div>
-					<div style='text-align: center; position: absolute; bottom: 20px; width: 100%; white-space: nowrap;'>{$pref}<span class='price'>{$price}</span> р.</div>
-					<hr>
-				</div>
-			";
+		foreach ($products[$t] as $k => $v) {
+			product_card($k, $v, $t);
 		}
 	?>
-
 	</div>
-</section>
-</section>
+	<p class="empty">В этой категории пока нет моделей.</p>
+</div>
 
 <?php
+	if ($t == "table") {
+		lead_section();
+	}
+	else {
+		lead_section("", "Поможем <em>подобрать</em> стулья", "Подскажем по ткани, цвету и сочетанию со столом. Оставьте телефон — специалист фабрики перезвонит.");
+	}
 	include "footer.php";
 ?>

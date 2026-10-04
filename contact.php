@@ -1,31 +1,48 @@
 <?php
+	include "catalog.php";
 	$title = "Контакты кировской фабрики ПРЕСТОЛ столы и стулья";
 	$description = "Адрес кировской фабрики ПРЕСТОЛ столы и стулья";
+	$path = "/contact";
 	include "header.php";
 ?>
 
-<section id="main">
-	<section class="page">
-		<ul class="breadcrumbs">
-			<li><a href="/">Главная</a></li>
-			<li><i class="fas fa-long-arrow-alt-left"></i></li>
-			<li><b>Контакты</b></li>
-		</ul>
-		<h1>Контакты</h1>
-		<section class="contact1">
-			<p>Адрес производства: г.Киров, ул.Луганская 59</p>
-			<p>Производство (Киров): <a href="tel:+79091317732">+7 909 131 77 32</a></p>
-			<p>Представитель в Екатеринбурге: <a href="tel:+79089113195">+7 908 911 31 95</a></p>
-			<p>Представитель в Нижнем Новгороде: <a href="tel:+79601620881">+7 960 162 08 81</a>&nbsp;<a href="https://t.me/+eNYAT_b6x2pkYjE6"><i class="fa-lg fab fa-telegram"></i></a>&nbsp;<a href="https://max.ru/join/Z7rAFoeoJ8iugBoGB4L03Fr9PN-ZZpBEEZ16wu7QIWY" style="position: relative;"><img src="/MAX.svg" width="24" height="24" style="position: absolute; bottom: -2px;"></a></p>
-			<p>Email: <a href="mailto:fabrikaprestol@gmail.com" target="_blank" rel="noopener">fabrikaprestol@gmail.com</a></p>
-		</section>
-	</section>
+<div class="container page-top">
+	<?php breadcrumbs(array(array("Главная", "/"), array("Контакты"))); ?>
 
-	<div style="height: 400px; margin-bottom: -40px; text-align: center;">
-		<iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=157680774230" width="100%" height="400" frameborder="0"></iframe>
+	<div class="page-head">
+		<h1>Контакты</h1>
+		<p>Позвоните на производство или представителю в вашем городе. Адреса салонов — на странице <a href="/address">«Где купить»</a>.</p>
 	</div>
 
-</section>
+	<div class="contact-grid">
+		<div class="contact-card">
+			<dl>
+				<div>
+					<dt>Адрес производства</dt>
+					<dd>г. Киров, ул. Луганская, 59</dd>
+				</div>
+				<?php foreach ($representatives as $r) { ?>
+				<div>
+					<dt><?=h($r[0])?></dt>
+					<dd>
+						<a href="tel:<?=$r[1]?>"><?=phone_text($r[1])?></a>
+						<?php if ($r[2]) { ?><a class="messenger" href="<?=h($r[2])?>" target="_blank" rel="nofollow noopener" aria-label="ВКонтакте"><?=icon("vk")?></a><?php } ?>
+						<!-- <?php if ($r[3]) { ?><a class="messenger" href="<?=h($r[3])?>" target="_blank" rel="nofollow noopener" aria-label="Telegram"><?=icon("telegram")?></a><?php } ?> -->
+						<?php if ($r[4]) { ?><a class="messenger" href="<?=h($r[4])?>" target="_blank" rel="nofollow noopener" aria-label="MAX"><img src="/MAX.svg" alt="" width="20" height="20"></a><?php } ?>
+					</dd>
+				</div>
+				<?php } ?>
+				<div>
+					<dt>Email</dt>
+					<dd><a href="mailto:<?=SITE_EMAIL?>"><?=SITE_EMAIL?></a></dd>
+				</div>
+			</dl>
+		</div>
+		<div class="map-frame">
+			<iframe src="https://yandex.ru/map-widget/v1/?z=12&amp;ol=biz&amp;oid=157680774230" title="Фабрика «Престол» на Яндекс.Картах" loading="lazy"></iframe>
+		</div>
+	</div>
+</div>
 
 <?php
 	include "footer.php";
