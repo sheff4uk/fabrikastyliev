@@ -137,10 +137,13 @@
 	if (links.length && window.HTMLDialogElement) {
 		var dlg = document.createElement("dialog");
 		dlg.className = "lightbox";
-		dlg.innerHTML = '<img alt=""><p class="lightbox__caption"></p>' +
-			'<button class="lightbox__close" type="button" aria-label="Закрыть">✕</button>' +
-			'<button class="lightbox__prev" type="button" aria-label="Предыдущее фото">←</button>' +
-			'<button class="lightbox__next" type="button" aria-label="Следующее фото">→</button>';
+		var chev = function (path) {
+			return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="' + path + '"/></svg>';
+		};
+		dlg.innerHTML = '<img alt="" draggable="false"><p class="lightbox__caption"></p>' +
+			'<button class="lightbox__close" type="button" aria-label="Закрыть">' + chev("M6 6l12 12M18 6L6 18") + '</button>' +
+			'<button class="lightbox__prev" type="button" aria-label="Предыдущее фото">' + chev("M15 4 7 12l8 8") + '</button>' +
+			'<button class="lightbox__next" type="button" aria-label="Следующее фото">' + chev("M9 4l8 8-8 8") + '</button>';
 		document.body.appendChild(dlg);
 		var img = dlg.querySelector("img"), cap = dlg.querySelector(".lightbox__caption");
 		var group = [], pos = 0;
@@ -176,11 +179,30 @@
 		dlg.querySelector(".lightbox__close").addEventListener("click", function () { dlg.close(); });
 		dlg.querySelector(".lightbox__prev").addEventListener("click", function () { show(pos - 1); });
 		dlg.querySelector(".lightbox__next").addEventListener("click", function () { show(pos + 1); });
-		dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
+		dlg.addEventListener("click", function (e) { if (e.target === dlg && !swiped) dlg.close(); });
 		dlg.addEventListener("keydown", function (e) {
 			if (e.key === "ArrowLeft") show(pos - 1);
 			if (e.key === "ArrowRight") show(pos + 1);
 		});
+
+		// Свайп по фото: по горизонтали — листание, по вертикали не трогаем
+		var startX = 0, startY = 0, tracking = false, swiped = false;
+		dlg.addEventListener("pointerdown", function (e) {
+			swiped = false;
+			if (e.pointerType === "mouse" || e.target.closest("button") || group.length < 2) return;
+			tracking = true;
+			startX = e.clientX;
+			startY = e.clientY;
+		});
+		dlg.addEventListener("pointerup", function (e) {
+			if (!tracking) return;
+			tracking = false;
+			var dx = e.clientX - startX, dy = e.clientY - startY;
+			if (Math.abs(dx) < 40 || Math.abs(dx) < Math.abs(dy)) return;
+			swiped = true;
+			show(pos + (dx < 0 ? 1 : -1));
+		});
+		dlg.addEventListener("pointercancel", function () { tracking = false; });
 	}
 
 	// Уведомление
