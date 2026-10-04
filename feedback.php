@@ -1,182 +1,102 @@
 <?php
-$title = "Заказать звонок";
-$description = "Заказать звонок";
-include "header.php";
+require_once "functions.php";
 
-if( isset($_POST["submit"]) ) {
-	$response = $_POST["g-recaptcha-response"];
-	$url = 'https://www.google.com/recaptcha/api/siteverify';
+$location = safe_local_url(isset($_GET["location"]) ? $_GET["location"] : "/");
+
+if (isset($_POST["submit"])) {
+	$f = array();
+	foreach (array("client", "mtel", "city", "text", "model") as $k) {
+		$f[$k] = isset($_POST[$k]) && is_string($_POST[$k]) ? trim($_POST[$k]) : "";
+	}
+
 	$data = [
 		'secret' => RECAPTCHA_SECRET,
-		'response' => $response
+		'response' => isset($_POST["g-recaptcha-response"]) ? $_POST["g-recaptcha-response"] : ""
 	];
 	$options = [
 		'http' => [
 			'method' => 'POST',
+			'header' => 'Content-Type: application/x-www-form-urlencoded',
 			'content' => http_build_query($data)
 		]
 	];
 	$context  = stream_context_create($options);
-	$verify = file_get_contents($url, false, $context);
-	$captcha_success=json_decode($verify);
-	if ($captcha_success->success==false) {
-		echo "Проверка reCAPTCHA не пройдена!";
-	} else if ($captcha_success->success==true) {
-		// Проверка на спам
-		if( stripos($_POST["text"], 'http') === false && stripos($_POST["text"], '@') === false ) {
-			// Отправляем сообщение при помощи телеграм бота
-			$message = "<b>Заявка с сайта:</b>\n{$_POST["client"]}\n{$_POST["mtel"]}\n{$_POST["city"]}\n{$_POST["text"]}";
-			message_to_telegram($message);
-			$_SESSION["alert"] = "Благодарим за обращение! С Вами обязательно свяжуться.";
+	$verify = file_get_contents('https://www.google.com/recaptcha/api/siteverify', false, $context);
+	$captcha_success = json_decode($verify);
+
+	$error = "";
+	if (!$captcha_success || $captcha_success->success == false) {
+		$error = "Проверка «Я не робот» не пройдена. Отметьте галочку и отправьте заявку ещё раз.";
+	}
+	elseif ($f["client"] === "" || $f["mtel"] === "") {
+		$error = "Укажите имя и телефон, чтобы мы могли с вами связаться.";
+	}
+	if ($error) {
+		$_SESSION["form_error"] = $error;
+		$_SESSION["form_data"] = $f;
+		header("Location: /feedback?location=" . rawurlencode($location));
+		exit;
+	}
+
+	// Проверка на спам
+	if (stripos($f["text"], 'http') === false && stripos($f["text"], '@') === false) {
+		// Отправляем сообщение при помощи телеграм бота
+		$message = "<b>Заявка с сайта:</b>\n" . h($f["client"]) . "\n" . h($f["mtel"]) . "\n" . h($f["city"]) . "\n" . h($f["text"]);
+		if ($f["model"] !== "" && mb_stripos($f["text"], $f["model"]) === false) {
+			$message .= "\nМодель: " . h($f["model"]);
 		}
-
-		exit ('<meta http-equiv="refresh" content="0; url='.$_GET["location"].'">');
+		$message .= "\nСтраница: " . h(SITE_URL . $location);
+		message_to_telegram($message);
+		$_SESSION["alert"] = "Благодарим за обращение! С вами обязательно свяжутся.";
 	}
 
+	header("Location: " . $location);
+	exit;
 }
+
+$title = "Заказать звонок";
+$description = "Оставьте телефон — специалист мебельной фабрики «Престол» перезвонит и рассчитает стоимость.";
+$path = "/feedback";
+$error = isset($_SESSION["form_error"]) ? $_SESSION["form_error"] : "";
+$saved = isset($_SESSION["form_data"]) ? $_SESSION["form_data"] : array();
+unset($_SESSION["form_error"], $_SESSION["form_data"]);
+$model = isset($saved["model"]) ? $saved["model"] : (isset($_GET["model"]) && is_string($_GET["model"]) ? mb_substr($_GET["model"], 0, 100) : "");
+$has_lead = true;
+include "header.php";
 ?>
-<style>
-	.decor * {box-sizing: border-box;}
-	body {background: #f69a73;}
-	.decor {
-		position: relative;
-		max-width: 400px;
-		margin: 50px auto 0;
-		background: white;
-		border-radius: 30px;
-	}
-	.form-left-decoration,
-	.form-right-decoration {
-		content: "";
-		position: absolute;
-		width: 50px;
-		height: 20px;
-		background: #f69a73;
-		border-radius: 20px;
-	}
-	.form-left-decoration {
-		bottom: 60px;
-		left: -30px;
-	}
-	.form-right-decoration {
-		top: 60px;
-		right: -30px;
-	}
-	.form-left-decoration:before,
-	.form-left-decoration:after,
-	.form-right-decoration:before,
-	.form-right-decoration:after {
-		content: "";
-		position: absolute;
-		width: 50px;
-		height: 20px;
-		border-radius: 30px;
-		background: white;
-	}
-	.form-left-decoration:before {top: -20px;}
-	.form-left-decoration:after {
-		top: 20px;
-		left: 10px;
-	}
-	.form-right-decoration:before {
-		top: -20px;
-		right: 0;
-	}
-	.form-right-decoration:after {
-		top: 20px;
-		right: 10px;
-	}
-	.circle {
-		position: absolute;
-		bottom: 80px;
-		left: -55px;
-		width: 20px;
-		height: 20px;
-		border-radius: 50%;
-		background: white;
-	}
-	.form-inner {padding: 50px;}
-	.form-inner input,
-	.form-inner textarea,
-	.form-inner select {
-		display: block;
-		width: 100%;
-		padding: 0 20px;
-		margin-bottom: 10px;
-		background: #E9EFF6;
-		line-height: 40px;
-		border-width: 0;
-		border-radius: 20px;
-		font-family: 'Roboto', sans-serif;
-		outline-style:none;
-		font-size: 1.1em;
-	}
-	.form-inner input[type="submit"] {
-		margin-top: 30px;
-		background: #f69a73;
-		border-bottom: 4px solid #d87d56;
-		color: white;
-		font-size: 16px;
-		cursor: pointer;
-		transition: all 0.3s ease-in-out;
-		-moz-transition: all 0.3s ease-in-out;
-		-webkit-transition: all 0.3s ease-in-out;
-		-o-transition: all 0.3s ease-in-out;
-	}
-	.form-inner input[type="submit"]:hover {opacity: .8;}
-	.form-inner textarea {resize: none;}
-	.form-inner h3 {
-		margin-top: 0;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 500;
-		font-size: 24px;
-		color: #707981;
-	}
-	.form-inner select {
-		height: 40px;
-	}
-</style>
 
-<section id="main">
-	<section class="page">
-		<form class="decor" method="post" autocomplete="off">
-			<div class="form-left-decoration"></div>
-			<div class="form-right-decoration"></div>
-			<div class="circle"></div>
-			<div class="form-inner">
-				<h3>Оставьте номер<br>и мы Вам перезвоним</h3>
-				<input type="text" name="client" autocomplete="off" required placeholder="Имя (обязательно)">
-				<input type="text" id="mtel" name="mtel" autocomplete="off" required placeholder="Телефон (обязательно)">
-				<select name="city" required>
-					<option value="">--выберите город--</option>
-					<option value="Киров">Киров</option>
-					<option value="Екатеринбург">Екатеринбург</option>
-					<option value="Нижний Новгород">Нижний Новгород</option>
-					<option value="Другой">другой (напишите в сообщении)</option>
-				</select>
-				<textarea name="text" rows="3" placeholder="Сообщение..."><?=($_GET["model"] ? "Интересует модель \"{$_GET["model"]}\"" : "")?></textarea>
-
-				<div class="captcha_wrapper">
-					<script src='https://www.google.com/recaptcha/api.js'></script>
-					<div class="g-recaptcha" data-sitekey="6LdZB-oUAAAAAA8oV4Sht3IvE0F0_VfkZ6arlTjd"></div>
+<section class="section" id="zayavka">
+	<div class="container">
+		<div class="lead">
+			<div class="lead__text">
+				<h1>Оставьте номер — <em>мы перезвоним</em></h1>
+				<p>Специалист фабрики ответит на вопросы, поможет подобрать модель, размер, декор и ткань и рассчитает стоимость.</p>
+				<div class="lead__contacts">
+					<a href="tel:<?=SITE_PHONE?>"><?=icon("phone")?><?=SITE_PHONE_TEXT?></a>
+					<!-- <a href="https://t.me/+eNYAT_b6x2pkYjE6" target="_blank" rel="nofollow noopener"><?=icon("telegram")?>Telegram</a> -->
+					<a href="/price.pdf" target="_blank"><?=icon("file")?>Прайс-лист с 1 августа 2026 (PDF)</a>
 				</div>
-
-				<input type="submit" value="Жду звонка!" name="submit">
 			</div>
-		</form>
-	</section>
+			<div>
+				<?php if ($error) { ?><p class="form-error" role="alert"><?=h($error)?></p><?php } ?>
+				<?php lead_form($model, null, "", $location); ?>
+			</div>
+		</div>
+	</div>
 </section>
 
+<?php if ($saved) { ?>
 <script>
-	$(document).ready(function() {
-		$("form.decor").on("submit", function() {
-			if( !grecaptcha.getResponse() ) {
-				alert('Вы не заполнили поле Я не робот!');
-				return false;
-			}
-		});
-	});
+	// Возвращаем введённые данные после неудачной проверки
+	(function (d) {
+		var form = document.querySelector(".lead-form");
+		for (var k in d) {
+			var el = form.elements[k];
+			if (el) el.value = d[k];
+		}
+	})(<?=json_encode($saved, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT)?>);
 </script>
+<?php } ?>
 
 <?php
 	include "footer.php";

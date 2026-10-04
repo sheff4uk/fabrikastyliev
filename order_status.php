@@ -73,6 +73,11 @@
 	}
 </style>
 
+<!-- Эта страница использует jQuery и jQuery UI (полоса прогресса); остальной сайт работает без них -->
+<link rel="stylesheet" href="/js/ui/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/ui/jquery-ui.js"></script>
+
 <section style="background-color: #653033; padding: 100px 0; color: white; text-align: center; font-size: 1em;">
 	<section class="page">
 		<?php
