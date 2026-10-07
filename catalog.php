@@ -97,7 +97,7 @@ $interiors = array(
 	array("max-shevalie.jpg", "Стол Макс и стулья Шевалье", array("max", "shevalie")),
 	array("pekin-persey.jpg", "Стол Пекин и кресла Персей", array("pekin", "persey")),
 	array("johny-bingo.jpg", "Стол Джонни и стулья Бинго 2", array("johny", "bingo")),
-	array("ivan-v-shevalie.jpg", "Стол Иван-В и стулья Шевалье", array("ivan-v", "shevalie")),
+	array("ivan-v-vikont.jpg", "Стол Иван-В и стулья Виконт", array("ivan-v", "vikont")),
 	array("johny-valli.jpg", "Стол Джонни и стулья Валли", array("johny", "valli")),
 	array("persey.jpg", "Кресла Персей", array("persey")),
 	array("zero.jpg", "Стул Зеро", array("zero")),
