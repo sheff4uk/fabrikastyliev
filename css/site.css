@@ -326,6 +326,7 @@ p { margin: 0 0 1em; }
 .specs div { display: grid; grid-template-columns: 130px 1fr; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 15px; }
 .specs dt { color: var(--muted); }
 .specs dd { margin: 0; }
+.pinfo__description { font-size: 15px; color: var(--ink-2); line-height: 1.6; margin: 0 0 24px; }
 .pinfo__actions { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 16px; }
 .pinfo__note { font-size: 14px; color: var(--muted); }
 .pnav { display: flex; justify-content: space-between; gap: 16px; margin-top: 32px; }

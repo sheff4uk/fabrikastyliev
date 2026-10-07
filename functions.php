@@ -177,6 +177,161 @@ function product_tags($type, $v) {
 	return $tags;
 }
 
+function mb_ucfirst($s) {
+	return mb_strtoupper(mb_substr($s, 0, 1, "UTF-8"), "UTF-8") . mb_substr($s, 1, null, "UTF-8");
+}
+
+// "белый + золотая патина" -> "цвета «белый» с золотой патиной"; "венге" -> "цвета «венге»"
+function product_color_phrase($color) {
+	if ($color === "") return "";
+	if (mb_strpos($color, "+") !== false) {
+		list($base, $finish) = array_map("trim", explode("+", $color, 2));
+		$finishMap = array("золотая патина" => "золотой патиной", "серебрянная патина" => "серебряной патиной");
+		$finishPhrase = isset($finishMap[$finish]) ? $finishMap[$finish] : mb_strtolower($finish, "UTF-8");
+		return "цвета «{$base}» с {$finishPhrase}";
+	}
+	return "цвета «{$color}»";
+}
+
+// Описание конструкции по составу материалов — свой вариант фразы на каждую комбинацию, встречающуюся в каталоге
+function product_material_phrase($materials, $type) {
+	$m = mb_strtolower($materials, "UTF-8");
+	$hasMassiv = mb_strpos($m, "массив") !== false;
+	$hasShponMdf = mb_strpos($m, "шпон") !== false && mb_strpos($m, "мдф") !== false;
+	$hasAbs = mb_strpos($m, "abs-пластик") !== false;
+	$hasMetalNogi = mb_strpos($m, "металлические ноги") !== false;
+	$hasGnutokleen = mb_strpos($m, "гнутоклееные") !== false;
+	$hasMetal = mb_strpos($m, "металл") !== false;
+
+	if ($type == "table") {
+		if (mb_strpos($m, "кромка-радиус") !== false) {
+			return "столешница с мягкой кромкой-радиусом, царга оклеена натуральным шпоном — без острых углов и с чётким рисунком дерева";
+		}
+		if (mb_strpos($m, "мебельным пластиком") !== false) {
+			return "ноги металлические, царговый пояс — МДФ, облицованный мебельным пластиком: простой уход и строгий минималистичный силуэт";
+		}
+		if ($hasMassiv && $hasShponMdf) {
+			return "ноги — массив дерева, царговый пояс оклеен натуральным шпоном по МДФ: выглядит как цельный массив, но легче и доступнее по цене";
+		}
+		if ($hasAbs && $hasShponMdf) {
+			return "ноги отлиты из ударопрочного ABS-пластика с резным декором, царговый пояс — шпонированный МДФ: классический силуэт без цены массива";
+		}
+		if ($hasMetalNogi) {
+			return "тонкие металлические ноги с порошковой покраской — устойчивы к влажной уборке, подходят современной кухне";
+		}
+		if (trim($m) === "массив") {
+			return "вся конструкция — массив дерева: традиционная сборка, которую можно повторно шлифовать и реставрировать";
+		}
+		if (trim($m) === "мдф") {
+			return "каркас и ноги — МДФ: стабильный материал, не боится перепадов влажности на кухне";
+		}
+		if (trim($m) === "шпон+мдф") {
+			return "каркас из МДФ, оклеенного натуральным шпоном — сохраняет рисунок дерева при стабильной геометрии столешницы";
+		}
+		return "ноги и каркас — " . $m;
+	}
+	else {
+		if ($hasMassiv && $hasGnutokleen) {
+			return "каркас — массив, спинка из гнутоклееного шпона: классическая технология, которая держит форму гнутых деталей десятилетиями";
+		}
+		if ($hasGnutokleen && $hasMetal) {
+			return "гнутоклееные детали из шпона на металлическом основании — лёгкий профиль и плавный поворот сиденья";
+		}
+		if ($hasGnutokleen && !$hasMassiv) {
+			return "гнутоклееные детали из шпона — точёный профиль спинки при меньшем весе, чем у цельного массива";
+		}
+		if (trim($m) === "массив") {
+			return "каркас, сиденье и спинка — массив дерева: прочная традиционная сборка";
+		}
+		if ($hasMassiv && $hasAbs) {
+			return "каркас — массив, передние ноги — ударопрочный ABS-пластик с лакированной отделкой: нарядный вид без цены цельного массива";
+		}
+		if ($hasAbs) {
+			return "корпус — ударопрочный ABS-пластик с лакированной отделкой: лёгкий и простой в уходе";
+		}
+		return $m;
+	}
+}
+
+// Имя механизма без кавычек: 'Раздвижной «Люкс»' -> 'Люкс'
+function mechanism_label($fullName) {
+	return preg_match('~«([^»]+)»~u', $fullName, $m) ? $m[1] : $fullName;
+}
+
+function product_mechanism_phrase($product, $mechanisms) {
+	$prices = $product[4];
+	$has2 = isset($prices[2]);
+	$has3 = isset($prices[3]);
+	if (!$has2 && !$has3) {
+		return "Столешница нераздвижная — цельная и жёсткая, без люфта по шву.";
+	}
+	$labels = array();
+	if ($has2) $labels[] = mechanism_label($mechanisms[2][0]);
+	if ($has3) $labels[] = mechanism_label($mechanisms[3][0]);
+	$list = implode("» или «", $labels);
+	return "Раздвигается по механизму «{$list}»: столешница увеличивается, когда за стол садится больше гостей.";
+}
+
+// Разные формулировки призыва к действию: детерминированный выбор по ключу модели, чтобы текст не менялся между запросами
+function product_pick_phrase($bank, $key) {
+	return $bank[crc32($key) % count($bank)];
+}
+
+// Расширенное SEO-описание модели для карточки товара (несколько предложений по реальным характеристикам)
+function product_description($key, $type, $product, $mechanisms) {
+	$name = $product[0];
+	$size = $product[1];
+	$color = $product[2];
+	$materials = $product[3];
+	$colorPhrase = product_color_phrase($color);
+
+	if ($type == "table") {
+		$isCoffee = mb_stripos($name, "журнальный") !== false;
+		$isConsole = mb_stripos($name, "консоль") !== false;
+		$kindWord = $isCoffee ? "журнальный столик" : ($isConsole ? "консольный стол" : (mb_strpos($size, "Ø") !== false ? "круглый кухонный стол" : "прямоугольный кухонный стол"));
+
+		$ctaBank = array(
+			"Изготовим «{$name}» в нужном размере и декоре — параметры уточняются при заказе.",
+			"Этот {$kindWord} делаем под заказ: нужный размер и декор столешницы подбираются индивидуально.",
+			"Размер и декор «{$name}» можно изменить под ваш интерьер — варианты смотрите в фирменных салонах.",
+		);
+
+		$sentences = array(
+			"«{$name}» — {$kindWord}" . ($colorPhrase ? ", {$colorPhrase}" : "") . ", от мебельной фабрики «Престол».",
+			mb_ucfirst(product_material_phrase($materials, "table")) . ".",
+			$isCoffee ? "" : product_mechanism_phrase($product, $mechanisms),
+			product_pick_phrase($ctaBank, $key),
+		);
+	}
+	else {
+		$kindWord = mb_stripos($name, "банкетка") !== false ? "банкетка"
+			: (mb_stripos($name, "пуфик") !== false ? "пуфик"
+			: (mb_stripos($name, "растущий") !== false ? "растущий стул для ребёнка"
+			: (mb_stripos($name, "кресло") !== false ? "кресло"
+			: (mb_stripos($name, "барный") !== false ? "барный стул" : "стул"))));
+
+		$ctaBank = array(
+			"Обивку и цвет каркаса «{$name}» подбираем под заказ — ткани и образцы покраски смотрите в фирменных салонах.",
+			"Ткань и цвет «{$name}» — на выбор: сотни образцов обивки доступны в фирменных салонах фабрики.",
+			"Для «{$name}» можно выбрать любую ткань обивки из нашего каталога образцов в салонах.",
+		);
+
+		$feature = "";
+		if ($kindWord === "барный стул") $feature = "Высота сидения увеличена под барную стойку или кухонный остров.";
+		elseif ($kindWord === "растущий стул для ребёнка") $feature = "Высота сиденья регулируется по росту ребёнка — стул растёт вместе с ним.";
+		elseif (mb_stripos($name, "поворотн") !== false || mb_strpos($name, "360") !== false) $feature = "Сиденье поворотное — удобно разворачиваться у стола без лишних движений.";
+
+		$sentences = array(
+			"«{$name}» — {$kindWord}" . ($colorPhrase ? ", {$colorPhrase}" : "") . ", от мебельной фабрики «Престол».",
+			mb_ucfirst(product_material_phrase($materials, "chair")) . ".",
+			$feature,
+			product_pick_phrase($ctaBank, $key),
+		);
+	}
+
+	return trim(implode(" ", array_filter($sentences)));
+}
+
 // Карточка модели в каталоге
 function product_card($key, $v, $type) {
 	$price = rub(product_min_price($v));
@@ -204,7 +359,7 @@ function product_card($key, $v, $type) {
 function lead_form($model = "", $title = "Рассчитаем стоимость", $lead = "Оставьте телефон — специалист фабрики перезвонит, поможет подобрать размер, декор и ткань.", $location = null) {
 	$location = safe_local_url($location === null ? $_SERVER["REQUEST_URI"] : $location);
 	?>
-	<form class="lead-form" method="post" action="/feedback?location=<?=h(rawurlencode($location))?>">
+	<form class="lead-form" method="post" action="/feedback?location=<?=h(rawurlencode($location))?>" onsubmit="ym(50341759, 'reachGoal', 'FEEDBACK'); return true;">
 		<?php if ($title !== null) { ?>
 		<div class="lead-form__head">
 			<h2 class="lead-form__title"><?=$title?></h2>

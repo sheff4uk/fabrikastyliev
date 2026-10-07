@@ -18,7 +18,7 @@
 	}
 
 	$title = $type_n." ".$product[0]." от кировской фабрики ПРЕСТОЛ";
-	$description = $type_n." ".$product[0]." ".$product[3];
+	$description = product_description($name, $ptype, $product, $mechanisms);
 	$path = product_url($name, $ptype);
 	$path_drop = array("name", "type");
 	$nav_current = list_url($ptype);
@@ -43,7 +43,7 @@
 		"@type" => "Product",
 		"name" => mb_convert_case($type_n, MB_CASE_TITLE, "UTF-8") . " " . $product[0],
 		"image" => array_map(function ($p) { return SITE_URL . img_url($p); }, array_slice($photos, 0, 3)),
-		"description" => strip_tags(str_replace("<br>", ", ", $product[1])) . ". " . $product[3],
+		"description" => $description,
 		"brand" => array("@type" => "Brand", "name" => "Престол"),
 		"offers" => $offer + array("url" => $canonical),
 	));
@@ -106,6 +106,8 @@
 				<div><dt>Столешница</dt><dd>МДФ, покрытая мебельным пластиком</dd></div>
 				<?php } ?>
 			</dl>
+
+			<p class="pinfo__description"><?=h($description)?></p>
 
 			<div class="pinfo__actions">
 				<a class="btn btn--accent" href="#zayavka">Рассчитать стоимость</a>
