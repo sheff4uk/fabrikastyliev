@@ -74,7 +74,7 @@ include "header.php";
 				<div class="lead__contacts">
 					<a href="tel:<?=SITE_PHONE?>"><?=icon("phone")?><?=SITE_PHONE_TEXT?></a>
 					<!-- <a href="https://t.me/+eNYAT_b6x2pkYjE6" target="_blank" rel="nofollow noopener"><?=icon("telegram")?>Telegram</a> -->
-					<a href="/price.pdf" target="_blank"><?=icon("file")?>Прайс-лист с 1 октября 2026 (PDF)</a>
+					<a href="/price.pdf" target="_blank"><?=icon("file")?>Прайс-лист (PDF)</a>
 				</div>
 			</div>
 			<div>

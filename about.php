@@ -56,7 +56,7 @@
 		<div class="docs">
 			<a class="doc" href="/certificates"><?=icon("shield")?><span>Сертификаты поставщиков<small>Пластики, МДФ, краски, клей, ткани</small></span></a>
 			<!-- <a class="doc" href="/sout"><?=icon("file")?><span>Специальная оценка условий труда<small>Сводные данные СОУТ</small></span></a> -->
-			<a class="doc" href="/price.pdf" target="_blank"><?=icon("file")?><span>Прайс-лист<small>Розничные цены с 1 октября 2026 года</small></span></a>
+			<a class="doc" href="/price.pdf" target="_blank"><?=icon("file")?><span>Прайс-лист<small>Розничные цены (PDF)</small></span></a>
 		</div>
 	</section>
 </div>
